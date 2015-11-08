@@ -4,17 +4,22 @@ from flask import Flask, render_template, redirect, url_for
 app = Flask(__name__)
 
 # just for testing
+oben_poem = "oben " * 20 + '\n'
+oben_poem += ("links" + (69 * ' ') + "rechts\n") * 20
+oben_poem += "unten " * 20 + '\n'
+
+# just for testing
 from random import randrange
 def lorem(): #DEBUG
     ipsum = lambda: " ".join(["Pack my box with five dozen liquor jugs."] * randrange(5, 16))
     return "\n\n".join([ ipsum() for _ in range(randrange(5, 16)) ])
 
 def get_art(art_id):
-    if art_id != 0: raise FileNotFoundError("No such art!")
+    if art_id > 1: raise FileNotFoundError("No such art!")
     art = {}
-    art["text_type"] = "prose"
-    art["title"] = "What is art"
-    art["text"] = lorem()
+    art["text_type"] = "mono" if art_id else "prose"
+    art["title"] = "schon dagewesen" if art_id else "What is art"
+    art["text"] = oben_poem if art_id else lorem()
     art["author"] = "Nobody at all"
     return art
 
