@@ -19,7 +19,7 @@ There's art! You can see the same filler text in three different styles!
 
 ## How do I work on the project?
 
-Read [DEVELOP.md](https://github.com/documnt/documnt/blob/master/DEPLOY.md).
+Read [DEVELOP.md](https://github.com/documnt/documnt/blob/master/DEVELOP.md).
 
 ## Theoretical CMS overview
 
