@@ -1,0 +1,112 @@
+/* page_structure.css: styles which affect the positioning and layout of the
+ * header, footer, and main content.
+ *
+ * The goal here is to have a header, content, and a footer. If the content
+ * doesn't take up a whole page, the footer should sit at the bottom of the
+ * page. If the content does take up the whole page, put the footer under the
+ * content.
+ *
+ * This used to be really hard, but in CSS3 we have flexbox!
+ *
+ * There's a top-to-bottom (column) flexbox representing the whole page
+ * containing three elements: header, main, and footer. Header is itself a
+ * flexbox. Main is where template data gets dumped. Footer is a bit of text in
+ * a div.
+ *
+ * A flexbox that takes up all the vertical height (100vh) of the rendered
+ * elements on the page and maximizes the size of main solves our issue. We fix
+ * the height of the header and footer to the smallest needed to render
+ * everything (height: auto;) and keep the main height unbounded.
+ */
+
+main {
+  flex: 1;
+  width: 70vw;
+  margin: auto;
+}
+
+@media all and (max-width: 600px) {
+  main { width: 85vw; }
+}
+
+header, footer { height: auto; }
+
+.page-wrapper {
+  height: 100vh;
+
+  /* flexbox; what a mouthful! */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-direction: column;
+}
+
+header { margin: 0 0 20px; }
+footer {
+  margin: 20px 0 10px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+
+  /* vertical centering */
+  align-items: center;
+
+  /* flexbox; what a mouthful! */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  /* add wrapping behavior for small screens */
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.navigation a {
+  display: block;
+  padding: 10px;
+}
+
+/* for smallish screens, horizontally center labels */
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+/* for tiny screens, list menu items in order */
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  /* draw a line under the logo */
+  .navigation .logo {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+main p {
+  text-align: justify;
+  white-space: pre-line;
+}
+
+footer {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* vi: set et sw=2 sts=2: */
