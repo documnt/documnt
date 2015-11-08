@@ -6,7 +6,7 @@ app = Flask(__name__)
 # just for testing
 from random import randrange
 def lorem(): #DEBUG
-    ipsum = lambda: " ".join(["Pack my bag with five dozen liquor jugs."] * randrange(5, 16))
+    ipsum = lambda: " ".join(["Pack my box with five dozen liquor jugs."] * randrange(5, 16))
     return "\n\n".join([ ipsum() for _ in range(randrange(5, 16)) ])
 
 def get_art(art_id):
