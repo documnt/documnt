@@ -26,3 +26,7 @@ body {
   font-weight: 900;
   text-decoration: none; /* avoid link underlining, italics, etc */
 }
+
+.font-effect-anaglyph {
+  text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+}
