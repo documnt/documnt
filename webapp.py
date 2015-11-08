@@ -32,3 +32,6 @@ def show_text(art_id):
 @app.route('/<int:art_id>/prose')
 def show_prose(art_id):
     return "This would show art #{} in justified variable-width text.".format(art_id)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
