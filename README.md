@@ -12,11 +12,10 @@ backend for the documnt concrete poetry site
 
 There's art! You can see the same filler text in three different styles!
 
-  - [shitty prose](http://0.0.0.0/0/prose)
-  - [shitty traditional poetry](http://0.0.0.0/0/poetry)
-  - [shitty concrete poetry](http://0.0.0.0/0/mono)
-
-If you visit the [main URL for the item](http://0.0.0.0/0) it'll go to the preferred form without changing the URL (this is good). I set my shitty filler text to prefer to be seen as prose.
+  - shitty prose on [production](http://documnt.pythonanywhere.com/0/prose) or [locally](http://0.0.0.0/0/prose)
+  - shitty traditional poetry on [production](http://documnt.pythonanywhere.com/0/poetry) or [locally](http://0.0.0.0/0/poetry)
+  - shitty concrete poetry on [production](http://documnt.pythonanywhere.com/0/mono) or [locally](http://0.0.0.0/0/mono)
+  - default style on [production](http://documnt.pythonanywhere.com/0) or [locally](http://0.0.0.0/0)
 
 ## How do I get changes into the codebase/production?
 
