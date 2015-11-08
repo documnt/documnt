@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from flask import Flask
 app = Flask(__name__)
 
@@ -6,7 +8,7 @@ def home():
     return "This would show a bunch of art entries."
 
 @app.route('/authors')
-def about():
+def authors():
     return "This would show a page about those authors who have content on the site."
 
 @app.route('/about')
