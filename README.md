@@ -17,9 +17,9 @@ There's art! You can see the same filler text in three different styles!
   - shitty concrete poetry on [production](http://documnt.pythonanywhere.com/0/mono) or [locally](http://0.0.0.0/0/mono)
   - default style on [production](http://documnt.pythonanywhere.com/0) or [locally](http://0.0.0.0/0)
 
-## How do I get changes into the codebase/production?
+## How do I work on the project?
 
-Read DEVELOP.md
+Read [DEVELOP.md](https://github.com/documnt/documnt/blob/master/DEPLOY.md).
 
 ## Theoretical CMS overview
 
