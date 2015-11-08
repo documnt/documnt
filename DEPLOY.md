@@ -3,8 +3,9 @@
 ### First: Develop on the develop branch
 
   1. do your development work on the develop branch, not master `git clone -b develop https://github.com/documnt/documnt`
-  2. rebase your copy onto the latest main document repository develop branch (do this often): `git pull --rebase`
-  3. push to the development branch once things mostly work: `git push`
+  2. code away
+  3. rebase your copy onto the latest main document repository develop branch (do this often): `git pull --rebase`
+  4. push to the development branch once things mostly work: `git push` (this means when we run `git pull --rebase`, your changes will be merged into our work as if we had started working after you)
 
 ### Second: Fast-forward the master branch to get your changes
 
