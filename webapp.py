@@ -5,6 +5,10 @@ app = Flask(__name__)
 def home():
     return "This would show a bunch of art entries."
 
+@app.route('/authors')
+def about():
+    return "This would show a page about those authors who have content on the site."
+
 @app.route('/about')
 def about():
     return "This would show an about page."
