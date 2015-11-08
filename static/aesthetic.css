@@ -6,9 +6,14 @@ body {
   font-size: 18px;
 }
 
-.navigation {
-  background: powderblue;
-}
+main p.author { text-align: right; }
+main p.prose { text-align: justify; }
+main p.poetry { text-align: center; }
+main p { margin-bottom: 1em; }
+
+h1 { text-align: center; }
+
+.navigation { background: powderblue; }
 
 .navigation a {
   text-decoration: none;
@@ -17,7 +22,6 @@ body {
 
 /* lighten space around header links on mouseover */
 .navigation a:hover { background: rgba(255, 255, 255, 0.5); }
-
 
 .logo {
   font-family: 'Lato', sans-serif;
@@ -29,6 +33,10 @@ body {
 
 .font-effect-anaglyph {
   text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+}
+
+footer {
+  font-size: 70%;
 }
 
 .shadow-1 {

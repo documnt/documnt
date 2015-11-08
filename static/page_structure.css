@@ -1,12 +1,23 @@
-/* page_structure.css: styles which affect the positioning and layout of the
- * header, footer, and main content.
+/* page_structure.css: styles which affect the positioning and layout of the header, footer, and main content. */
+
+pre {
+  width: 80ch;
+  margin: 0 auto 0;
+  overflow: hidden;
+}
+
+/* newlines should count as <br /> tags */
+main p { white-space: pre-line; }
+
+/* Here comes a big hunk of page skeleton styling.
  *
  * The goal here is to have a header, content, and a footer. If the content
  * doesn't take up a whole page, the footer should sit at the bottom of the
  * page. If the content does take up the whole page, put the footer under the
  * content.
  *
- * This used to be really hard, but in CSS3 we have flexbox!
+ * This used to be really hard, but in CSS3 we have flexbox! We'll support
+ * modern browsers without worrying about legacy nonsense.
  *
  * There's a top-to-bottom (column) flexbox representing the whole page
  * containing three elements: header, main, and footer. Header is itself a
@@ -19,20 +30,41 @@
  * everything (height: auto;) and keep the main height unbounded.
  */
 
+/* the flexbox that contains the header, main section, and footer */
+.page-wrapper {
+
+  /* flexbox; what a mouthful! */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  /* sections stack atop each other, top to bottom */
+  flex-direction: column;
+
+  /* it should take up the whole screen at a minimum */
+  height: 98vh;
+}
+
+/* the content section should hog as much height as it can but stay a readable width */
 main {
   flex: 1;
   width: 70vw;
   margin: auto;
 }
 
+/* on tiny screens, the readable width needs to increase */
 @media all and (max-width: 600px) {
   main { width: 85vw; }
 }
 
+/* the header and footer take as little height as possible while remaining viewable */
 header, footer { height: auto; }
 
-.page-wrapper {
-  height: 100vh;
+header { margin: 0 0 20px; }
+
+.navigation {
 
   /* flexbox; what a mouthful! */
   display: -webkit-box;
@@ -41,33 +73,21 @@ header, footer { height: auto; }
   display: -webkit-flex;
   display: flex;
 
-  flex-direction: column;
-}
+  /* sections sit next to each other, left to right */
+  flex-direction: row;
 
-header { margin: 0 0 20px; }
-footer {
-  margin: 20px 0 10px;
-}
+  /* sections are centered vertically */
+  align-items: center;
 
-.navigation {
   list-style: none;
   margin: 0;
 
-  /* vertical centering */
-  align-items: center;
-
-  /* flexbox; what a mouthful! */
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  /* add wrapping behavior for small screens */
-  -webkit-flex-flow: row wrap;
+  /* wrap on small screens */
+  -webkit-flex-wrap: row wrap;
   flex-flow: row wrap;
 }
 
+/* each link in the bar has some room around it to make up for list-style:none; */
 .navigation a {
   display: block;
   padding: 10px;
@@ -99,13 +119,10 @@ footer {
   }
 }
 
-main p {
-  text-align: justify;
-  white-space: pre-line;
-}
-
 footer {
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  margin: 20px auto 0;
+  width: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
