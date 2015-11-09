@@ -33,6 +33,10 @@ main p { white-space: pre-line; }
 /* the flexbox that contains the header, main section, and footer */
 .page-wrapper {
 
+  background-image: url('richter-background.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   /* flexbox; what a mouthful! */
   display: -webkit-box;
   display: -moz-box;
@@ -42,9 +46,6 @@ main p { white-space: pre-line; }
 
   /* sections stack atop each other, top to bottom */
   flex-direction: column;
-
-  /* it should take up the whole screen at a minimum */
-  height: 98vh;
 }
 
 /* the content section should hog as much height as it can but stay a readable width */
