@@ -31,28 +31,32 @@ main p { white-space: pre-line; }
  */
 
 /* the flexbox that contains the header, main section, and footer */
+/*
 .page-wrapper {
 
-  background-image: url('richter-background.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   /* flexbox; what a mouthful! */
+  /*
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
+  */
   /* sections stack atop each other, top to bottom */
+  /*
   flex-direction: column;
 }
+*/
 
 /* the content section should hog as much height as it can but stay a readable width */
 main {
   flex: 1;
   width: 70vw;
-  margin: auto;
+  margin-left: 90px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline-block;
 }
 
 /* on tiny screens, the readable width needs to increase */
@@ -63,7 +67,7 @@ main {
 /* the header and footer take as little height as possible while remaining viewable */
 header, footer { height: auto; }
 
-header { margin: 0 0 20px; }
+header { margin: 0; }
 
 .navigation {
 
@@ -82,6 +86,7 @@ header { margin: 0 0 20px; }
 
   list-style: none;
   margin: 0;
+  height: auto;
 
   /* wrap on small screens */
   -webkit-flex-wrap: row wrap;
@@ -91,25 +96,40 @@ header { margin: 0 0 20px; }
 /* each link in the bar has some room around it to make up for list-style:none; */
 .navigation a {
   display: block;
-  padding: 10px;
+  padding: 0px;
+}
+
+/* override browsers user agent */
+ul {
+  padding-left: 70px;
+  margin: 0;
+}
+
+.left {
+  float: left;
+  margin-left: 25px;
+  display: inline-block;
 }
 
 /* for smallish screens, horizontally center labels */
+/*
 @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around;
   }
 }
-
+*/
 /* for tiny screens, list menu items in order */
+/*
 @media all and (max-width: 600px) {
   .navigation {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }
-
+*/
   /* draw a line under the logo */
+  /*
   .navigation .logo {
     border-bottom: 1px solid rgba(0,0,0,0.2);
   }
@@ -118,7 +138,9 @@ header { margin: 0 0 20px; }
     text-align: center;
     padding: 10px;
   }
+
 }
+*/
 
 footer {
   margin: 20px auto 0;
