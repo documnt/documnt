@@ -5,8 +5,8 @@ body {
   background-image: url('richter-background.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-family: 'Vollkorn', serif;
+  font-size: 15px;
 }
 
 main p.author { text-align: right; }

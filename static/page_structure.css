@@ -51,10 +51,10 @@ main p { white-space: pre-line; }
 /* the content section should hog as much height as it can but stay a readable width */
 main {
   flex: 1;
-  width: 70vw;
-  margin-left: 90px;
+  width: 40vw;
+  margin-left: 60px;
   margin-right: auto;
-  margin-top: auto;
+  margin-top: 200px;
   margin-bottom: auto;
   display: inline-block;
 }
