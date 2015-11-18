@@ -47,21 +47,49 @@ main p { white-space: pre-line; }
   flex-direction: column;
 }
 */
+/**
+ * The media tags and width of the text are such that the richter background
+ * image remains mostly separate from the text, making sure that the text
+ * is readable and not hidden by dark parts of the image.
+ */
 
 /* the content section should hog as much height as it can but stay a readable width */
 main {
   flex: 1;
   width: 40vw;
-  margin-left: 60px;
+  margin-left: 47px;
   margin-right: auto;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-bottom: auto;
   display: inline-block;
 }
 
 /* on tiny screens, the readable width needs to increase */
 @media all and (max-width: 600px) {
-  main { width: 85vw; }
+  main { 
+    width: 85vw;
+    margin-top: auto;
+    margin-left: 30px;
+  }
+}
+
+/* on small screens, the readable width needs to increase only slightly */
+@media all and (min-width: 600px) and (max-width: 800px) {
+  main { 
+    width: 57vw;
+    margin-left: 30px;
+    margin-top: 230px;
+  }
+}
+
+/* on medium screens, the readable width needs to increase only slightly, too*/
+/* but less so because of the richter background image */
+@media all and (min-width: 800px) and (max-width: 1000px) {
+  main { 
+    width: 50vw;
+    margin-left: 30px;
+    margin-top: 260px;
+  }
 }
 
 /* the header and footer take as little height as possible while remaining viewable */
