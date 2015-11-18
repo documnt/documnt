@@ -5,10 +5,13 @@ body {
   background-image: url('richter-background.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Lato', serif;
   font-size: 15px;
 }
 
+main {
+  font-family: 'Vollkorn', serif;
+}
 main p.author { text-align: right; }
 main p.prose { text-align: justify; }
 main p.poetry { text-align: center; }
@@ -81,12 +84,4 @@ footer {
 
 .shadow-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-
-@font-face {
-  font-family: "DIN Regular Alternate";
-  src: url(DINRegularAlternate.ttf);
-  font-weight: bold;
-  font-style: normal;
-  font-variant: normal;
 }
