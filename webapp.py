@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from flask import Flask, render_template, redirect, url_for
+
 app = Flask(__name__)
 
 # just for testing
@@ -15,12 +16,18 @@ def lorem(): #DEBUG
     return "\n\n".join([ ipsum() for _ in range(randrange(5, 16)) ])
 
 def get_art(art_id):
-    if art_id > 1: raise FileNotFoundError("No such art!")
     art = {}
-    art["text_type"] = "mono" if art_id else "prose"
-    art["title"] = "schon dagewesen" if art_id else "What is art"
-    art["text"] = oben_poem if art_id else lorem()
-    art["author"] = "documnt"
+    if art_id > 1:
+        f = open("static/documnts/{}.txt".format(art_id), "r")
+        art["text_type"] = "mono" if art_id else "prose"
+        art["title"] = "schon dagewesen" if art_id else "What is art"
+        art["text"] = f.read()
+        art["author"] = "documnt"
+    else:
+        art["text_type"] = "mono" if art_id else "prose"
+        art["title"] = "schon dagewesen" if art_id else "What is art"
+        art["text"] = oben_poem if art_id else lorem()
+        art["author"] = "documnt"
     return art
 
 @app.route('/')
@@ -49,7 +56,6 @@ def render_art(art):
         template = "monospaced.html"
     else:
         template = "literary.html"
-
     try:
         return render_template(template, **art)
     except FileNotFoundError:
