@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  font-family: 'Helvetica Neue', Helvetica, 'Vollkorn', serif;
+  font-family: Helvetica, 'Helvetica Neue', 'Vollkorn', serif;
 }
 main p.author { text-align: right; }
 main p.prose { text-align: justify; }
