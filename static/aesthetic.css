@@ -7,17 +7,17 @@ body {
   font-family: 'Lato', serif;
   font-size: 15px;
 }
-
 main {
-  font-family: 'Vollkorn', serif;
+  font-family: Helvetica, 'Helvetica Neue', 'Vollkorn', serif;
 }
 main p.author { text-align: right; }
 main p.prose { text-align: justify; }
-main p.poetry { text-align: center; }
+main p.poetry { text-align: left; }
 main p { margin-bottom: 1em; }
 
-h1 { text-align: center; }
-h2 { margin: 10px; }
+
+h1 { text-align: left; }
+h2 { margin: 0px; }  /* was 20px */
 h4 { font-weight: 500; }
 
 .navigation {
