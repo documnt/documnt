@@ -36,8 +36,8 @@ def get_art(art_id):
     art = {}
     if art_id > 1:
         f = open("static/documnts/{}.txt".format(art_id), "r")
-        art["text_type"] = "mono" if art_id else "prose"
-        art["title"] = "schon dagewesen" if art_id else "What is art"
+        art["text_type"] = "mono"
+        art["title"] = art_id
         art["text"] = f.read()
         art["author"] = "documnt"
     else:
