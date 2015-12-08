@@ -57,9 +57,9 @@ main p { white-space: pre-line; }
 main {
   flex: 1;
   width: 50vw;
-  margin-left: 100px;
+  margin-left: 200px;
   margin-right: 0px;
-  margin-top: 80px;
+  margin-top: 500px;
   margin-bottom: auto;
   display: inline-block;
 }
@@ -135,6 +135,7 @@ ul {
   float: left;
   margin-left: 0px; /* was 25px */
   display: inline-block;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
