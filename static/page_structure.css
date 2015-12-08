@@ -67,9 +67,9 @@ main {
 /* on tiny screens, the readable width needs to increase */
 @media all and (max-width: 600px) {
   main { 
-    width: 85vw;
+    width: 60vw;
     margin-top: auto;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 }
 
@@ -77,7 +77,7 @@ main {
 @media all and (min-width: 600px) and (max-width: 800px) {
   main { 
     width: 57vw;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 }
 
@@ -86,7 +86,7 @@ main {
 @media all and (min-width: 800px) and (max-width: 1000px) {
   main { 
     width: 50vw;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 }
 
