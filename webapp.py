@@ -14,7 +14,8 @@ from random import randrange
 def lorem(): #DEBUG
     #ipsum = lambda: " ".join(["Pack my box with five dozen liquor jugs."] * randrange(5, 16))
     #return "\n\n".join([ ipsum() for _ in range(randrange(5, 16)) ])
-    poem = "I have eaten" + '\n'
+    poem = "\n"+"\n"+"\n"+"\n"+"\n"
+    poem += "I have eaten" + '\n'
     poem += "the plums" + '\n'
     poem += "that were in" + '\n'
     poem += "the icebox" + '\n' + '\n'
@@ -61,9 +62,14 @@ def authors():
 def about():
     return "This would show an about page."
 
-@app.route('/contact')
-def contact():
-    return "This would show a contact page."
+#added by Matt:
+@app.route('/submit')
+def submit():
+    return "This would show a submit page."
+
+#@app.route('/contact')
+#def contact():
+#    return "This would show a contact page."
 
 @app.route('/<int:art_id>/meta')
 def about_art(art_id):
