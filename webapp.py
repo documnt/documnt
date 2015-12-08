@@ -14,7 +14,10 @@ from random import randrange
 def lorem(): #DEBUG
     #ipsum = lambda: " ".join(["Pack my box with five dozen liquor jugs."] * randrange(5, 16))
     #return "\n\n".join([ ipsum() for _ in range(randrange(5, 16)) ])
-    poem = "\n"+"\n"+"\n"+"\n"+"\n"
+    poem = "\n"+"\n"+"\n"
+    poem += "This is just to say" + '\n'
+    poem += "by William Carlos Williams" + '\n'
+    poem += "\n"+"\n"+"\n"
     poem += "I have eaten" + '\n'
     poem += "the plums" + '\n'
     poem += "that were in" + '\n'
