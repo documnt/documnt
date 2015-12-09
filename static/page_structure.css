@@ -134,8 +134,9 @@ ul {
   float: left;
   margin-left: 0px; /* was 25px */
   display: inline-block;
+  /*
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2); */
 }
 
 /* for smallish screens, horizontally center labels */
@@ -172,7 +173,7 @@ ul {
 footer {
   margin: 20px auto 0;
   width: auto;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
   text-align: center;
 }
 
