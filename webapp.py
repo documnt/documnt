@@ -43,7 +43,7 @@ def get_art(art_id):
         art["text_type"] = "mono"
         art["title"] = art_id
         art["text"] = f.read()
-        art["author"] = "documnt"
+        art["author"] = "author"
     else:
         art["text_type"] = "mono" if art_id else "prose"
         art["title"] = "1" if art_id else "0"
@@ -69,6 +69,28 @@ def about():
 @app.route('/submit')
 def submit():
     return "This would show a submit page."
+
+#added by Matt:
+@app.route('/essay')
+def submit():
+    return "This would show an essay page."
+
+#added by Matt:
+@app.route('/poem')
+def submit():
+    return "This would show a poem page."
+
+#added by Matt:
+@app.route('/mix')
+def submit():
+    return "This would show a mix page."
+
+#added by Matt:
+@app.route('/review')
+def submit():
+    return "This would show a review page."
+
+
 
 #@app.route('/contact')
 #def contact():
