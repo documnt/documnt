@@ -34,7 +34,7 @@ h4 { font-weight: 500; }
 }
 
 /* lighten space around header links on mouseover */
-.navigation a:hover { background: rgba(255, 255, 255, 0.5); }
+.navigation a:hover { background: rgba(211, 211, 211, 0.5); }
 
 .logo {
   font-size: 20px;
