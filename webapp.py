@@ -72,22 +72,22 @@ def submit():
 
 #added by Matt:
 @app.route('/essay')
-def submit():
+def essay():
     return "This would show an essay page."
 
 #added by Matt:
 @app.route('/poem')
-def submit():
+def poem():
     return "This would show a poem page."
 
 #added by Matt:
 @app.route('/mix')
-def submit():
+def mix():
     return "This would show a mix page."
 
 #added by Matt:
 @app.route('/review')
-def submit():
+def review():
     return "This would show a review page."
 
 
