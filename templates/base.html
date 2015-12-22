@@ -112,12 +112,11 @@
       {% if googledoc_url %}
       <iframe src="{{ googledoc_url }}" style="width:700px;height:1200px;border:none"></iframe>
       {% endif %}
-<!--      <br>
+      {% if title %}
       <h1>{{ title }}</h1>
       {% block content %}{% endblock %}
-
       <p class="author">&mdash;{{ author }}</p>
--->
+      {% endif %}
     </main>
 
     <footer>
