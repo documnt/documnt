@@ -39,7 +39,9 @@
         <p>12</p>
         <p>&nbsp&nbsp&nbsp2015</p>
         <p>&nbsp<b><a href="/poem/punishment">Punishment</a></b></p>
-        <p>&nbspby Jared Golant</p> 
+        <p>&nbspby Jared Golant</p>
+        <p>&nbsp<b><a href="/mix/mixtape-01">mixtape-01</a></b></p>
+        <p>&nbspby SINOSC</p>
         <br>
 
         <p>11</p>
@@ -109,6 +111,9 @@
     </div>
 
     <main>
+      {% if mix_url %}
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ mix_url }}"></iframe>
+      {% endif %}
       {% if googledoc_url %}
       <iframe src="{{ googledoc_url }}" style="width:700px;height:{{ height }}px;border:none"></iframe>
       {% endif %}

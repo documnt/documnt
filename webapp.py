@@ -10,15 +10,17 @@ oben_poem += ("links" + (69 * ' ') + "rechts\n") * 20
 oben_poem += "unten " * 20 + '\n'
 
 
-poems = {'punishment': 'https://docs.google.com/document/d/1jLnJRkie9RqdV_5-9M7mkque_w17ZS8fWwQGWZKtATM/pub?embedded=true',
+docs = {'punishment': 'https://docs.google.com/document/d/1jLnJRkie9RqdV_5-9M7mkque_w17ZS8fWwQGWZKtATM/pub?embedded=true',
+         'mixtape-01': 'https://docs.google.com/document/d/1ro-zU4bXFsAq8kh4BYJnYxsBTUmPyCbKHzdxx7KIUBI/pub?embedded=true',
          'other': 'about:blank'}
 
 doc_heights = {'punishment': 1400,
+               'mixtape-01': 500,
                'other': 1000}
 
 essays = {}
 
-mixes = {'mixtape-01': 'about:blank'}
+mixes = {'mixtape-01': 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false'}
 
 
 # just for testing
@@ -94,7 +96,7 @@ def poem(poem_title=None):
     print(poem_title)
     if poem_title:
         doc = {}
-        doc["googledoc_url"] = poems[poem_title]
+        doc["googledoc_url"] = docs[poem_title]
         doc["height"] = doc_heights[poem_title]
         print(doc)
         return render_googledoc(doc)
@@ -104,8 +106,17 @@ def poem(poem_title=None):
 
 #added by Matt:
 @app.route('/mix')
-def mix():
-    return "This would show a mix page."
+@app.route('/mix/<mix_title>')
+def mix(mix_title=None):
+    if mix_title:
+        mix = {}
+        mix['mix_url'] = mixes[mix_title]
+        doc = {}
+        doc["googledoc_url"] = docs[mix_title]
+        doc["height"] = doc_heights[mix_title]
+        return render_mix(mix, doc)
+    else:
+        return render_template("base.html")
 
 
 #@app.route('/contact')
@@ -115,6 +126,9 @@ def mix():
 @app.route('/<int:art_id>/meta')
 def about_art(art_id):
     return "This would show an overview of art #{}.".format(art_id)
+
+def render_mix(mix, doc):
+    return render_template("base.html", **mix, **doc)
 
 def render_googledoc(doc):
     return render_template("base.html", **doc)
