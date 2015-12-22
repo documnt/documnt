@@ -9,6 +9,15 @@ oben_poem = "oben " * 20 + '\n'
 oben_poem += ("links" + (69 * ' ') + "rechts\n") * 20
 oben_poem += "unten " * 20 + '\n'
 
+
+poems = {'punishment': 'https://docs.google.com/document/d/1jLnJRkie9RqdV_5-9M7mkque_w17ZS8fWwQGWZKtATM/pub?embedded=true',
+         'other': 'about:blank'}
+
+essays = {}
+
+mixes = {'mixtape-01': 'about:blank'}
+
+
 # just for testing
 from random import randrange
 def lorem(): #DEBUG
@@ -81,15 +90,18 @@ def poem():
     return "This would show a poem page."
 
 #added by Matt:
+@app.route('/<poem_title>')
+def poemtitle():
+    print(poem_title)
+    doc = {}
+    doc["googledoc_url"] = poems[poem_title]
+    return render_googledoc(doc)
+
+
+#added by Matt:
 @app.route('/mix')
 def mix():
     return "This would show a mix page."
-
-#added by Matt:
-@app.route('/review')
-def review():
-    return "This would show a review page."
-
 
 
 #@app.route('/contact')
@@ -99,6 +111,9 @@ def review():
 @app.route('/<int:art_id>/meta')
 def about_art(art_id):
     return "This would show an overview of art #{}.".format(art_id)
+
+def render_googledoc(doc):
+    return render_template("base.html", **doc)
 
 def render_art(art):
     if art["text_type"] == "mono":
