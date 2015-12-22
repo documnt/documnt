@@ -88,7 +88,7 @@ def submit():
 #added by Matt:
 @app.route('/essay')
 @app.route('/essay/<essay_title>')
-def essay(essay_title=None):
+def essay(essay_title='smooth-jazz'):
     if essay_title:
         doc = {}
         doc["title"] = essay_title
@@ -101,7 +101,7 @@ def essay(essay_title=None):
 #added by Matt:
 @app.route('/poem')
 @app.route('/poem/<poem_title>')
-def poem(poem_title=None):
+def poem(poem_title='punishment'):
     if poem_title:
         doc = {}
         doc["title"] = poem_title
@@ -115,7 +115,7 @@ def poem(poem_title=None):
 #added by Matt:
 @app.route('/mix')
 @app.route('/mix/<mix_title>')
-def mix(mix_title=None):
+def mix(mix_title='mixtape-01'):
     if mix_title:
         mix = {}
         mix['mix_url'] = mixes[mix_title]
