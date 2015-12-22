@@ -12,10 +12,12 @@ oben_poem += "unten " * 20 + '\n'
 
 docs = {'punishment': 'https://docs.google.com/document/d/1jLnJRkie9RqdV_5-9M7mkque_w17ZS8fWwQGWZKtATM/pub?embedded=true',
          'mixtape-01': 'https://docs.google.com/document/d/1ro-zU4bXFsAq8kh4BYJnYxsBTUmPyCbKHzdxx7KIUBI/pub?embedded=true',
+         'smooth-jazz': 'https://docs.google.com/document/d/16W2hYGWG6L3GuVq_Hv8RW8OaLBSnPxJoFQY23L8g8Hg/pub?embedded=true',
          'other': 'about:blank'}
 
 doc_heights = {'punishment': 1400,
                'mixtape-01': 500,
+               'smooth-jazz': 620,
                'other': 1000}
 
 essays = {}
