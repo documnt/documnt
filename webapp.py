@@ -13,6 +13,9 @@ oben_poem += "unten " * 20 + '\n'
 poems = {'punishment': 'https://docs.google.com/document/d/1jLnJRkie9RqdV_5-9M7mkque_w17ZS8fWwQGWZKtATM/pub?embedded=true',
          'other': 'about:blank'}
 
+doc_heights = {'punishment': 1400,
+               'other': 1000}
+
 essays = {}
 
 mixes = {'mixtape-01': 'about:blank'}
@@ -92,6 +95,7 @@ def poem(poem_title=None):
     if poem_title:
         doc = {}
         doc["googledoc_url"] = poems[poem_title]
+        doc["height"] = doc_heights[poem_title]
         print(doc)
         return render_googledoc(doc)
     else:

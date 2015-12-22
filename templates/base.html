@@ -110,7 +110,7 @@
 
     <main>
       {% if googledoc_url %}
-      <iframe src="{{ googledoc_url }}" style="width:700px;height:1200px;border:none"></iframe>
+      <iframe src="{{ googledoc_url }}" style="width:700px;height:{{ height }}px;border:none"></iframe>
       {% endif %}
       {% if title %}
       <h1>{{ title }}</h1>
