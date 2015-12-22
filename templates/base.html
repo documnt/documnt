@@ -59,6 +59,10 @@
         <br>
         <p>10</p>
         <p>&nbsp&nbsp&nbsp2015</p>
+
+        <p>&nbsp<b><a href="/essay/smooth-jazz">Smooth Jazz</a></b></p>
+        <p>&nbspby Daniel Lopatin</p>
+        
         <br>
         <br>
         <p>09</p>
@@ -116,8 +120,7 @@
       {% endif %}
       {% if googledoc_url %}
       <iframe src="{{ googledoc_url }}" style="width:700px;height:{{ height }}px;border:none"></iframe>
-      {% endif %}
-      {% if title %}
+      {% elif title %}
       <h1>{{ title }}</h1>
       {% block content %}{% endblock %}
       <p class="author">&mdash;{{ author }}</p>

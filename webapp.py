@@ -17,7 +17,7 @@ docs = {'punishment': 'https://docs.google.com/document/d/1jLnJRkie9RqdV_5-9M7mk
 
 doc_heights = {'punishment': 1400,
                'mixtape-01': 500,
-               'smooth-jazz': 620,
+               'smooth-jazz': 4400,
                'other': 1000}
 
 
