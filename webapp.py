@@ -86,16 +86,16 @@ def essay():
 
 #added by Matt:
 @app.route('/poem')
-def poem():
-    return "This would show a poem page."
-
-#added by Matt:
-@app.route('/<poem_title>')
-def poemtitle():
+@app.route('/poem/<poem_title>')
+def poem(poem_title=None):
     print(poem_title)
-    doc = {}
-    doc["googledoc_url"] = poems[poem_title]
-    return render_googledoc(doc)
+    if poem_title:
+        doc = {}
+        doc["googledoc_url"] = poems[poem_title]
+        print(doc)
+        return render_googledoc(doc)
+    else:
+        return render_template("base.html")
 
 
 #added by Matt:

@@ -110,14 +110,15 @@
     </div>
 
     <main>
-      <h1><img src="static/images/DOCUMNT_MIXTAPE_01_SINOSC.jpg" alt="DOCUMNT MIXTAPE 01 SINOSC" style="width:500px;height:300px;"></h1>
-      <br>
-      <br>
+      {% if googledoc_url %}
       <iframe src="{{ googledoc_url }}" style="width:700px;height:1200px;border:none"></iframe>
-      <br>
+      {% endif %}
+<!--      <br>
       <h1>{{ title }}</h1>
       {% block content %}{% endblock %}
+
       <p class="author">&mdash;{{ author }}</p>
+-->
     </main>
 
     <footer>
