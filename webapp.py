@@ -18,7 +18,6 @@ doc_heights = {'punishment': 1400,
                'mixtape-01': 500,
                'other': 1000}
 
-essays = {}
 
 mixes = {'mixtape-01': 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false'}
 
@@ -86,19 +85,26 @@ def submit():
 
 #added by Matt:
 @app.route('/essay')
-def essay():
-    return "This would show an essay page."
+@app.route('/essay/<essay_title>')
+def essay(essay_title=None):
+    if essay_title:
+        doc = {}
+        doc["title"] = essay_title
+        doc["googledoc_url"] = docs[essay_title]
+        doc["height"] = doc_heights[essay_title]
+        return render_googledoc(doc)
+    else:
+        return render_template("base.html")
 
 #added by Matt:
 @app.route('/poem')
 @app.route('/poem/<poem_title>')
 def poem(poem_title=None):
-    print(poem_title)
     if poem_title:
         doc = {}
+        doc["title"] = poem_title
         doc["googledoc_url"] = docs[poem_title]
         doc["height"] = doc_heights[poem_title]
-        print(doc)
         return render_googledoc(doc)
     else:
         return render_template("base.html")
@@ -112,6 +118,7 @@ def mix(mix_title=None):
         mix = {}
         mix['mix_url'] = mixes[mix_title]
         doc = {}
+        doc["title"] = mix_title
         doc["googledoc_url"] = docs[mix_title]
         doc["height"] = doc_heights[mix_title]
         return render_mix(mix, doc)
