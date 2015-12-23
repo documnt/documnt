@@ -57,7 +57,8 @@ main p { white-space: pre-line; }
 main {
   flex: 1;
   width: 50vw;
-  margin-left: 200px;
+  margin-top: 50px;
+  margin-left: 300px;
   margin-right: 0px;
   margin-bottom: auto;
   display: inline-block;

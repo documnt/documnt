@@ -12,18 +12,26 @@ oben_poem += "unten " * 20 + '\n'
 
 docs = {'punishment': 'https://docs.google.com/document/d/1jLnJRkie9RqdV_5-9M7mkque_w17ZS8fWwQGWZKtATM/pub?embedded=true',
          'mixtape-01': 'https://docs.google.com/document/d/1ro-zU4bXFsAq8kh4BYJnYxsBTUmPyCbKHzdxx7KIUBI/pub?embedded=true',
+         'mixtape-02': 'https://docs.google.com/document/d/1kismJ02WaW87eBCPqEoMiWpLTEUADeW9ck6PZxydssM/pub?embedded=true',
          'smooth-jazz': 'https://docs.google.com/document/d/16W2hYGWG6L3GuVq_Hv8RW8OaLBSnPxJoFQY23L8g8Hg/pub?embedded=true',
          'poetics-of-throwing-trash': 'https://docs.google.com/document/d/12-VhxsKDD3LAYjj-znwfZldF4vHJJFN1UZ-vNG6Q-MA/pub?embedded=true',
+         'schizophrenic-writing': 'https://docs.google.com/document/d/1TZq5dp0o9h7S5h4-vof5uCQqPzH_Uw339LdQjUgoAvw/pub?embedded=true',
+         'sound-poetry': 'https://docs.google.com/document/d/1tFdQc-6forqggC91Qw8SG12GE6KBwTj6UAtHKz-AdZo/pub?embedded=true',
          'other': 'about:blank'}
 
 doc_heights = {'punishment': 1500,
                'mixtape-01': 500,
+               'mixtape-02': 500,
                'smooth-jazz': 4400,
                'poetics-of-throwing-trash': 1600,
+               'schizophrenic-writing': 2380,
+               'sound-poetry': 2400,
                'other': 1000}
 
 
-mixes = {'mixtape-01': 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false'}
+mixes = {'mixtape-01': 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false',
+         'mixtape-02': 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/238805456&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false'
+}
 
 
 # just for testing
