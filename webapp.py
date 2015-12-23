@@ -27,7 +27,7 @@ doc_heights = {'punishment': 1500,
                'poetics-of-throwing-trash': 1600,
                'schizophrenic-writing': 2380,
                'sound-poetry': 2400,
-               'toward-a-roominess-of-sound': 10000,
+               'toward-a-roominess-of-sound': 9700,
                'other': 1000}
 
 
