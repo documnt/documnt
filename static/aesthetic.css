@@ -16,21 +16,35 @@ main p.poetry { text-align: left; }
 main p { margin-bottom: 1em; }
 
 
-h1 { text-align: left; }
-h2 { margin: 0px; }  /* was 20px */
+h1 { text-align: left; 
+}
+h2 { margin: 0px;  /* was 20px */
+     position: fixed;
+}
 h4 { font-weight: 500; }
 
 .navigation {
   font-weight: normal;
+  font-size: 9px;
 }
 
+/*
 .navigation ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  height: 25%; 
+  position: fixed; 
+  overflow: auto; 
 }
+*/
 
 .navigation a {
   text-decoration: none;
   color: gray;
+  position: fixed;
 }
 
 /* lighten space around header links on mouseover */
@@ -41,6 +55,7 @@ h4 { font-weight: 500; }
   color: black;
   font-weight: 900;
   text-decoration: none; /* avoid link underlining, italics, etc */
+  position: fixed;
 }
 
 .logo2 {
@@ -51,6 +66,7 @@ h4 { font-weight: 500; }
 
 .left {
   font-weight: 600;
+  position: fixed;
 }
 
 .left p { 
@@ -60,6 +76,15 @@ h4 { font-weight: 500; }
   font-size: 10px;
   margin: 1px;
   padding: 0;
+}
+
+.archive {
+   font-size: 10px;
+   text-decoration: none;
+}
+
+.collections {
+   text-decoration: none;
 }
 
 
