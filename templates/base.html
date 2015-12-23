@@ -49,11 +49,14 @@
           <p>&nbsp<b><a href="/poem/poetics-of-throwing-trash">Poetics of throwing trash...</a></b></p>
           <p>&nbspby Matt Arnold</p>
           <br>
-          <p>&nbsp<b><a href="/essay/smooth-jazz">Smooth Jazz</a></b></p>
-          <p>&nbspby Daniel Lopatin</p>
+          <p>&nbsp<b><a href="/essay/toward-a-roominess-of-sound">Toward a Roominess of Sound</a></b></p>
+          <p>&nbspby Matt Arnold</p>
           <br>
           <p>&nbsp<b><a href="/poem/punishment">Punishment</a></b></p>
           <p>&nbspby Jared Golant</p>
+          <br>
+          <p>&nbsp<b><a href="/essay/smooth-jazz">Smooth Jazz</a></b></p>
+          <p>&nbspby Daniel Lopatin</p>
           <br>
           <p>&nbsp<b><a href="/essay/schizophrenic-writing">Schizophrenic Writing</a></b></p>
           <p>&nbspby John Ensslin</p>
@@ -121,10 +124,10 @@
 
     <main>
       {% if mix_url %}
-      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{ mix_url }}"></iframe>
+      <iframe width="770px" height="166" scrolling="no" frameborder="no" src="{{ mix_url }}"></iframe>
       {% endif %}
       {% if googledoc_url %}
-      <iframe src="{{ googledoc_url }}" style="width:750px;height:{{ height }}px;border:none"></iframe>
+      <iframe src="{{ googledoc_url }}" style="width:770px;height:{{ height }}px;border:none"></iframe>
       {% elif title %}
       <h1>{{ title }}</h1>
       {% block content %}{% endblock %}

@@ -17,15 +17,17 @@ docs = {'punishment': 'https://docs.google.com/document/d/1jLnJRkie9RqdV_5-9M7mk
          'poetics-of-throwing-trash': 'https://docs.google.com/document/d/12-VhxsKDD3LAYjj-znwfZldF4vHJJFN1UZ-vNG6Q-MA/pub?embedded=true',
          'schizophrenic-writing': 'https://docs.google.com/document/d/1TZq5dp0o9h7S5h4-vof5uCQqPzH_Uw339LdQjUgoAvw/pub?embedded=true',
          'sound-poetry': 'https://docs.google.com/document/d/1tFdQc-6forqggC91Qw8SG12GE6KBwTj6UAtHKz-AdZo/pub?embedded=true',
+         'toward-a-roominess-of-sound': 'https://docs.google.com/document/d/1wqLsQETq83AHD5NkZZjTGa76fwu3MkQjz7FxN9-nhc0/pub?embedded=true',
          'other': 'about:blank'}
 
 doc_heights = {'punishment': 1500,
-               'mixtape-01': 500,
-               'mixtape-02': 500,
+               'mixtape-01': 400,
+               'mixtape-02': 400,
                'smooth-jazz': 4400,
                'poetics-of-throwing-trash': 1600,
                'schizophrenic-writing': 2380,
                'sound-poetry': 2400,
+               'toward-a-roominess-of-sound': 10000,
                'other': 1000}
 
 
