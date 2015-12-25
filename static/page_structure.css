@@ -6,6 +6,7 @@ pre {
   overflow: hidden;
 }
 
+
 /* newlines should count as <br /> tags */
 main p { white-space: pre-line; }
 
@@ -123,6 +124,7 @@ header { margin: 0; }
 .navigation a {
   display: block;
   padding: 0px;
+  position: fixed;
 }
 
 /* override browsers user agent */
@@ -133,6 +135,7 @@ ul {
 
 .left {
   float: left;
+  position: fixed;
   margin-left: 0px; /* was 25px */
   display: inline-block;
   /*
@@ -170,6 +173,9 @@ ul {
 
 }
 */
+.logo {
+  position: fixed;
+}
 
 footer {
   margin: 20px auto 0;
