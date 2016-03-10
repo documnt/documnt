@@ -16,11 +16,8 @@ main p.poetry { text-align: left; }
 main p { margin-bottom: 1em; }
 
 
-h1 { text-align: left; 
-}
-h2 { margin: 0px;  /* was 20px */
-     position: fixed;
-}
+h1 { text-align: left; }
+h2 { margin: 0px; }
 h4 { font-weight: 500; }
 
 .navigation {
@@ -44,7 +41,6 @@ h4 { font-weight: 500; }
 .navigation a {
   text-decoration: none;
   color: gray;
-  position: fixed;
 }
 
 /* lighten space around header links on mouseover */
@@ -55,7 +51,6 @@ h4 { font-weight: 500; }
   color: black;
   font-weight: 900;
   text-decoration: none; /* avoid link underlining, italics, etc */
-  position: fixed;
 }
 
 .logo2 {
@@ -66,7 +61,6 @@ h4 { font-weight: 500; }
 
 .left {
   font-weight: 600;
-  position: fixed;
 }
 
 .left p { 
