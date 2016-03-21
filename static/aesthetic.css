@@ -1,7 +1,7 @@
 /* aesthetic.css: styles which don't dramatically change the site's layout */
 
 body {
-  background: darkgray;
+  background: white;
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: 'Lato', serif;
@@ -70,6 +70,8 @@ h4 { font-weight: 500; }
   font-size: 10px;
   margin: 1px;
   padding: 0;
+  text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+  color: gray;
 }
 
 .archive {
