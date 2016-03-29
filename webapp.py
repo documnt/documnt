@@ -4,20 +4,15 @@ from flask import Flask, render_template, redirect, url_for
 
 app = Flask(__name__)
 
-# just for testing
-oben_poem = "oben " * 20 + '\n'
-oben_poem += ("links" + (69 * ' ') + "rechts\n") * 20
-oben_poem += "unten " * 20 + '\n'
-
 
 docs = {'punishment': 'https://docs.google.com/document/d/1jLnJRkie9RqdV_5-9M7mkque_w17ZS8fWwQGWZKtATM/pub?embedded=true',
          'mixtape-01': 'https://docs.google.com/document/d/1ro-zU4bXFsAq8kh4BYJnYxsBTUmPyCbKHzdxx7KIUBI/pub?embedded=true',
          'mixtape-02': 'https://docs.google.com/document/d/1kismJ02WaW87eBCPqEoMiWpLTEUADeW9ck6PZxydssM/pub?embedded=true',
          'smooth-jazz': 'https://docs.google.com/document/d/16W2hYGWG6L3GuVq_Hv8RW8OaLBSnPxJoFQY23L8g8Hg/pub?embedded=true',
-         'poetics-of-throwing-trash': 'https://docs.google.com/document/d/12-VhxsKDD3LAYjj-znwfZldF4vHJJFN1UZ-vNG6Q-MA/pub?embedded=true',
          'schizophrenic-writing': 'https://docs.google.com/document/d/1TZq5dp0o9h7S5h4-vof5uCQqPzH_Uw339LdQjUgoAvw/pub?embedded=true',
          'sound-poetry': 'https://docs.google.com/document/d/1tFdQc-6forqggC91Qw8SG12GE6KBwTj6UAtHKz-AdZo/pub?embedded=true',
          'toward-a-roominess-of-sound': 'https://docs.google.com/document/d/1wqLsQETq83AHD5NkZZjTGa76fwu3MkQjz7FxN9-nhc0/pub?embedded=true',
+         'mission-statement': 'https://docs.google.com/document/d/1eCV9jNzzJoZhAAyVmoPxF17ipLoQrqQpuLARQBSdfas/pub?embedded=true',
          'other': 'about:blank'}
 
 doc_heights = {'punishment': 1500,
@@ -28,6 +23,7 @@ doc_heights = {'punishment': 1500,
                'schizophrenic-writing': 2380,
                'sound-poetry': 2400,
                'toward-a-roominess-of-sound': 9600,
+               'mission-statement': 1000,
                'other': 1000}
 
 
@@ -43,22 +39,6 @@ def lorem(): #DEBUG
     #return "\n\n".join([ ipsum() for _ in range(randrange(5, 16)) ])
     poem = "\n"+"\n"+"\n"
     poem += "This is just to say" + '\n'
-    poem += "by William Carlos Williams" + '\n'
-    poem += "\n"+"\n"+"\n"
-    poem += "I have eaten" + '\n'
-    poem += "the plums" + '\n'
-    poem += "that were in" + '\n'
-    poem += "the icebox" + '\n' + '\n'
-
-    poem += "and which" + '\n'
-    poem += "you were probably" + '\n'
-    poem += "saving" + '\n'
-    poem += "for breakfast" + '\n' + '\n'
-
-    poem += "Forgive me" + '\n'
-    poem += "they were delicious" + '\n'
-    poem += "so sweet" + '\n'
-    poem += "and so cold" + '\n'
 
     return poem
 
@@ -149,7 +129,7 @@ def about_art(art_id):
     return "This would show an overview of art #{}.".format(art_id)
 
 def render_mix(mix, doc):
-    return render_template("base.html", **mix, **doc)
+    return render_template("base.html", **doc)
 
 def render_googledoc(doc):
     return render_template("base.html", **doc)
