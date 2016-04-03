@@ -2,11 +2,14 @@
 
 body {
   -webkit-filter: blur(0px);
+  background: white;
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: 'Helvetica', sans-serif;
   font-size: 12px;
+  text-justify: distribute;
 }
+
 main {
   font-family: Helvetica, "Futura", serif;
 }
@@ -20,31 +23,59 @@ h1 { text-align: left; }
 h2 { margin: 0px; }
 h4 { font-weight: 500; }
 
-.navigation {
+.navigation-1 {
   font-weight: normal;
   font-size: 9px;
+  position: absolute;
+  left: 150px;
+  top: 30px;
+  width: 400px;
+  z-index: 200;
+  background: white;
 }
-
-/*
-.navigation ul {
+.navigation-1 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 15%;
-  background-color: #f1f1f1;
-  height: 25%; 
-  position: fixed; 
+  height: 25%;  
   overflow: auto; 
 }
-*/
-
-.navigation a {
+.navigation-1 a {
   text-decoration: none;
   color: gray;
 }
 
 /* lighten space around header links on mouseover */
-.navigation a:hover { background: rgba(211, 211, 211, 0.5); }
+.navigation-1 a:hover { background: rgba(211, 211, 211, 0.5); }
+
+
+
+
+.navigation-2 {
+  list-style-type: none;
+  position: absolute;
+  left: 250px;
+  top: 30px
+  background: white;
+}
+
+.navigation-2 li {
+  display: inline;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+
+.navigation-2 a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* lighten space around header links on mouseover */
+.navigation-2 a:hover { background: rgba(211, 211, 211, 0.5); }
+
+
 
 .logo {
   font-size: 20px;
@@ -53,18 +84,8 @@ h4 { font-weight: 500; }
   text-decoration: none; /* avoid link underlining, italics, etc */
   margin-left: 10px;
   margin-top:10px;
+  background: white;
 }
-
-.logo2 {
-  font-size: 19px;
-  color: black;
-  text-decoration: none; /* avoid link underlining, italics, etc */
-  margin-left: 10px;
-  margin-top:10px;
-}
-
-
-
 
 .background-image {
   position: absolute;
@@ -75,7 +96,7 @@ h4 { font-weight: 500; }
   z-index: 1;
 
   display: block;
-  background-image: url('documnts-background.png');
+  
   background-repeat:no-repeat;
   background-size:cover;
 
@@ -87,15 +108,20 @@ h4 { font-weight: 500; }
 }
 
 .content {
-  position: fixed;
-  left: 0;
+  position: absolute;
+  left: 200px;
   right: 0;
   min-width: 300px;
-  max-width: 400px;
+  max-width: 380px;
   z-index: 9999;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top:20px;
+  margin-top:100px;
+  text-shadow: white
+  background: white;
+  line-height: 12px
+  text-justify: distribute;
+}
 }
 
 

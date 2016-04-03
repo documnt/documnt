@@ -38,7 +38,6 @@ def lorem(): #DEBUG
     #ipsum = lambda: " ".join(["Pack my box with five dozen liquor jugs."] * randrange(5, 16))
     #return "\n\n".join([ ipsum() for _ in range(randrange(5, 16)) ])
     poem = "\n"+"\n"+"\n"
-    poem += "This is just to say" + '\n'
 
     return poem
 
@@ -55,7 +54,7 @@ def get_art(art_id):
         art["text_type"] = "mono" if art_id else "prose"
         art["title"] = "1" if art_id else "0"
         art["text"] = oben_poem if art_id else lorem()
-        art["author"] = "documnt"
+        art["author"] = " "
 
     return art
 
