@@ -52,7 +52,7 @@ def get_art(art_id):
         art["author"] = "author"
     else:
         art["text_type"] = "mono" if art_id else "prose"
-        art["title"] = "1" if art_id else "0"
+        art["title"] = " " if art_id else " "
         art["text"] = oben_poem if art_id else lorem()
         art["author"] = " "
 

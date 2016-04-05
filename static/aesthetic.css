@@ -55,15 +55,16 @@ h4 { font-weight: 500; }
 .navigation-2 {
   list-style-type: none;
   position: absolute;
-  left: 250px;
+  left: 700px;
   top: 30px
   background: white;
+  font-size: 10px
 }
 
 .navigation-2 li {
   display: inline;
   padding: 10px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
 
@@ -78,6 +79,8 @@ h4 { font-weight: 500; }
 
 
 .logo {
+  position: fixed;
+  bottom: 10px;
   font-size: 20px;
   color: black;
   font-weight: 900;
@@ -85,6 +88,7 @@ h4 { font-weight: 500; }
   margin-left: 10px;
   margin-top:10px;
   background: white;
+  font-family: "Futura";
 }
 
 .background-image {
@@ -109,21 +113,52 @@ h4 { font-weight: 500; }
 
 .content {
   position: absolute;
-  left: 200px;
+  left: 190px;
   right: 0;
-  min-width: 300px;
+  min-width: 380px;
   max-width: 380px;
   z-index: 9999;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top:100px;
+  top: 0px;
   text-shadow: white
   background: white;
   line-height: 12px
   text-justify: distribute;
-}
+  border: solid;
+  border-width: 1px
 }
 
+.content2 {
+  position: absolute;
+  left: 210px;
+  right: 0;
+  min-width: 380px;
+  max-width: 380px;
+  margin-left: 40px
+  margin-right: 40px;
+  margin-top:140px;
+  border: solid;
+  border-width: 1px;
+}
+
+
+
+.button
+{
+    height: 23px;
+    width: 150px;
+    border: 1px solid #555;
+    background-color: #999;
+        
+    text-align: center;
+    cursor: pointer;
+    
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    margin:10px 0px 10px 0px;
+}
 
 
 
