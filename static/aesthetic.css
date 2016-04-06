@@ -82,14 +82,11 @@ h4 { font-weight: 500; }
   -webkit-filter: blur(2px);
   position: fixed;
   bottom: 10px;
+  left: 10px;
   font-size: 20px;
   color: black;
   font-weight: 900;
-  text-decoration: none; /* avoid link underlining, italics, etc */
-  margin-left: 10px;
-  left: 10px;
   margin-top:10px;
-  background: white;
   font-family: "Futura";
   z-index: 80;
 }
@@ -181,6 +178,32 @@ h4 { font-weight: 500; }
 
 }
 
+
+.content6 {
+  position: absolute;
+  left: 2128px;
+  top:200px;
+  bottom: 0px;
+  min-width: 380px;
+  max-width: 380px;
+  border: solid;
+  border-width: 1px;
+  z-index: 9995;
+
+}
+
+.content7 {
+  position: absolute;
+  left: 2513px;
+  top:200px;
+  bottom: 0px;
+  min-width: 380px;
+  max-width: 380px;
+  border: solid;
+  border-width: 1px;
+  z-index: 9995;
+
+}
 
 
 .button
