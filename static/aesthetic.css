@@ -87,6 +87,7 @@ h4 { font-weight: 500; }
   color: black;
   font-weight: 900;
   margin-top:10px;
+  text-decoration: none;
   font-family: "Futura";
   z-index: 80;
 }
@@ -219,7 +220,7 @@ h4 { font-weight: 500; }
 
 .content9 {
   position: absolute;
-  left: 3213px;
+  left: 3284px;
   top:200px;
   bottom: 0px;
   min-width: 380px;
@@ -232,7 +233,7 @@ h4 { font-weight: 500; }
 
 .content10 {
   position: absolute;
-  left: 3513px;
+  left: 3669px;
   top:200px;
   bottom: 0px;
   min-width: 380px;
