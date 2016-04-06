@@ -196,6 +196,18 @@ h4 { font-weight: 500; }
   position: absolute;
   left: 2513px;
   top:200px;
+  min-width: 380px;
+  max-width: 380px;
+  border: solid;
+  border-width: 1px;
+  z-index: 9995;
+
+}
+
+.content8 {
+  position: absolute;
+  left: 2899px;
+  top:200px;
   bottom: 0px;
   min-width: 380px;
   max-width: 380px;
@@ -204,6 +216,34 @@ h4 { font-weight: 500; }
   z-index: 9995;
 
 }
+
+.content9 {
+  position: absolute;
+  left: 3213px;
+  top:200px;
+  bottom: 0px;
+  min-width: 380px;
+  max-width: 380px;
+  border: solid;
+  border-width: 1px;
+  z-index: 9995;
+
+}
+
+.content10 {
+  position: absolute;
+  left: 3513px;
+  top:200px;
+  bottom: 0px;
+  min-width: 380px;
+  max-width: 380px;
+  border: solid;
+  border-width: 1px;
+  z-index: 9995;
+
+}
+
+
 
 
 .button
