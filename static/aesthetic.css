@@ -79,6 +79,7 @@ h4 { font-weight: 500; }
 
 
 .logo {
+  -webkit-filter: blur(2px);
   position: fixed;
   bottom: 10px;
   font-size: 20px;
@@ -86,9 +87,11 @@ h4 { font-weight: 500; }
   font-weight: 900;
   text-decoration: none; /* avoid link underlining, italics, etc */
   margin-left: 10px;
+  left: 10px;
   margin-top:10px;
   background: white;
   font-family: "Futura";
+  z-index: 80;
 }
 
 .background-image {
