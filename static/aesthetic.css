@@ -113,33 +113,69 @@ h4 { font-weight: 500; }
 
 .content {
   position: absolute;
-  left: 190px;
-  right: 0;
+  left: 200px;
+  top: 200px;
   min-width: 380px;
   max-width: 380px;
-  z-index: 9999;
-  margin-left: 40px;
-  margin-right: 40px;
-  top: 0px;
+  min-height: 100%;
   text-shadow: white
   background: white;
   line-height: 12px
   text-justify: distribute;
   border: solid;
-  border-width: 1px
+  border-width: 1px;
+  z-index: 9999;
 }
 
 .content2 {
   position: absolute;
-  left: 210px;
-  right: 0;
+  left: 586px;
+  top:200px;
+  bottom: 0px;
   min-width: 380px;
   max-width: 380px;
-  margin-left: 40px
-  margin-right: 40px;
-  margin-top:140px;
   border: solid;
   border-width: 1px;
+  z-index: 9998;
+}
+
+.content3 {
+  position: absolute;
+  left: 971px;
+  top:200px;
+  bottom: 0px;
+  min-width: 380px;
+  max-width: 380px;
+  border: solid;
+  border-width: 1px;
+  z-index: 9997;
+
+}
+
+.content4 {
+  position: absolute;
+  left: 1357px;
+  top:200px;
+  bottom: 0px;
+  min-width: 380px;
+  max-width: 380px;
+  border: solid;
+  border-width: 1px;
+  z-index: 9996;
+
+}
+
+.content5 {
+  position: absolute;
+  left: 1742px;
+  top:200px;
+  bottom: 0px;
+  min-width: 380px;
+  max-width: 380px;
+  border: solid;
+  border-width: 1px;
+  z-index: 9995;
+
 }
 
 
