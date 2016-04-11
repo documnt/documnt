@@ -72,8 +72,18 @@ h4 { font-weight: 500; }
   color: gray;
 }
 
-/* lighten space around header links on mouseover */
-.navigation-2 a:hover { background: rgba(211, 211, 211, 0.5); }
+.navigation-2 a:hover { -webkit-filter: blur(1.3px); }
+
+
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
 
 
 
@@ -81,13 +91,14 @@ h4 { font-weight: 500; }
   -webkit-filter: blur(2px);
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  left: 20px;
   font-size: 20px;
+  line-height: 20px;
   color: black;
   font-weight: 900;
   margin-top:10px;
   text-decoration: none;
-  font-family: "Futura";
+  font-family: "Helvetica";
   z-index: 1000000;
 }
 
@@ -117,7 +128,6 @@ h4 { font-weight: 500; }
   top: 200px;
   min-width: 380px;
   max-width: 380px;
-  min-height: 100%;
   text-shadow: white
   background: white;
   line-height: 12px
@@ -213,6 +223,7 @@ h4 { font-weight: 500; }
   z-index: 9995;
 
 }
+.content8 a:hover { -webkit-filter: blur(1.3px); }
 
 .content9 {
   position: absolute;
