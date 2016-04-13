@@ -143,6 +143,11 @@ def render_art(art):
     except FileNotFoundError:
         return "No art found with id {}.".format(art_id)
 
+
+@app.route('/demo')
+def show_demo():
+    return render_template("demo_content.html")
+
 @app.route('/<int:art_id>')
 def show_art(art_id):
     return render_art(get_art(art_id))
