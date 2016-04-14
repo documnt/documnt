@@ -22,6 +22,13 @@ h1 { text-align: left; }
 h2 { margin: 0px; }
 h4 { font-weight: 500; }
 
+.page_wrapper {
+  height: 99%;
+  width: 99%;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+}
 
 .navigation-1 {
   font-weight: normal;

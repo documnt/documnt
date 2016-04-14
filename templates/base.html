@@ -54,42 +54,35 @@
 
     <div class="content2">
       <img src="/static/gillard_word_chords_2.jpg" width="380px">
-      <p>Bryony Gillard, <em>Word Chords</em>, 2013-ongoing</p>
     </div>
 
     <div class="content3">
       <img src="/static/mirjam_music.jpg" width="380px">
-      <p>Mirjam Kroker, Concept Nr. 05, 2015</p> 
     </div>
 
     <div class="content4">
-      <img src="/static/Emmett_Williams_LikeAttractLike.jpg" width="380px">
-      <p>Emmett Williams, Like Attracts Like</p> 
+      <img src="/static/Emmett_Williams_LikeAttractLike.jpg" width="380px"> 
     </div>
 
     <div class="content5">
       <img src="/static/Emmett_Williams_CENSORED.jpg" width="380px">
-      <p>Emmett Williams, CENSORED</p> 
     </div>
 
     <div class="content6">
       <a href="/static/mueller_language_to_cover_a_page_2.jpg">
         <img src="/static/mueller_language_to_cover_a_page_2.jpg" width="380px">
       </a>
-      <p>Kristen Mueller, Language to Cover a Page [excerpt]</p>
     </div>
 
     <div class="content7">
       <iframe width="380px" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253776416&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
       <br>
-      <p>MIXTAPE 03: HEALTH</p>
     </div>
 
     <div class="content8">
       <a href="/static/carl_andre_poem.jpg">
         <img src="/static/carl_andre_poem.jpg" width="380px">
       </a>
-      <p>Carl Andre</p>
     </div>
 
     <div class="content9">
@@ -100,26 +93,7 @@
     <div class="content10">
       <img src="/static/holmqvist_skyline.jpg" width="380px">
       <br>
-      <p>Karl Holmqvist, <em>Skyline Is The By-linezz</em> [excerpt]</p>
     </div>
-
-
-
-
-
-
-    <main>
-      {% if mix_url %}
-      <iframe width="770px" height="166" scrolling="no" frameborder="no" src="{{ mix_url }}"></iframe>
-      {% endif %}
-      {% if googledoc_url %}
-      <iframe src="{{ googledoc_url }}" style="width:770px;height:{{ height }}px;border:none"></iframe>
-      {% elif title %}
-      <h1>{{ title }}</h1>
-      {% block content %}{% endblock %}
-      <p class="author">{{ author }}</p>
-      {% endif %}
-    </main>
 
     <footer>
       <br>
