@@ -69,7 +69,7 @@ def authors():
 
 @app.route('/about')
 def about():
-    return "This would show an about page."
+    return render_template("about.html")    
 
 #added by Matt:
 @app.route('/submit')

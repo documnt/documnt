@@ -1,24 +1,20 @@
-{# document_content.html: for experiencing a document#}
-
-{# I copied unnecessarily from base.html, we will eventually extend#}
-
 <!doctype html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
+
   <title>Documnt</title>
+
   <link rel="stylesheet" type="text/css" href="/static/aesthetic.css">
   <link rel="stylesheet" type="text/css" href="/static/page_structure.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,900' rel='stylesheet' type='text/css'>
+  {# 300-weight is available for Lato #}
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,900' rel='stylesheet' type='text/css'>
 
 </head>
 
-
 <body>
-
   <div class="page-wrapper">
-
     <header>
       <h2><a href="/" class="logo">Documnt</h2>
       <br>
@@ -31,56 +27,40 @@
       </ul>
     </div>
 
+    <div class="navigation-1">
+      <ul>
+      </ul>
+    </div>
+
     <div class="navigation-2">
       <ul>
         <li><a href="/about">about</a></li>
         <li><a href="/contact">contact</a></li>
         <li><a href="/subscribe">subscribe</a></li>
         <li><a href="/submit">submit</a></li>
+
       </ul>
     </div>
 
     <div class="background-image"></div>
 
-
-
-
-
-    <div class="demo_content_image">
-      <img src="/static/dvs1image_no_photo.jpg" width="380px">
-    </div>
-
-    {#<div class="empty_box"></div>#}
-
+    <a href="/demo">
+      <div class="empty_box">
+        <a href="/demo"> </a>
+      </div>
+    </a>
 
     <div class="demo_content_text">
-      <iframe src="https://docs.google.com/document/d/1OIc2GZMHyM79u_mJE4XlCnuhVZoKxBCAwI6cxm8aQnY/pub?embedded=true" style="width:800px;height:1500px;border:none"></iframe>
-      <p>link</p>
+      <iframe src="https://docs.google.com/document/d/1oERu6UWEhDcm1Oa29UHBxVk6NJi9U98Imhe3OxH2VxU/pub?embedded=true" style="width:800px;height:1500px;border:none"></iframe>
+      <a href="/">back</a>
+      <br>
     </div>
 
 
-
-
-
-    <main>
-      {% if mix_url %}
-      <iframe width="770px" height="166" scrolling="no" frameborder="no" src="{{ mix_url }}"></iframe>
-      {% endif %}
-      {% if googledoc_url %}
-      <iframe src="{{ googledoc_url }}" style="width:770px;height:{{ height }}px;border:none"></iframe>
-      {% elif title %}
-      <h1>{{ title }}</h1>
-      {% block content %}{% endblock %}
-      <p class="author">{{ author }}</p>
-      {% endif %}
-    </main>
 
     <footer>
       <br>
     </footer>
-
   </div>
-
 </body>
-
 </html>

@@ -153,14 +153,17 @@ h4 { font-weight: 500; }
   position: fixed;
   width: 380px;
   height: 500px;
+  left: 20%;
+  bottom: 60px;
   border: solid;
   border-width: 1px;
   border-color: black;
+  z-index: 999999;
 }
 
 .demo_content_text {
   position: absolute;
-  left: 420px;
+  left: 50%;
   top: 100px;
   border: none;
   z-index: 0;
