@@ -35,7 +35,7 @@ h4 { font-weight: 500; }
   list-style-type: none;
   position: fixed;
   left: 140px;
-  top: 27px;
+  top: 29px;
   font-size: 10px
   z-index: 1000000;
 }
@@ -161,7 +161,7 @@ h4 { font-weight: 500; }
   position: fixed;
   width: 380px;
   height: 500px;
-  left: 12%;
+  left: 9%;
   bottom: 5%;
   border: solid;
   background-color:white;
@@ -174,7 +174,7 @@ h4 { font-weight: 500; }
   position: fixed;
   width: 380px;
   height: 500px;
-  left: 10%;
+  left: 7%;
   bottom: 8%;
   border: solid;
   border-width: 1px;
