@@ -61,7 +61,8 @@ def get_art(art_id):
 @app.route('/')
 def home():
     # just for testing
-    return redirect(url_for('show_art', art_id=0)) #DEBUG
+    return redirect(url_for('about')) #beta
+    #return render_template("index.html")
 
 @app.route('/about')
 def about():

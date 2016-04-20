@@ -1,45 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>Documnt</title>
-
-  <link rel="stylesheet" type="text/css" href="/static/aesthetic.css">
-  <link rel="stylesheet" type="text/css" href="/static/page_structure.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,900' rel='stylesheet' type='text/css'>
-  {# 300-weight is available for Lato #}
-  <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,900' rel='stylesheet' type='text/css'>
-
-</head>
-
-<body>
-  <div class="page-wrapper">
-    <header>
-      <h2><a href="/about" class="logo">documnt</h2>	
-      <br>
-    </header>
-
-    <div class="navigation-1">
-      <ul>
-        <li><a href="/">concrete poems</a></li>
-        <li><a href="http://soundcloud.com/documnt" target="_blank">mixtapes</a></li>
-      </ul>
-    </div>
-
-    <div class="navigation-1">
-      <ul>
-      </ul>
-    </div>
-
-    <div class="navigation-2">
-      <ul>
-        <li><a href="/about">about</a></li>
-        <li><a href="http://www.wooloo.org/open-call/entry/371298" target="_blank">submit</a></li>
-
-      </ul>
-    </div>
-
+{% extends "base.html" %}
+{% block content %}
     <div class="background-image"></div>
 
     <a href="/demo">
@@ -64,10 +24,4 @@
     </div>
 
 
-
-    <footer>
-      <br>
-    </footer>
-  </div>
-</body>
-</html>
+{% endblock %}
