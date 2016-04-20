@@ -63,13 +63,13 @@ def home():
     # just for testing
     return redirect(url_for('show_art', art_id=0)) #DEBUG
 
-@app.route('/authors')
-def authors():
-    return "This would show a page about those authors who have content on the site."
-
 @app.route('/about')
 def about():
-    return render_template("about.html")    
+    return render_template("about.html")  
+
+@app.route('/contact')
+def contact():
+    return rendertemplate("contact.html")  
 
 #added by Matt:
 @app.route('/submit')
@@ -147,6 +147,17 @@ def render_art(art):
 @app.route('/demo')
 def show_demo():
     return render_template("demo_content.html")
+
+@app.route('/death-by-screenrubbing')
+def show_deathbyscreenrubbing():
+    return render_template("death-by-screenrubbing.html")
+
+
+
+
+
+
+
 
 @app.route('/<int:art_id>')
 def show_art(art_id):
