@@ -59,7 +59,7 @@ h4 { font-weight: 500; }
   list-style-type: none;
   position: fixed;
   left: 156px;
-  top: 33px;
+  top: 35px;
   font-size: 10px;
   z-index: 1000000;
 }
@@ -162,7 +162,7 @@ h4 { font-weight: 500; }
   position: fixed;
   width: 380px;
   height: 500px;
-  left: 3%;
+  left: 24px;
   bottom: 11%;
   border: solid;
   border-width: 1px;
