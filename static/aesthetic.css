@@ -108,7 +108,7 @@ h4 { font-weight: 500; }
   width: 40px;
   font-size: 20px;
   line-height: 20px;
-  color: black;
+  color: rgba(0, 0, 0, 0.75);
   font-weight: 900;
   margin-top:10px;
   text-decoration: none;
