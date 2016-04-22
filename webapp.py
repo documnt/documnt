@@ -69,7 +69,7 @@ def about():
     return render_template("about.html")  
 
 @app.route('/issues')
-def about():
+def issues():
     return render_template("issues.html") 
 
 @app.route('/contact')
