@@ -193,6 +193,9 @@ h4 { font-weight: 500; }
   border: solid;
   border-width: 1px;
 }
+.about_thumbnail {
+
+}
 
 .thumbnail a:hover { -webkit-filter: blur(1px); }
 
@@ -237,7 +240,26 @@ h4 { font-weight: 500; }
   left: 3643px;
 }
 
+#abt1 {
+  top:100px;
+  z-index: 0;
+  position: absolute;
+  left: 40%;
+}
 
+#abtarrow {
+  top: 350px;
+  z-index: 0;
+  position: absolute;
+  right: 0%;
+}
+
+#abt2 {
+  top:100px;
+  z-index: 0;
+  position: absolute;
+  left: 2000px;
+}
 
 
 
