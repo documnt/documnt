@@ -22,7 +22,7 @@ h1 { text-align: left; }
 h2 { margin: 0px; }
 h2:after {
   content: "documnt";
-  position: absolute; left: 20px; top: 27px;
+  position: absolute; left: 5px; top: 5px;
   color: rgba(255, 0, 0, 0.7);
 }
 h4 { font-weight: 500; }
