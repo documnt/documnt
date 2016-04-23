@@ -72,6 +72,10 @@ def about():
 def issues():
     return render_template("issues.html") 
 
+@app.route('/mixtapes')
+def mixtapes():
+    return render_template("mixtapes.html") 
+
 @app.route('/contact')
 def contact():
     return rendertemplate("contact.html")  
