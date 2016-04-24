@@ -78,16 +78,16 @@ def mixtapes():
 
 @app.route('/contact')
 def contact():
-    return rendertemplate("contact.html")  
+    return render_template("contact.html")  
 
 #added by Matt:
-@app.route('/submit')
+#@app.route('/submit')
 def submit():
     return "This would show a submit page."
 
 #added by Matt:
-@app.route('/essay')
-@app.route('/essay/<essay_title>')
+#@app.route('/essay')
+#@app.route('/essay/<essay_title>')
 def essay(essay_title='smooth-jazz'):
     if essay_title:
         doc = {}
@@ -99,8 +99,8 @@ def essay(essay_title='smooth-jazz'):
         return render_template("base.html")
 
 #added by Matt:
-@app.route('/poem')
-@app.route('/poem/<poem_title>')
+#@app.route('/poem')
+#@app.route('/poem/<poem_title>')
 def poem(poem_title='punishment'):
     if poem_title:
         doc = {}
@@ -113,8 +113,8 @@ def poem(poem_title='punishment'):
 
 
 #added by Matt:
-@app.route('/mix')
-@app.route('/mix/<mix_title>')
+#@app.route('/mix')
+#@app.route('/mix/<mix_title>')
 def mix(mix_title='mixtape-01'):
     if mix_title:
         mix = {}
@@ -129,10 +129,10 @@ def mix(mix_title='mixtape-01'):
 
 
 #@app.route('/contact')
-#def contact():
-#    return "This would show a contact page."
+def contact():
+    return "This would show a contact page."
 
-@app.route('/<int:art_id>/meta')
+#@app.route('/<int:art_id>/meta')
 def about_art(art_id):
     return "This would show an overview of art #{}.".format(art_id)
 
@@ -168,23 +168,23 @@ def show_deathbyscreenrubbing():
 
 
 
-@app.route('/<int:art_id>')
+#@app.route('/<int:art_id>')
 def show_art(art_id):
     return render_art(get_art(art_id))
 
-@app.route('/<int:art_id>/poetry')
+#@app.route('/<int:art_id>/poetry')
 def show_poetry(art_id):
     art = get_art(art_id)
     art["text_type"] = "poetry"
     return render_art(art)
 
-@app.route('/<int:art_id>/prose')
+#@app.route('/<int:art_id>/prose')
 def show_prose(art_id):
     art = get_art(art_id)
     art["text_type"] = "prose"
     return render_art(art)
 
-@app.route('/<int:art_id>/mono')
+#@app.route('/<int:art_id>/mono')
 def show_mono(art_id):
     art = get_art(art_id)
     art["text_type"] = "mono"
