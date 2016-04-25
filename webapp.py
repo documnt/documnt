@@ -85,6 +85,12 @@ def contact():
 def submit():
     return "This would show a submit page."
 
+@app.route('/demo')
+def show_demo():
+    return render_template("demo_content.html")
+
+    
+
 #added by Matt:
 #@app.route('/essay')
 #@app.route('/essay/<essay_title>')
@@ -151,20 +157,6 @@ def render_art(art):
         return render_template(template, **art)
     except FileNotFoundError:
         return "No art found with id {}.".format(art_id)
-
-
-@app.route('/demo')
-def show_demo():
-    return render_template("demo_content.html")
-
-@app.route('/death-by-screenrubbing')
-def show_deathbyscreenrubbing():
-    return render_template("death-by-screenrubbing.html")
-
-
-
-
-
 
 
 
