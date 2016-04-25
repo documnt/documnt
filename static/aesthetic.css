@@ -36,27 +36,6 @@ h4 { font-weight: 500; }
 }
 
 
-.navigation-1 {
-  list-style-type: none;
-  position: fixed;
-  left: 140px;
-  top: 29px;
-  font-size: 10px
-  z-index: 1000000;
-}
-.navigation-1 li {
-  display: inline;
-  padding: 10px;
-}
-.navigation-1 a {
-  text-decoration: none;
-  color: gray;
-  -webkit-filter: blur(1px);
-}
-.navigation-1 a:hover { -webkit-filter: blur(0px); text-decoration: underline; -moz-text-decoration-color: red; /* Code for Firefox */
-    text-decoration-color: red; }
-
-
 
 
 
