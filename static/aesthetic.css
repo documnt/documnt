@@ -43,7 +43,7 @@ h4 { font-weight: 500; }
   list-style-type: none;
   position: fixed;
   /*left: 140px;*/
-  right: 20px;
+  right: 10px;
   top: 10px;
   font-size: 10px;
   z-index: 1000000;
