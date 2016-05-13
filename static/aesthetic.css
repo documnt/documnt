@@ -21,9 +21,9 @@ main p { margin-bottom: 1em; }
 h1 { text-align: left; }
 h2 { margin: 0px; }
 h2:after {
-  content: "documnt";
+  content: "";
   position: absolute; left: 5px; top: 5px;
-  color: rgba(255, 0, 0, 0.5);
+  color: rgba(255, 0, 0, 0.2);
 }
 h4 { font-weight: 500; }
 
@@ -42,8 +42,9 @@ h4 { font-weight: 500; }
 .navigation-2 {
   list-style-type: none;
   position: fixed;
-  left: 160px;
-  top: 39px;
+  /*left: 140px;*/
+  right: 20px;
+  top: 10px;
   font-size: 10px;
   z-index: 1000000;
 }
@@ -82,17 +83,18 @@ h4 { font-weight: 500; }
 .logo {
   -webkit-filter: blur(2px);
   position: fixed;
-  left: 25px;
-  top: 10px;
+  /*left: 10px;*/
+  left: 70%;
+  top: 30px;
   width: 40px;
   font-size: 20px;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.45);
   font-weight: 900;
   margin-top:10px;
   text-decoration: none;
   font-family: "Futura";
-  z-index: 1000000;
+  z-index: 1;
 }
 
 .logo a:hover { -webkit-filter: blur(0px); }
@@ -135,7 +137,7 @@ h4 { font-weight: 500; }
   position: fixed;
   width: 380px;
   height: 500px;
-  left: 25px;
+  left: 26px;
   bottom: 25px;
   border: solid;
   background-color:white;
@@ -148,8 +150,8 @@ h4 { font-weight: 500; }
   position: fixed;
   width: 380px;
   height: 500px;
-  left: 26px;
-  bottom: 26px;
+  left: 28px;
+  bottom: 27px;
   border: solid;
   background-color:white;
   border-width: 1px;
@@ -161,8 +163,8 @@ h4 { font-weight: 500; }
   position: fixed;
   width: 380px;
   height: 500px;
-  left: 27px;
-  bottom: 27px;
+  left: 30px;
+  bottom: 29px;
   border: solid;
   background-color:white;
   border-width: 1px;
@@ -174,8 +176,8 @@ h4 { font-weight: 500; }
   position: fixed;
   width: 380px;
   height: 500px;
-  left: 28px;
-  bottom: 28px;
+  left: 32px;
+  bottom: 31px;
   border: solid;
   background-color:white;
   border-width: 1px;
@@ -187,11 +189,11 @@ h4 { font-weight: 500; }
   position: fixed;
   width: 380px;
   height: 500px;
-  left: 29px;
-  bottom: 29px;
+  left: 34px;
+  bottom: 33px;
   border: solid;
   background-color:white;
-  border-width: 1px;
+  border-width: .5px;
   border-color: black;
   z-index: 100;
 }
