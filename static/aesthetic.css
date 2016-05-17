@@ -43,7 +43,8 @@ h4 { font-weight: 500; }
   list-style-type: none;
   position: fixed;
   /*left: 140px;*/
-  right: 10px;
+  /*right: 10px;*/
+  left: 20px;
   top: 10px;
   font-size: 10px;
   z-index: 1000000;
@@ -84,8 +85,9 @@ h4 { font-weight: 500; }
   -webkit-filter: blur(2px);
   position: fixed;
   /*left: 10px;*/
-  left: 73%;
-  top: 35px;
+  /*left: 76.5%;*/
+  right: 7%;
+  bottom: 15px;
   width: 40px;
   font-size: 20px;
   line-height: 20px;
@@ -132,7 +134,7 @@ h4 { font-weight: 500; }
 }
 
 
-
+/*
 .empty_box {
   position: fixed;
   width: 380px;
@@ -146,6 +148,7 @@ h4 { font-weight: 500; }
   z-index: 100;
 }
 
+/*
 .empty_box2 {
   position: fixed;
   width: 380px;
@@ -158,6 +161,7 @@ h4 { font-weight: 500; }
   border-color: black;
   z-index: 100;
 }
+
 
 .empty_box3 {
   position: fixed;
@@ -172,6 +176,7 @@ h4 { font-weight: 500; }
   z-index: 100;
 }
 
+/*
 .empty_box4 {
   position: fixed;
   width: 380px;
@@ -197,12 +202,12 @@ h4 { font-weight: 500; }
   border-color: black;
   z-index: 100;
 }
-
+*/
 
 
 .demo_content_text {
   position: absolute;
-  left: 40%;
+  left: 30%;
   top: 100px;
   border: none;
   z-index: 0;
@@ -210,16 +215,16 @@ h4 { font-weight: 500; }
 
 
 
+
 .thumbnail {
   position: absolute;
-  bottom: 5%;
+  bottom: 12%;
   width: 380px;
   background: white;
-  border: solid;
-  border-width: 1px;
+  border: none;
 }
 
-.thumbnail a:hover { -webkit-filter: blur(1px); }
+.thumbnail a:hover { -webkit-filter: blur(0px); }
 
 #t1 {
   left: 150px;
