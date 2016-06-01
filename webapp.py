@@ -61,10 +61,10 @@ def get_art(art_id):
 @app.route('/')
 def home():
     # just for testing
-    return redirect(url_for('about')) #beta
-    #return render_template("index.html")
+    #return redirect(url_for('about')) #beta
+    return render_template("home.html")
 
-@app.route('/index')
+#@app.route('/index')
 def index():
     return render_template("index.html")
 
