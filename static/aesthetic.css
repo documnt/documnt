@@ -207,6 +207,7 @@ h4 { font-weight: 500; }
 div .thumbnail p {
   margin-top: 0;
   visibility: hidden;
+  font-size: 8px;
 }
 
 .demo_content_text {
