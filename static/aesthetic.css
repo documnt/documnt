@@ -218,7 +218,7 @@ h4 { font-weight: 500; }
 
 .thumbnail {
   position: absolute;
-  bottom: 12%;
+  bottom: 10%;
   width: 380px;
   background: white;
   border: none;
