@@ -204,6 +204,9 @@ h4 { font-weight: 500; }
 }
 */
 
+div .thumbnail p {
+  margin-top: 0;
+}
 
 .demo_content_text {
   position: absolute;
