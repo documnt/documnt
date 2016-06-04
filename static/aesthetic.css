@@ -232,7 +232,6 @@ div .thumbnail p {
   width: 380px;
   background: white;
   border: none;
-  z-index: 999999999999999999;
 }
 
 div .thumbnail:hover p {
