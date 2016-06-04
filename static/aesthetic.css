@@ -232,6 +232,7 @@ div .thumbnail p {
   width: 380px;
   background: white;
   border: none;
+  z-index: 999999999999999999;
 }
 
 div .thumbnail:hover p {
@@ -245,11 +246,11 @@ div .thumbnail:hover p {
 }
 
 #t2 {
-  left: 536px;
+  left: 531px;
 }
 
 #t3 {
-  left: 922px;
+  left: 912px;
 }
 
 #t4 {
@@ -261,19 +262,19 @@ div .thumbnail:hover p {
 }
 
 #t6 {
-  left: 2092px;
+  left: 2089px;
 }
 
 #t7 {
-  left: 2478px;
+  left: 2470px;
 }
 
 #t8 {
-  left: 2867px;
+  left: 2853px;
 }
 
 #t9 {
-  left: 3255px;
+  left: 3234px;
 
 }
 
