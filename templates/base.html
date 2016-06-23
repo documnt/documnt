@@ -11,9 +11,20 @@
   {# 300-weight is available for Lato #}
   <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,900' rel='stylesheet' type='text/css'>
 
+  <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+  <script type='text/javascript' src='/static/jquery.mousewheel.js'></script>
+
 </head>
 
 <body>
+  <script>
+    $(function() {
+      $("body").mousewheel(function(event, delta) {
+        this.scrollLeft -= (delta * 40);
+        event.preventDefault();
+      });
+    });
+  </script>
   <div class="page-wrapper">
     <header>
       <div class="logo">
