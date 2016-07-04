@@ -44,8 +44,9 @@ h4 { font-weight: 500; }
   position: fixed;
   /*left: 140px;*/
   /*right: 10px;*/
-  left: 50%;
-  top: 10px;
+  /*left: 50%;*/
+  right: 33px;
+  top: 33px;
   font-size: 10px;
   z-index: 1000000;
 }
@@ -84,10 +85,11 @@ h4 { font-weight: 500; }
 .logo {
   -webkit-filter: blur(2px);
   position: fixed;
-  /*left: 10px;*/
+  left: 15px;
+  top: 10px;
   /*left: 76.5%;*/
-  right: 7%;
-  bottom: -21px;
+  /*right: 7%;
+  bottom: -21px;*/
   width: 40px;
   font-size: 20px;
   line-height: 20px;
@@ -96,12 +98,12 @@ h4 { font-weight: 500; }
   margin-top:10px;
   text-decoration: none;
   font-family: "Futura";
-  z-index: 1;
+  z-index: 1; /*
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
+    transform: rotate(270deg); */
 }
 
 .logo a:hover { -webkit-filter: blur(0px); }
@@ -253,34 +255,33 @@ div .thumbnail:hover p {
 }
 
 #t4 {
-  left: 1320px;
+  left: 1293px;
 }
 
 #t5 {
-  left: 1706px;
+  left: 1674px;
 }
 
 #t6 {
-  left: 2089px;
+  left: 2055px;
 }
 
 #t7 {
-  left: 2470px;
+  left: 2436px;
 }
 
 #t8 {
-  left: 2853px;
+  left: 2817px;
 }
 
 #t9 {
-  left: 3234px;
+  left: 3198px;
 
 }
 
 #t10 {
   left: 3643px;
 }
-
 
 
 
