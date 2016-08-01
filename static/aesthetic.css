@@ -229,8 +229,8 @@ div .thumbnail p {
 .text_content {
   position: absolute;
   width: 45%;
-  left: -1%;
-  top: -1%;
+  left: 33px;
+  top: 33px;
   border: none;
   z-index: 0;
 }
