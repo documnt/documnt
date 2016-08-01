@@ -1,16 +1,16 @@
 /* aesthetic.css: styles which don't dramatically change the site's layout */
 
 body {
-  background: white;
+  background: none;
   background-size: 100%;
-  background-repeat: no-repeat;
-  font-family: 'Helvetica', sans-serif;
+  background-position: fixed;
   font-size: 12px;
+  font-family: "Futura";
   text-justify: distribute;
 }
 
 main {
-  font-family: Helvetica, "Futura", serif;
+  font-family: "Futura";
 }
 main p.author { text-align: right; }
 main p.prose { text-align: justify; }
@@ -226,6 +226,14 @@ div .thumbnail p {
   z-index: 0;
 }
 
+.text_content {
+  position: absolute;
+  width: 45%;
+  left: -1%;
+  top: -1%;
+  border: none;
+  z-index: 0;
+}
 
 
 

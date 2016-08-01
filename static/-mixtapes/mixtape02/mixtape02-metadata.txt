@@ -1,6 +1,6 @@
-mix-title: “DOCUMNT MIXTAPE 01: SINOSC”
+mix-title: “DOCUMNT MIXTAPE 02: CLAIRE D.”
 
-artist: “sinosc”
+artist: “Claire D.”
 
 date-uploaded: “December 2015”
 
