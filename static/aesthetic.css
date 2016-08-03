@@ -108,6 +108,12 @@ h4 { font-weight: 500; }
 
 .logo a:hover { -webkit-filter: blur(0px); }
 
+.logo-image {
+  position: fixed;
+  bottom: 33px;
+  right: 0px;
+}
+
 
 
 
