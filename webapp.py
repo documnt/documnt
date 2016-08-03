@@ -33,5 +33,10 @@ def show_demo():
 def show_demo2():
     return render_template("demo_content2.html")
 
+@app.route('/demo3')
+def show_demo3():
+    return render_template("demo_content3.html")
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
