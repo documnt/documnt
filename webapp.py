@@ -29,5 +29,9 @@ def contact():
 def show_demo():
     return render_template("demo_content.html")
 
+@app.route('/demo2')
+def show_demo2():
+    return render_template("demo_content2.html")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
