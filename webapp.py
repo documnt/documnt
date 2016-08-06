@@ -9,6 +9,10 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
+@app.route('/index')
+def index():
+    return render_template("index.html")
+
 @app.route('/about')
 def about():
     return render_template("about.html")  
@@ -20,6 +24,14 @@ def issues():
 @app.route('/mixtapes')
 def mixtapes():
     return render_template("mixtapes.html") 
+
+@app.route('/art')
+def art():
+    return render_template("art.html") 
+
+@app.route('/texts')
+def texts():
+    return render_template("texts.html")
 
 @app.route('/contact')
 def contact():
@@ -36,6 +48,10 @@ def show_demo2():
 @app.route('/demo3')
 def show_demo3():
     return render_template("demo_content3.html")
+
+@app.route('/demo4')
+def show_demo4():
+    return render_template("demo_content4.html")
 
 
 if __name__ == '__main__':

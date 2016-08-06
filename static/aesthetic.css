@@ -39,30 +39,76 @@ h4 { font-weight: 500; }
 
 
 
+
+
+.logo-image {
+  position: fixed;
+  bottom: 33px;
+  right: 0px;
+  border: none;
+  border-width: 0.5px;
+}
+div .logo-image p {
+  margin-top: 0;
+  visibility: hidden;
+  font-size: 8px;
+}
+div .logo-image:hover p {
+  visibility: visible;
+}
+
+
+.text_content {
+  position: absolute;
+  width: 614px;
+  left: 33px;
+  top: 33px;
+  border: none;
+  z-index: 0;
+  font-size: 8px;
+}
+
+.mixtape_div {
+  position: absolute;
+  width: 45%;
+  left: 18%;
+  top: 100px;
+  border: none;
+  z-index: 0;
+  font-size: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navigation-2 {
   list-style-type: none;
   position: fixed;
-  /*left: 140px;*/
-  /*right: 10px;*/
-  /*left: 50%;*/
   right: 33px;
   top: 33px;
   font-size: 10px;
   z-index: 1000000;
-}
 
+}
 .navigation-2 li {
   display: inline;
   padding: 10px;
  
 }
-
 .navigation-2 a {
   text-decoration: none;
   color: gray;
   -webkit-filter: blur(1px);
 }
-
 .navigation-2 a:hover { -webkit-filter: blur(0px); text-decoration: underline; -moz-text-decoration-color: #F80000; /* Code for Firefox */
     text-decoration-color: #F80000; }
 
@@ -71,178 +117,17 @@ h4 { font-weight: 500; }
 
 
 
-.alignleft {
-  float: left;
-}
-
-.alignright {
-  float: right;
-}
 
 
 
 
-.logo {
-  -webkit-filter: blur(2px);
-  position: fixed;
-  left: 15px;
-  top: 10px;
-  /*left: 76.5%;*/
-  /*right: 7%;
-  bottom: -21px;*/
-  width: 200px;
-  font-size: 20px;
-  line-height: 20px;
-  color: rgba(0, 0, 0, 0.45);
-  font-weight: 900;
-  margin-top:10px;
-  text-decoration: none;
-  font-family: "Futura";
-  z-index: 1; /*
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg); */
-}
 
-.logo a:hover { -webkit-filter: blur(0px); }
-
-.logo-image {
-  position: fixed;
-  bottom: 33px;
-  right: 0px;
-}
-
-
-
-
-.background-image {
-  position: absolute;
-  top: 100px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-
-  display: block;
-  
-  background-repeat:no-repeat;
-  background-size:cover;
-
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
-}
-
-
-
-.demo_content_image {
-  position: fixed;
-  left: 30px;
-  top: 40px;
-  max-width: 500px;
-}
-
-
-/*
-.empty_box {
-  position: fixed;
-  width: 380px;
-  height: 500px;
-  left: 26px;
-  bottom: 25px;
-  border: solid;
-  background-color:white;
-  border-width: 1px;
-  border-color: black;
-  z-index: 100;
-}
-
-/*
-.empty_box2 {
-  position: fixed;
-  width: 380px;
-  height: 500px;
-  left: 28px;
-  bottom: 27px;
-  border: solid;
-  background-color:white;
-  border-width: 1px;
-  border-color: black;
-  z-index: 100;
-}
-
-
-.empty_box3 {
-  position: fixed;
-  width: 380px;
-  height: 500px;
-  left: 30px;
-  bottom: 29px;
-  border: solid;
-  background-color:white;
-  border-width: 1px;
-  border-color: black;
-  z-index: 100;
-}
-
-/*
-.empty_box4 {
-  position: fixed;
-  width: 380px;
-  height: 500px;
-  left: 32px;
-  bottom: 31px;
-  border: solid;
-  background-color:white;
-  border-width: 1px;
-  border-color: black;
-  z-index: 100;
-}
-
-.empty_box5 {
-  position: fixed;
-  width: 380px;
-  height: 500px;
-  left: 34px;
-  bottom: 33px;
-  border: solid;
-  background-color:white;
-  border-width: .5px;
-  border-color: black;
-  z-index: 100;
-}
-*/
 
 div .thumbnail p {
   margin-top: 0;
   visibility: hidden;
   font-size: 8px;
 }
-
-.demo_content_text {
-  position: absolute;
-  width: 45%;
-  left: 18%;
-  top: 100px;
-  border: none;
-  z-index: 0;
-}
-
-.text_content {
-  position: absolute;
-  width: 45%;
-  left: 33px;
-  top: 33px;
-  border: none;
-  z-index: 0;
-  font-size: 8px;
-}
-
-
 
 .thumbnail {
   position: absolute;
