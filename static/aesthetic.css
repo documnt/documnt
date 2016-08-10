@@ -94,7 +94,7 @@ div .logo-image:hover p {
   list-style-type: none;
   position: fixed;
   right: 33px;
-  top: 33px;
+  bottom: 25px;
   font-size: 10px;
   z-index: 1000000;
 

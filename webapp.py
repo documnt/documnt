@@ -33,6 +33,10 @@ def art():
 def texts():
     return render_template("texts.html")
 
+@app.route('/videos')
+def videos():
+	return render_template("videos.html")
+
 @app.route('/contact')
 def contact():
     return render_template("contact.html")  
