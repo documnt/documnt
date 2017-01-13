@@ -17,6 +17,10 @@ def index():
 def about():
     return render_template("about.html")  
 
+@app.route('/subscribe')
+def subscribe():
+    return render_template("subscribe.html")
+
 @app.route('/issues')
 def issues():
     return render_template("issues.html") 
