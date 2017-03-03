@@ -67,6 +67,13 @@ div .logo-image:hover p {
   font-size: 8px;
 }
 
+.contact_column {
+  position: fixed;
+  bottom: 17px;
+  left: 150px;
+  font-size: 10px;
+}
+
 .mixtape_div {
   width: 45%;
   left: 33px;
