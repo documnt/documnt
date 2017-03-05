@@ -1,16 +1,21 @@
 /* aesthetic.css: styles which don't dramatically change the site's layout */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
   background: none;
   background-size: 100%;
   background-position: fixed;
   font-size: 12px;
-  font-family: "Futura";
+  /*font-family: "Futura";*/
+  /*font-family: "Monospace821";*/
+  font-family: 'Open Sans', sans-serif;
   text-justify: distribute;
 }
 
 main {
-  font-family: "Futura";
+  font-family: "Open Sans", sans-serif;
+  /*font-family: "Monospace821";*/
 }
 main p.author { text-align: right; }
 main p.prose { text-align: justify; }
@@ -88,23 +93,6 @@ div .logo-image:hover p {
   left:0;
   top: 0;
 }
-
-
-
-
-
-
-
-.new-about {
-  left: 45%;
-  top: 40%;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-
-
-
 
 .navigation-2 {
   list-style-type: none;
