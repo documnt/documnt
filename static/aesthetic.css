@@ -69,9 +69,9 @@ div .logo-image:hover p {
 
 .contact_column {
   position: fixed;
-  bottom: 17px;
-  left: 150px;
-  font-size: 10px;
+  bottom: 30px;
+  left: 85px;
+  font-size: 8px;
 }
 
 .mixtape_div {
@@ -109,11 +109,7 @@ div .logo-image:hover p {
 .navigation-2 {
   list-style-type: none;
   position: fixed;
-  /*right: 33px;*/
-  /*right: 7%;*/
-  /*right: 50%;*/
   right: 3%;
-  /*margin-right: 50%;*/
   bottom: 20px;
   font-size: 10px;
   z-index: 1000000;
@@ -127,9 +123,8 @@ div .logo-image:hover p {
 .navigation-2 a {
   text-decoration: none;
   color: gray;
-  -webkit-filter: blur(0px);
 }
-.navigation-2 a:hover { -webkit-filter: blur(0px); text-decoration: underline; -moz-text-decoration-color: #F80000; /* Code for Firefox */
+.navigation-2 a:hover {text-decoration: underline; -moz-text-decoration-color: #F80000; /* Code for Firefox */
     text-decoration-color: #F80000; }
 
 
@@ -264,6 +259,20 @@ div .logo-image:hover p {
 /*  .title {
     wid*/th: 500px;
   }
+}
+
+/* iphone 6 Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .navigation-2 {
+      left: 0;
+      width: 100%;
+      font-size: 12px;
+    }
+
 }
 
 /*@media (min-width: 1035px) {
