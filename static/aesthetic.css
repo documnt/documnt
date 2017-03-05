@@ -40,12 +40,6 @@ h4 { font-weight: 500; }
   border-color: black;
 }
 
-
-
-
-
-
-
 .logo-image {
   /*display: none;*/
   position: fixed;
@@ -63,31 +57,6 @@ div .logo-image p {
 div .logo-image:hover p {
   visibility: visible;
 }
-
-
-.text_content {
-  width: 614px;
-  left: 33px;
-  top: 50px;
-  font-size: 8px;
-}
-
-.contact_column {
-  position: fixed;
-  bottom: 30px;
-  left: 85px;
-  font-size: 8px;
-}
-
-.mixtape_div {
-  width: 45%;
-  left: 33px;
-  top: 100px;
-  border: none;
-  z-index: 0;
-  font-size: 8px;
-}
-
 .homepage_image {
   height: 100vh;
   left:0;
@@ -115,90 +84,35 @@ div .logo-image:hover p {
 .navigation-2 a:hover {text-decoration: underline; -moz-text-decoration-color: #F80000; /* Code for Firefox */
     text-decoration-color: #F80000; }
 
+/* ---- */
 
 
-.building {
+.text_content {
+  width: 614px;
+  left: 33px;
+  top: 50px;
+  font-size: 8px;
+}
+
+.contact_column {
   position: fixed;
-  bottom: 50px;
-  right:0;
-  width: 370px;
-  
+  bottom: 30px;
+  left: 85px;
+  font-size: 8px;
 }
 
-.building__block a {
-  text-decoration: none;
-  font-size: 12px;
-}
-
-
-
-
-
-.texts-list {
-  /*right: 2%;*/
-  /*opacity: 1;*/
-  right: 4%;
-  top: 27%;
-  padding-bottom: 100px;
-  position: absolute;
-  font-size: 24px;
-  line-height: 24px;
-  color: gray;
-  width: 370px;
-  transition-duration: 1s;
-  
-}
-
-.texts-list a:hover{
-  color: black;
-  text-decoration: none;
-}
-
-.text-category {
-  text-align: right;
-}
-.text-format a {
-  display: inline;
-  font-size: 12px;
-  text-align: right;
+.mixtape_div {
+  width: 45%;
+  left: 33px;
+  top: 100px;
+  border: none;
+  z-index: 0;
+  font-size: 8px;
 }
 
 
-.back-to-texts {
-  right: 2%;
-  top: 0;
-  /*position: fixed;*/
-  font-size: 12px;
-  font-weight: lighter;
-  padding-bottom: 24px;
-}
+/* demo essay */
 
-
-.text-category {
-  right: 8%;
-  /*position: fixed;*/
-  font-size: 24px;
-  font-weight: lighter;
-  margin-top: 24px;
-
-}
-
-.type-by-author {
-  position: fixed;
-  font-size: 24px;
-  margin-top: 24px;
-  font-weight: lighter;
-  right: 4%;
-  top: 2%;
-  display: inline-block;
-}
-
-.author-name {
-  /*position: fixed;*/
-  font-size: 36px;
-  right: 10%;
-  margin-top: 24px;
-}
 .title {
   position: fixed;
   right: 4%;
@@ -260,14 +174,4 @@ div .logo-image:hover p {
       width: 100%;
       font-size: 12px;
     }
-
 }
-
-/*@media (min-width: 1035px) {
-  .texts-list {
-    opacity: 1;
-    transition-duration: 1s;
-  }
-}*/
-
-
