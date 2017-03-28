@@ -3,10 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  background: none;
   background-size: 100%;
   background-position: fixed;
-  font-size: 12px;
+  font-size: 10px;
   /*font-family: "Futura";*/
   /*font-family: "Monospace821";*/
   font-family: 'Open Sans', sans-serif;
@@ -41,7 +40,7 @@ h4 { font-weight: 500; }
 }
 
 .logo-image {
-  /*display: none;*/
+  display: none;
   position: fixed;
   bottom: 33px;
   right: 0px;
@@ -58,9 +57,11 @@ div .logo-image:hover p {
   visibility: visible;
 }
 .homepage_image {
-  height: 100vh;
+  float: left;
+  width: 380px;
   left:0;
   top: 0;
+  overflow: hidden;
 }
 
 .navigation-2 {
@@ -86,6 +87,45 @@ div .logo-image:hover p {
 
 /* ---- */
 
+.doc-stack {
+
+}
+.doc-stack ul {
+  list-style-type: none;
+}
+.doc-stack li {
+  width: 300px;
+  height: 480px;
+}
+.doc-stack img {
+  width: 380px;
+  height: 480px;
+}
+.doc-stack li#one {
+  top: 0;
+  left: 0;
+}
+.doc-stack li#two {
+  top: 20%;
+  left: 20%;
+}
+.doc-stack li#three {
+  top: 40%;
+  left: 40%;
+}
+.doc-stack li#four {
+  top: 60%;
+  left: 60%;
+}
+.doc-stack li#five {
+  top: 80%;
+  left: 80%;
+}
+
+
+
+
+/* ---- */
 
 .text_content {
   width: 614px;
@@ -109,6 +149,183 @@ div .logo-image:hover p {
   z-index: 0;
   font-size: 8px;
 }
+.mixtapes {
+  margin-left: 50px;
+  margin-top: 80px;
+  width: 700px;
+}
+
+
+.pdf-preview {
+  width: 380px;
+  top: 30px;
+  background-color: red; 
+  margin-left: 380px;
+  position: fixed;
+}
+
+.pdf-preview__image {
+  width: 90%;
+}
+
+/* --- --- */
+
+
+
+
+
+
+
+
+
+
+/*.nav-bar {
+  background-color: red;
+  position: fixed;
+  height: 40px;
+  width: 600px;
+  bottom:0;
+  font-size: 10px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  list-style-type: none;
+
+}
+.nav-bar li {
+  display: inline;
+  padding: 10px;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: gray;
+}
+.nav-bar a:hover {text-decoration: underline; -moz-text-decoration-color: #F80000; text-decoration-color: #F80000; }
+
+*/
+
+
+
+
+
+#container {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  perspective: 600;
+}
+#checkbox {
+  width: 38px;
+  height: 38px;
+  display:block;
+  opacity: 0;
+  z-index: 2;
+  position:absolute;
+  left: 0px;
+  bottom: 0px;
+}
+#plus {
+  width: 38px;
+  height: 38px;
+  background: #ff005a;
+  border-radius: 19px;
+  position:absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index:5;
+  text-align:center;
+  line-height: 38px;
+  color: #fff;
+  font-size: 20px;
+  font-weight:bold;
+  transition: all 200ms ease-out;
+}
+.image {
+  width: 92px;
+  height: 92px;
+  background: #fff;
+  border: 4px solid #fff;
+  border-radius: 4px;
+  box-shadow:  0px 2px 3px 0px rgba(0, 0, 0, 0.29);
+  position:absolute;
+  transition: all 200ms ease-out;
+  z-index: 1;
+}
+.image#one {
+  transform: translateY( 10px ) translateX( 20px )  rotateX( 60deg );
+  background: url('http://brkcan.net/fun/codepen/danbo1.jpg');
+}
+.image#two {
+  transform: translateY( 6px ) translateX( 20px )  rotateX( 60deg );
+  background: url('http://brkcan.net/fun/codepen/danbo2.jpg');
+}
+.image#three {
+  transform: translateY( 2px ) translateX( 20px )  rotateX( 60deg );
+  background: url('http://brkcan.net/fun/codepen/danbo3.jpg');
+}
+.image#four {
+  transform: translateY( -2px ) translateX( 20px )  rotateX( 60deg );
+  background: url('http://brkcan.net/fun/codepen/danbo4.jpg');
+}
+.image#five {
+  transform: translateY( -6px ) translateX( 20px )  rotateX( 60deg );
+  background: url('http://brkcan.net/fun/codepen/danbo5.jpg');
+}
+#checkbox:checked+label .image#one {
+  transform: translateY( 220px ) translateX( 20px )  rotateX( 0deg );
+  background: url('http://brkcan.net/fun/codepen/danbo1.jpg');
+}
+#checkbox:checked+label .image#two {
+  transform: translateY( 115px ) translateX( 20px )  rotateX( 0deg );
+  background: url('http://brkcan.net/fun/codepen/danbo2.jpg');
+}
+#checkbox:checked+label .image#three {
+  transform: translateY( 10px ) translateX( 20px )  rotateX( 0deg );
+  background: url('http://brkcan.net/fun/codepen/danbo3.jpg');
+}
+#checkbox:checked+label .image#four {
+  transform: translateY( -95px ) translateX( 20px )  rotateX( 0deg );
+  background: url('http://brkcan.net/fun/codepen/danbo4.jpg');
+}
+#checkbox:checked+label .image#five {
+  transform: translateY( -200px ) translateX( 20px )  rotateX( 0deg );
+  background: url('http://brkcan.net/fun/codepen/danbo5.jpg');
+}
+#checkbox:checked+label #plus {
+  background: #000;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* demo essay */
