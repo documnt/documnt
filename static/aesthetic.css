@@ -57,11 +57,9 @@ div .logo-image:hover p {
   visibility: visible;
 }
 .homepage_image {
-  float: left;
-  width: 380px;
+  /*width: 380px;*/
   left:0;
   top: 0;
-  overflow: hidden;
 }
 
 .navigation-2 {
@@ -82,8 +80,8 @@ div .logo-image:hover p {
   text-decoration: none;
   color: gray;
 }
-.navigation-2 a:hover {text-decoration: underline; -moz-text-decoration-color: #F80000; /* Code for Firefox */
-    text-decoration-color: #F80000; }
+
+.navigation-2 a:hover { filter: blur(1px); -webkit-filter: blur(1px); }
 
 /* ---- */
 
