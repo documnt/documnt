@@ -33,6 +33,10 @@ def mixtapes():
 def art():
     return render_template("art.html") 
 
+@app.route('/archive')
+def archive():
+    return render_template("archive.html") 
+
 @app.route('/texts')
 def texts():
     return render_template("texts.html")
