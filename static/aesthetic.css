@@ -138,15 +138,14 @@ div .logo-image:hover p {
   width: 614px;
   left: 33px;
   top: 50px;
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .contact_column {
   position: fixed;
   bottom: 30px;
-  left: 85px;
-  font-size: 8px;
-  /*color: white;*/
+  left: 115px;
+  font-size: 9px;
 }
 
 .mixtape_div {
