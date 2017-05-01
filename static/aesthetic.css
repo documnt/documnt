@@ -3,24 +3,19 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  background-size: 100%;
   /*background-color: rgba(0, 0, 0, 0.9);*/
-  background-position: fixed;
   font-size: 10px;
-  /*font-family: "Monospace821";*/
-  /*font-family: 'Open Sans', sans-serif;*/
   font-family: 'Courier New', sans-serif;
   /*color: white;*/
   color: black;
 }
 
 /*body a {
-  color: yellow;
+  color: white;
 }*/
 
 main {
-  font-family: "Open Sans", sans-serif;
-  /*font-family: "Monospace821";*/
+  font-family: "Open Sans", sans-serif; 
 }
 main p.author { text-align: right; }
 main p.prose { text-align: justify; }
@@ -33,16 +28,14 @@ h2 { margin: 0px; }
 h2:after {
   content: "";
   position: absolute; left: 5px; top: 5px;
-  /*color: rgba(255, 0, 0, 0.2);*/
 }
 h4 { font-weight: 500; }
 
 .page_wrapper {
   height: 99%;
   width: 99%;
-  border: solid;
-  border-width: 1px;
-  border-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+
 }
 
 .logo-image {

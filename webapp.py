@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template("home.html")
+    return render_template("issues.html")
 
 @app.route('/index')
 def index():
@@ -35,7 +35,7 @@ def art():
 
 @app.route('/archive')
 def archive():
-    return render_template("archive.html") 
+    return render_template("art.html") 
 
 @app.route('/texts')
 def texts():
