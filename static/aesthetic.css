@@ -5,31 +5,14 @@
 body {
   background-color: rgba(0, 0, 0, 0.9);
   font-size: 10px;
-  font-family: 'Courier New', sans-serif;
+  font-family: 'Courier New', 'Open Sans' sans-serif;
   color: white;
-  /*color: black;*/
 }
-
 body a {
   color: white;
 }
 
-main {
-  font-family: "Open Sans", sans-serif; 
-}
-main p.author { text-align: right; }
-main p.prose { text-align: justify; }
-main p.poetry { text-align: left; }
 main p { margin-bottom: 1em; }
-
-
-h1 { text-align: left; }
-h2 { margin: 0px; }
-h2:after {
-  content: "";
-  position: absolute; left: 5px; top: 5px;
-}
-h4 { font-weight: 500; }
 
 .page_wrapper {
   height: 99%;
@@ -37,29 +20,7 @@ h4 { font-weight: 500; }
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.logo-image {
-  display: none;
-  position: fixed;
-  bottom: 33px;
-  right: 0px;
-  border: none;
-  border-width: 0.5px;
-  z-index: -1;
-}
-div .logo-image p {
-  margin-top: 0;
-  visibility: hidden;
-  font-size: 8px;
-}
-div .logo-image:hover p {
-  visibility: visible;
-}
-.homepage_image {
-  /*width: 380px;*/
-  left:0;
-  top: 0;
-}
-
+/* nav */
 .navigation-2 {
   list-style-type: none;
   position: fixed;
@@ -68,23 +29,16 @@ div .logo-image:hover p {
   font-size: 10px;
   /*font-weight: bold;*/
   z-index: 1000000;
-
 }
 .navigation-2 li {
   display: inline;
   padding: 10px;
- 
 }
 .navigation-2 a {
   text-decoration: none;
-  /*color: black;*/
-  /*color: yellow;*/
   color: white;
 }
-
-/*.navigation-2 a:hover { filter: blur(1px); -webkit-filter: blur(1px); }*/
 .navigation-2 a:hover { text-decoration: underline; }
-
 
 .text_content {
   width: 614px;
@@ -127,42 +81,6 @@ div .logo-image:hover p {
 
 /* --- --- */
 
-
-#container {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -50px 0 0 -50px;
-  perspective: 600;
-}
-#checkbox {
-  width: 38px;
-  height: 38px;
-  display:block;
-  opacity: 0;
-  z-index: 2;
-  position:absolute;
-  left: 0px;
-  bottom: 0px;
-}
-#plus {
-  width: 38px;
-  height: 38px;
-  background: #ff005a;
-  border-radius: 19px;
-  position:absolute;
-  left: 0px;
-  bottom: 0px;
-  z-index:5;
-  text-align:center;
-  line-height: 38px;
-  color: #fff;
-  font-size: 20px;
-  font-weight:bold;
-  transition: all 200ms ease-out;
-}
 .image {
   width: 92px;
   height: 92px;
