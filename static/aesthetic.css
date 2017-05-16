@@ -3,16 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  /*background-color: rgba(0, 0, 0, 0.9);*/
+  background-color: rgba(0, 0, 0, 0.9);
   font-size: 10px;
   font-family: 'Courier New', sans-serif;
-  /*color: white;*/
-  color: black;
+  color: white;
+  /*color: black;*/
 }
 
-/*body a {
+body a {
   color: white;
-}*/
+}
 
 main {
   font-family: "Open Sans", sans-serif; 
@@ -35,7 +35,6 @@ h4 { font-weight: 500; }
   height: 99%;
   width: 99%;
   background-color: rgba(0, 0, 0, 0.9);
-
 }
 
 .logo-image {
@@ -67,6 +66,7 @@ div .logo-image:hover p {
   right: 3%;
   bottom: 20px;
   font-size: 10px;
+  /*font-weight: bold;*/
   z-index: 1000000;
 
 }
@@ -77,55 +77,14 @@ div .logo-image:hover p {
 }
 .navigation-2 a {
   text-decoration: none;
-  color: black;
+  /*color: black;*/
   /*color: yellow;*/
-  /*color: white;*/
+  color: white;
 }
 
 /*.navigation-2 a:hover { filter: blur(1px); -webkit-filter: blur(1px); }*/
 .navigation-2 a:hover { text-decoration: underline; }
 
-/* ---- */
-
-.doc-stack {
-
-}
-.doc-stack ul {
-  list-style-type: none;
-}
-.doc-stack li {
-  width: 300px;
-  height: 480px;
-}
-.doc-stack img {
-  width: 380px;
-  height: 480px;
-}
-.doc-stack li#one {
-  top: 0;
-  left: 0;
-}
-.doc-stack li#two {
-  top: 20%;
-  left: 20%;
-}
-.doc-stack li#three {
-  top: 40%;
-  left: 40%;
-}
-.doc-stack li#four {
-  top: 60%;
-  left: 60%;
-}
-.doc-stack li#five {
-  top: 80%;
-  left: 80%;
-}
-
-
-
-
-/* ---- */
 
 .text_content {
   width: 614px;
@@ -139,6 +98,17 @@ div .logo-image:hover p {
   bottom: 30px;
   left: 115px;
   font-size: 9px;
+  /*font-weight: bold;*/
+}
+
+.D2_opencall_text {
+  position: fixed;
+  width: 178px;
+  left: 490px;
+  top: 0px;
+  font-size: 9px;
+  /*font-weight: bold;*/
+  color: white;
 }
 
 .mixtape_div {
@@ -155,58 +125,7 @@ div .logo-image:hover p {
   width: 700px;
 }
 
-
-.pdf-preview {
-  width: 380px;
-  top: 30px;
-  background-color: red; 
-  margin-left: 380px;
-  position: fixed;
-}
-
-.pdf-preview__image {
-  width: 90%;
-}
-
 /* --- --- */
-
-
-
-
-
-
-
-
-
-
-/*.nav-bar {
-  background-color: red;
-  position: fixed;
-  height: 40px;
-  width: 600px;
-  bottom:0;
-  font-size: 10px;
-}
-
-.nav-bar ul {
-  list-style: none;
-  list-style-type: none;
-
-}
-.nav-bar li {
-  display: inline;
-  padding: 10px;
-}
-.nav-bar a {
-  text-decoration: none;
-  color: gray;
-}
-.nav-bar a:hover {text-decoration: underline; -moz-text-decoration-color: #F80000; text-decoration-color: #F80000; }
-
-*/
-
-
-
 
 
 #container {
@@ -255,78 +174,6 @@ div .logo-image:hover p {
   transition: all 200ms ease-out;
   z-index: 1;
 }
-.image#one {
-  transform: translateY( 10px ) translateX( 20px )  rotateX( 60deg );
-  background: url('http://brkcan.net/fun/codepen/danbo1.jpg');
-}
-.image#two {
-  transform: translateY( 6px ) translateX( 20px )  rotateX( 60deg );
-  background: url('http://brkcan.net/fun/codepen/danbo2.jpg');
-}
-.image#three {
-  transform: translateY( 2px ) translateX( 20px )  rotateX( 60deg );
-  background: url('http://brkcan.net/fun/codepen/danbo3.jpg');
-}
-.image#four {
-  transform: translateY( -2px ) translateX( 20px )  rotateX( 60deg );
-  background: url('http://brkcan.net/fun/codepen/danbo4.jpg');
-}
-.image#five {
-  transform: translateY( -6px ) translateX( 20px )  rotateX( 60deg );
-  background: url('http://brkcan.net/fun/codepen/danbo5.jpg');
-}
-#checkbox:checked+label .image#one {
-  transform: translateY( 220px ) translateX( 20px )  rotateX( 0deg );
-  background: url('http://brkcan.net/fun/codepen/danbo1.jpg');
-}
-#checkbox:checked+label .image#two {
-  transform: translateY( 115px ) translateX( 20px )  rotateX( 0deg );
-  background: url('http://brkcan.net/fun/codepen/danbo2.jpg');
-}
-#checkbox:checked+label .image#three {
-  transform: translateY( 10px ) translateX( 20px )  rotateX( 0deg );
-  background: url('http://brkcan.net/fun/codepen/danbo3.jpg');
-}
-#checkbox:checked+label .image#four {
-  transform: translateY( -95px ) translateX( 20px )  rotateX( 0deg );
-  background: url('http://brkcan.net/fun/codepen/danbo4.jpg');
-}
-#checkbox:checked+label .image#five {
-  transform: translateY( -200px ) translateX( 20px )  rotateX( 0deg );
-  background: url('http://brkcan.net/fun/codepen/danbo5.jpg');
-}
-#checkbox:checked+label #plus {
-  background: #000;
-  opacity: 0.5;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* demo essay */
 
@@ -368,27 +215,4 @@ div .logo-image:hover p {
   margin-left: 2%;
   margin-top: 35%;
   z-index: 99999;
-}
-
-@media (min-width: 520px) {
-  .essay-wrapper {
-    width: 500px;
-    margin-top: 20%;
-  }
-/*  .title {
-    wid*/th: 500px;
-  }
-}
-
-/* iphone 6 Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-    .navigation-2 {
-      left: 0;
-      width: 100%;
-      font-size: 12px;
-    }
 }
