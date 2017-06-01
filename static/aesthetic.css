@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  background-image: url("/static/D2OpenCall150517blackend.jpg");
+  /*background-image: url("/static/D2OpenCall150517blackend.jpg");*/
+  /*background-size: 470px;*/
+  /*background-attachment: fixed;*/
+  /*background-repeat: no-repeat;*/
   background-color: rgba(0, 0, 0, 0.9);
   font-size: 10px;
   font-family: 'Courier New', 'Open Sans' sans-serif;
@@ -32,6 +35,7 @@ main p { margin-bottom: 1em; }
 }
 .navigation-2 li {
   display: inline;
+  /*list-style-type: none;*/
   padding: 10px;
 }
 .navigation-2 a {
