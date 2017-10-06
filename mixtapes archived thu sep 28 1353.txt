@@ -1,0 +1,395 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="mixtape-links">
+        <a href="https://soundcloud.com/documnt/mixtape-15-klned" target="_blank">https://soundcloud.com/documnt/mixtape-15-klne</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-14-wunderwaffel" target="_blank">https://soundcloud.com/documnt/mixtape-14-wunderwaffel</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-13-zond" target="_blank">https://soundcloud.com/documnt/mixtape-13-zond</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-12-mxg" target="_blank">https://soundcloud.com/documnt/mixtape-12-mxg</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-11-lord-byron-styropor" target="_blank">https://soundcloud.com/documnt/mixtape-11-lord-byron-styropor</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-10-anna-adams" target="_blank">https://soundcloud.com/documnt/mixtape-10-anna-adams</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-09-artetetra-records" target="_blank">https://soundcloud.com/documnt/mixtape-09-artetetra-records</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-08-tragedija-u-steglitzu" target="_blank">https://soundcloud.com/documnt/mixtape-08-tragedija-u-steglitzu</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-07-paul-seidler" target="_blank">https://soundcloud.com/documnt/mixtape-07-paul-seidler</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-06-ben-ko" target="_blank">https://soundcloud.com/documnt/mixtape-06-ben-ko</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-05-kurort-spandau" taget="_blank">https://soundcloud.com/documnt/mixtape-05-kurort-spandau</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-04-sho" target="_blank">https://soundcloud.com/documnt/mixtape-04-sho</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-03-health" target="_blank">https://soundcloud.com/documnt/mixtape-03-health</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-02-claire-d" target="_blank">https://soundcloud.com/documnt/mixtape-02-claire-d</a><br>
+        <a href="https://soundcloud.com/documnt/mixtape-01-sinosc" target="_blank">https://soundcloud.com/documnt/mixtape-01-sinosc</a><br><br>
+    </div>
+    <div class="mixtape-images">
+        <a href="https://soundcloud.com/documnt/mixtape-15-klned" target="_blank"><img class="mixtape-img" src="/static/mixtape15.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-14-wunderwaffel" target="_blank"><img class="mixtape-img" src="/static/mixtape14.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-13-zond" target="_blank"><img class="mixtape-img" src="/static/mixtape13.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-12-mxg" target="_blank"><img class="mixtape-img" src="/static/mixtape12.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-11-lord-byron-styropor" target="_blank"><img class="mixtape-img" src="/static/mixtape11.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-10-anna-adams" target="_blank"><img class="mixtape-img" src="/static/mixtape10.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-09-artetetra-records" target="_blank"><img class="mixtape-img" src="/static/mixtape09.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-08-tragedija-u-steglitzu" target="_blank"><img class="mixtape-img" src="/static/mixtape08.png"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-07-paul-seidler" target="_blank"><img class="mixtape-img" src="/static/mixtape07.png"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-06-ben-ko" target="_blank"><img class="mixtape-img" src="/static/mixtape06.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-05-kurort-spandau" target="_blank"><img class="mixtape-img" src="/static/mixtape05.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-04-sho" target="_blank"><img class="mixtape-img" src="/static/mixtape04.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-03-health" target="_blank"><img class="mixtape-img" src="/static/mixtape03.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-02-claire-d" target="_blank"><img class="mixtape-img" src="/static/mixtape02.jpg"></a>
+        <a href="https://soundcloud.com/documnt/mixtape-01-sinosc" target="_blank"><img class="mixtape-img" src="/static/mixtape01.jpg"></a>
+    </div>
+    
+    <div class="mixtapes">
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331320434&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/325031229&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_14">tracklist</label>
+        <input id="_14" type="checkbox"> 
+        <div>
+            <p>1. Egisto Macchi: L'Eco Delle Gole<br>
+            2. Mechthild Von Leusch: Rungholter Totentanz<br>
+            3. Andres Lewin-Richter: Study No. 1<br>
+            4. Lesiman: Obsession<br>
+            5. Louise Huebner: The Coleopterous Charm For Romantic Adventure<br>
+            6. Nurse With Wound: Untitled 1 (from Images/Zero Mix)<br>
+            7. Nino Nardini: Storm Clouds<br>
+            8. John Barry: Oktober - Walk From The River<br>
+            9. Andrés Lewin-Richter: Pulsar<br>
+            10. Chene Noir: Les Oiseaux<br>
+            11. Piero Umiliani: Pulzationit<br>
+            12. Ennio Morricone: Un Tranquillo Posto Di Campagna (#8)<br>
+            13. Woody Leafer: Drums In My Typewriter<br>
+            14. Mechthild Von Leusch: Rungholter Tanz 10<br>
+            15. Phillip Werren: Whale Piece<br>
+            16. The Creed Taylor Orchestra: Gloomy Sunday<br>
+            17. Roger Roger: Bolero Chinois<br>
+            18. Tom Recchion: Flying Weather<br>
+            19. Otto Luening: Fantasy In Space<br>
+            20. Peppino De Luca & I Marc 4: Metronomo Della Morte<br>
+            21. Werkbund: Allseele<br>
+            22. The Creed Taylor Orchestra: The Cranc<br>
+            23. Otto Luening And Vladimir Ussachevsky: Incantation<br>
+            24. Vladimir Ussachevsky: Piece For Tape Recorder<br>
+            25. Psychophysicist: PSR .833-45 16.65 Mg Htz<br>
+            26. Mort Garson: Music To Soothe The Savage Snake Plant<br>
+            27. Louise Huebner: The Earthquake Spell For Unwanted<br>
+            28. Asmus Tietchens: Wind ohne Wetter<br>
+            29. Raskovich: Alpha Gamma<br>
+            30. Steve Maxwell Von Braund - Shadowfax<br>
+            31. P16.D4: Hammer/Zange/Hebel<br>
+            32. Hirsche Nicht Aufs Sofa: Ganz unverbindlich<br>
+            33. Asmus Tietchens: Litia<br>
+            34. Colin Potter: Knit Where?<br>
+            35. Roger Roger: Sound Industrial 12<br>
+            36. Egisto Macchi: La Memoire<br>
+            37. Egisto Macchi: Chanson De Matin<br>
+            38. Louise Huebner: Witches And Wizards<br>
+            39. John Barry: Wednesday's Child - Main Theme</p>
+        </div>
+        <br>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323027924&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_13">tracklist</label>
+        <input id="_13" type="checkbox"> 
+        <div>
+            <p>1. Thomas Köner: Nunatak<br>
+            2. Gondwana: A Gospel Of Dirt<br>
+            3. Valerio Tricoli: In The Eye Of The Cyclone <br>
+            4. Scheich in China: Untitled<br>
+            5. Kassel Jaeger & Giuseppe Ielasi: Greyscale<br>
+            6. Spoils & Relics: Sins of Omission<br>
+            7. Mika Vainio & Sean Booth: Mika & Kouhei 11th June 2008<br>
+            8. Thomas Ankersmit: Untitled<br>
+            9. Mika Vainio: Voisin Olla Vanha Mies Huoltamon Pihassa<br>
+            10. Scott Gibbons & Lilith: Stone: Reciprocal<br>
+            11. Ditterich von Euler-Donnersperg: Die Truhe Im Fluss #4<br>
+            12. Body Sculptures: Feet Into Soil</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/318494905&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_12">tracklist</label>
+        <input id="_12" type="checkbox"> 
+        <div>
+            <p>:O</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/314138273&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_11">tracklist</label>
+        <input id="_11" type="checkbox"> 
+        <div>
+            <p>1. Shinobi inu: Clear<br>
+            2. GAIKA: Security (feat. Fallacy and Gretz)<br>
+            3. Yung Internet: Crimb<br>
+            4. These Hidden Hands: These Moments Dismantled (feat. Lucrecia Dalt)<br>
+            5. coucou chloé: Touched ft. lala<br>
+            6. Isis Scott: AmenoHa x Work Bitch Edit<br>
+            7. Sd Laika: Spaceman piff<br>
+            8. clipping.: Dominoes<br>
+            9. Isis Scott: Poppin Pills With Beyonce & Nicki<br>
+            10. G_H: Earth<br>
+            11. Magma Trakt: Među nama<br>
+            12. G_H: Housebound_Demigod<br>
+            13. Emptyset: Len<br>
+            14. Mαḋεṃαṉ: Selfdefense<br>
+            15. OG Maco: Want More<br>
+            16. N8NOFACE: MISERY<br>
+            17. Yoshitaka Hikawa: LTV<br>
+            18. Silvana Imam: Imam Cobain<br>
+            19. LSDXOXO: R e c h u r a_<br>
+            20. MY DISCO: 1991 (Lustmord 20-20 Mix) (played extremly fast)</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/308014238&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_10">tracklist</label>
+        <input id="_10" type="checkbox"> 
+        <div>
+            <p>01. Nthng: In My Dreams (Lobster Theremin, 2016)<br>
+            02. Günter Karpa: Wunderland bei Nacht (33 rpm) (Amiga, 1952)<br>
+            03. Füxa: Dream (Don't Give Up) (Emotional Response, 2014)<br>
+            04. SHDW & Obscure Shape: Die Macht des Schicksals (From Another Mind, 2016)<br>
+            05. Daze: Leisure Complex (Unknown To The Unknown, 2016)<br>
+            06. Gianluca Petrella: 103 (electronique.it, 2015)<br>
+            07. Benedikt Frey: Portal (MRT, 2015)<br>
+            08. Cornflakes 808: Evil House (Ghost Track) (J.A.M. Traxx, 2013)<br>
+            09. Gina X Performance: Hypnosis / Hypnose (EMI, 1981)<br>
+            10. Alchemy Of The 20th Century: 1.-3.-10.1996 (Bawler Productions, 1997)<br>
+            11. Rattler Proxy: McReady's Blues (Lurid, 2014)<br>
+            12. Mistress Mix And Psychic TV: Je T'aime (Menstrual Mix) (Temple Records, 1989)<br>
+            13. Visonia: The Amethyst City (Electronic Emergencies, 2016)<br>
+            14. Bestial Mouths: Earth (Greenlander Remix) (Clan Destine, 2014)<br>
+            15. Zwischenfall: Flucht '84 (33 rpm) (1984/ Dark Entries, 2016)<br>
+            16. Bestial Mouths: Movement (Dalhous Remix) (Clan Destine, 2014)</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/301599766&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_9">tracklist</label>
+        <input id="_9" type="checkbox"> 
+        <div>
+            <p>???</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293601943&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_8">tracklist</label>
+        <input id="_8" type="checkbox"> 
+        <div>
+            <p>1. Haptic: Sum (Entr'acte / Absurd, 2007)<br>
+            2. Natascha Sadr Haghighian And Rashad Becker: Play:Display (Part 1) (Apparent Extent, 2014)<br>
+            3. Éric La Casa: L'Inspir Du Rivage Part 2 (Povertech Industries, 1999)<br>
+            4. Stefan Römer: Die Erweiterung Des Alphabets (LAUREL Productions, 1988)<br>
+            5. Dennis Loesch: .aiff (Stadl, 2004)<br>
+            6. Matthias Scholten: Stanley (Stadl, 2005)<br>
+            7. Stabat Mors: Fraktale 1 (Psych.KG / Kafue Systeme, 2008)<br>
+            8. Claus Böhmler: Chers Amis Du Meubler Perdu, Chers Auditeurs! (Edition Block, 1986)</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/270098722&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_7">tracklist</label>
+        <input id="_7" type="checkbox"> 
+        <div>
+            <p>1. Britney Spears: I'M A SLAVE 4 U (Acapella) (Set Edit)<br>
+            2. Vanilla Hammer: Crabskin (kanyon Mishap)<br>
+            3. Rabit - Trapped in This Body (darkmatter edit)<br>
+            4. quebrus - ⊶⊚⊖⬚⊟⊑∷༜⊚༜∷⊒⊞⬚⊖⊚⊷<br>
+            5. Ultramiedo - Alien Extruder<br>
+            6. Shyqa - Predator’s Test<br>
+            7. Alfred English - piston (tropical interface remix)<br>
+            8. d-n-e - Nothing of Nature<br>
+            9. Zui - Zora Jones<br>
+            10. Dane Law - United with The Sadness in Your Eyes<br>
+            11. WWWINGS - OBSCURE (FT. HNRK & DJ HEROIN)<br>
+            12. Subhumanizer - Lost In The Digital Labyrinth<br>
+            13. Baby Blue - NOTHING CAN STOP US<br>
+            14. That poeribbon idiot on twitter - чертовски мертвих<br>
+            15. serpai - oni-chan<br>
+            16. DJ Alina - БЕЗСМЕРТНИЙ<br>
+            17. Sensational Meets Kouhei - Sensachre 10 Mix (Autechre Remix)<br>
+            18. ▉▉▒▒█▎l▓░▉ＣＨＬＯＲＩＮＥ - Wyh</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/262273011&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_6">tracklist</label>
+        <input id="_6" type="checkbox"> 
+        <div>
+            <p>1. Chevel: Comb<br>
+            2. Lucy: Lav<br>
+            3. Yan Cook: Shift<br>
+            4. Darko Esser: Clean Slate (DVS1 Remix)<br>
+            5. André Kronert: Into the Zone (Efdemin Rework)<br>
+            6. Chevel: Detrimental<br>
+            7. Machine Woman: 10.08.15<br>
+            8. Privacy: Query C<br>
+            9. Gestolen Cirkel: Zombie Machine (Acid)<br>
+            10. Helena Hauff: Spur<br>
+            11. Matrixxman: Augmented<br>
+            12. Blawan: Diatonic Values<br>
+            13. Objekt: Agnes Demise<br>
+            14. Dynarec: First Machines<br>
+            15. Front 242: Least Inkling</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/260246029&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_5">tracklist</label>
+        <input id="_5" type="checkbox"> 
+        <div>
+            <p>1. Waterworld: Yoshi’s Soul<br>
+            2. Jon Hassell: Empire V<br>
+            3. Karamika: Ton 02<br>
+            4. Ondness: Hobo Pwe<br>
+            5. Contact Field Orchestra: On The Autumn Sea <br>
+            6. Monte: Lava<br>
+            7. Midori Takada: Mr. Henri Rousseau’s Dream <br>
+            8. William Hoskins: Drum Chime<br>
+            9. James Harpham: Voodoo Tronics 2<br>
+            10. Poplar Bluff: Orphan Nexus<br>
+            11. Magnétophonique: Quiet Village<br>
+            12. Sunhiilow: Astral Asteroidea <br>
+            13. Nicola Ratti: W10<br>
+            14. Dolphins Into The Future: Jardim Dos Tufaos<br>
+            15. Waterworld: Yoshi’s Reprise</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257987514&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <br>
+        <br>
+        <!-- <label class="collapse" for="_4">tracklist</label>
+        <input id="_4" type="checkbox"> 
+        <div>
+            <p>1. Shō: Dreams Less Sweet<br>
+            2. Rainforest Spiritual Enslavement: Homes Built Over The Sea <br>
+            3. Lunar Aurora: Im Gartn <br>
+            4. Tim Hecker: Amps, Drugs, Mellotron<br>
+            5. Olhon: R.O.V. Mercurio (-210 m)<br>
+            6. The Conet Project:(G20) Spruchnummer 1<br>
+            7. The Conet Project: (G18) 8 Note Rising Scale<br>
+            8. Cyclobe: Sleeper: The Blue Towers, The Copper Bells, Ghost Ribbon, The Unknowable Index <br>
+            9. IRM: Closure I<br>
+            10. Grunt: Dog In The Leash Pt.1<br>
+            11. Blawan: His Daughters <br>
+            12. Demdike Stare: Past Majesty<br>
+            13. Peder Mannerfelt: STROBB<br>
+            14. Kenji Kawai: M01謡I-Making Of Cyborg</p>
+        </div>
+        <br>
+        <br> -->
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253776416&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <!-- <br>
+        <label class="collapse" for="_3">tracklist</label>
+        <input id="_3" type="checkbox"> 
+        <div>
+            <p>1. Éliane Radigue: Stress-Osaka<br>
+            2. Peter Gordon & Lawrence Weiner: Deutsche Angst<br>
+            3. Senking: Serpent<br>
+            4. Heroin in Tahiti: Spinalonga<br>
+            5. Z'ev: Wipe Out<br>
+            6. Asmus Tietchens: Ritual der kranken Freude<br>
+            7. HysM?Duo: Small Universes<br>
+            8. Nicola Tirabasso: Landscape Suicide<br>
+            9. Sunn O))): BP//Simple<br>
+            10. Factory Floor ft. Peter Gordon: Beach combing<br>
+            11. Terry Riley: A Rainbow in Curved Air<br>
+            12. The Rah Band: Messages From the Stars</p>
+        </div> -->
+        <br>
+        <br>
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/238805456&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <!-- <br>
+        <label class="collapse" for="_2">tracklist</label>
+        <input id="_2" type="checkbox"> 
+        <div>
+            <p>1. Bestial Mouths: Faceless (Funerals Remix)<br>
+            2. Kan3da: Bangabnungo<br>
+            3. Powell: Club Music (Ancient Methods Körpersäure 91 Remix)<br>
+            4. Front Line Assembly: Mindphaser<br>
+            5. Front 242: Work 01<br>
+            6. An-i: Mutter <br>
+            7. Helena Hauff: L'homme mort<br>
+            8. Cosby: Veil (Club Scene)<br>
+            9. Gesloten Cirkel: Feat. Liette<br>
+            10. Von Spar: Jon Voight<br>
+            11. Red Axes: Shem<br>
+            12. Lucy Cliche: Smash<br>
+            13. Helena Hauff: Hiemal Quietus</p>
+        </div> -->
+        <br>
+        <br>
+
+        <iframe width="700px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <br>
+        <!-- <br>
+        <label class="collapse" for="_1">tracklist</label>
+        <input id="_1" type="checkbox"> 
+        <div>
+            <p>1. Alinoe: II (Outro)<br>
+            2. Kiyoko: Track 2<br>
+            3. Ametsub: Repeatedly (Video Edit)<br>
+            4. We Will Fail: Verstörung v.07<br>
+            5. Klive: Sweaty Psalms<br>
+            6. Farben: Loop.Exposure<br>
+            7. Rechenzentrum: IBM<br>
+            8. Carter Tutti Void: f = (2.7)<br>
+            9. Function: Untitled<br>
+            10. Donnacha Costello: Cocoa A<br>
+            11. Farben: As Long As There’s Love Around<br>
+            12. SND: Circa 1509<br>
+            13. Gramm: Legends / Nugroove™ <br>
+            14. Ursula Bogner: Begleitung für Tuba</p>
+        </div> -->
+        <br>
+        <br>
+        
+    </div>
+
+{% endblock %}

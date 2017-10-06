@@ -3,17 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  /*background-image: url("/static/D2OpenCall150517blackend.jpg");*/
-  /*background-size: 470px;*/
-  /*background-attachment: fixed;*/
-  /*background-repeat: no-repeat;*/
   background-color: rgba(0, 0, 0, 0.9);
-  font-size: 10px;
+  font-size: 16px;
   font-family: "Courier New", Courier, monospace;
   color: white;
 }
 body a {
   color: white;
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: underline;
 }
 
 main p { margin-bottom: 1em; }
@@ -28,14 +28,13 @@ main p { margin-bottom: 1em; }
 .navigation-2 {
   list-style-type: none;
   position: fixed;
-  right: 3%;
-  bottom: 20px;
+  right: 10px;
+  bottom: 10px;
   font-size: 10px;
   z-index: 1000000;
 }
 .navigation-2 li {
   display: inline;
-  /*list-style-type: none;*/
   padding: 10px;
 }
 .navigation-2 a {
@@ -47,32 +46,202 @@ main p { margin-bottom: 1em; }
 
 /* text */
 .text_content {
+  position: fixed;
   width: 614px;
-  left: 33px;
-  top: 50px;
-  font-size: 9px;
+  left: 0px;
+  top: 0px;
+  font-size: 10px;
 }
 .contact_column {
   position: fixed;
   bottom: 30px;
-  left: 115px;
-  font-size: 9px;
+  left: 215px;
+  font-size: 10px;
 }
-.D2_opencall_text {
+.contact_column a {
+  text-decoration: none;
+}
+.contact_column a:hover {
+  text-decoration: underline;
+}
+.homepage_image {
   position: fixed;
-  width: 178px;
-  left: 490px;
+  float: left;
+  left: 0px;
   top: 0px;
-  font-size: 9px;
+}
+
+.D2_opencall_text {
+  position: relative;
+  width: 320px;
+  left: 420px;
+  top: 10px;
+  font-size: 10px;
   color: white;
+  overflow: auto;
 }
 /* -- */
+.issue-text {
+  font-size: 10px;
+  position: fixed;
+  width: 600px;
+  left: 420px;
+  top: 20px;
+  color: white;
+  overflow: auto;
+}
+
+.issue-text a{
+  text-decoration: none;
+}
+.issue-text a:hover{
+  text-decoration: underline;
+}
+
+.index-text {
+  font-size: 10px;
+  position: relative;
+  width: 600px;
+  left: 415px;
+  color: white;
+  overflow: auto;
+  float: left;
+}
+.index-text a{
+  text-decoration: none;
+}
+.index-text a:hover{
+  text-decoration: underline;
+}
 
 /* mixtapes */
+.tracklist {
+  font-size: 10px;
+  position: fixed;
+  width: 600px;
+  left: 320px;
+  top: 30px;
+  color: white;
+  overflow: auto;
+}
 .mixtapes {
   margin-left: 50px;
   margin-top: 80px;
   width: 700px;
+}
+.single-mixtape {
+  width: 97%;
+  left: 15px;
+  bottom:25px;
+  position: fixed;
+}
+.single-mixtape-img {
+  left: 15px;
+  top: 30px;
+  position: fixed;
+  height: 275px;
+  width: 275px;
+}
+.links {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  font-size: 10px;
+}
+.issue-links {
+  position: fixed;
+  bottom: 11px;
+  left: 0px;
+}
+
+.mixtape-title {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 10px;
+}
+.mixtape-title a {
+  text-decoration: none;
+}
+.mixtape-title a:hover{
+  text-decoration: underline;
+}
+
+.mixtape-img {
+  /*float: left;*/
+  height: 220px;
+  width: 220px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.issue-thumb {
+  width: 275px;
+}
+.mixtape-img:hover{
+  opacity: .95;
+}
+.single-mixtape-img .mixtape-img:hover{
+  opacity: 1;
+}
+
+.mixtape-img:hover #mixtape-title{
+  display: block;
+}
+.mixtape-images{
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  float: left;
+}
+
+.mixtape-images-right{
+  top: 0px;
+  right: 0px;
+  width: 250px;
+  margin-right: -20px;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.mixtape-images-left{
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  /*margin-left: -20px;*/
+  float: left;
+  margin-bottom: 20px;
+}
+
+.issue-images-right{
+  top: 10px;
+  /*bottom: 20px;*/
+  right: 5px;
+  width: 300px;
+  margin-right: -20px;
+  float: right;
+  position: fixed;
+}
+
+.issue-image-left{
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  /*margin-right: -20px;*/
+  /*float: right;*/
+  position: fixed;
+  float: left;
+}
+
+.back-to{
+  top: 15px;
+  left: 13px;
+  position: fixed;
+  font-size: 10px;
+}
+.back-to a {
+  text-decoration: none;
+}
+.back-to a:hover {
+  text-decoration: underline;
 }
 
 /* click 'tracklist' to show tracklist */
@@ -109,6 +278,12 @@ main p { margin-bottom: 1em; }
   text-align: justify;
   font-size: 12px;
   line-height: 16px;
+}
+.text-content a {
+  text-decoration: none;
+}
+.text-content a:hover {
+  text-decoration: underline;
 }
 .block-quote {
   padding-left: 48px;
