@@ -21,10 +21,6 @@ def about():
 def mixtapes():
     return render_template("mixtapes.html")  
 
-# @app.route('/mixtapes/01')
-# def mixtape01():
-#     return render_template("01.html") 
-
 @app.route('/files')
 def files():
     return render_template("files.html") 
@@ -93,6 +89,93 @@ def mixtape01():
 def documnt1index():
 	return render_template("documnt1-index.html")
 
+@app.route('/documnt-wants-to-be-free')
+def documntwantstobefree():
+	return render_template("documnt-wants-to-be-free.html")
+
+@app.route('/concept-nr-05-music-as-organisatorial-principle')
+def conceptnr05():
+	return render_template("concept-nr-05-music-as-organisatorial-principle.html")
+
+@app.route('/how-to-do-things-with-docs')
+def howtodothingswithdocs():
+	return render_template("how-to-do-things-with-docs.html")
+
+@app.route('/gefühlt-aphrodite-mit-soße')
+def gefuehltaphroditemitsosse():
+	return render_template("gefühlt-aphrodite-mit-soße.html")
+
+@app.route('/your-poetry-reader')
+def yourpoetryreader():
+	return render_template("your-poetry-reader.html")
+
+@app.route('/untitled-half-man-half-beast')
+def halfmanhalfbeast():
+	return render_template("untitled-half-man-half-beast.html")
+
+@app.route('/ill-make-the-world-explode')
+def illmaketheworldexplode():
+	return render_template("ill-make-the-world-explode.html")
+
+@app.route('/3C-93-53-27-E4-E1-13-63-92-08-49-40-A4-E2-E4-35-E2-49-EF-2D-3D-E9-54-37-D3-C9-04-64-BF-3E-34')
+def holdhusuntitled():
+	return render_template("3C-93-53-27-E4-E1-13-63-92-08-49-40-A4-E2-E4-35-E2-49-EF-2D-3D-E9-54-37-D3-C9-04-64-BF-3E-34.html")
+
+@app.route('/how-we-became-posthuman')
+def howwebecameposthuman():
+	return render_template("how-we-became-posthuman.html")
+
+@app.route('/on-transmissions')
+def ontransmissions():
+	return render_template("on-transmissions.html")
+
+@app.route('/memorial-numerique')
+def memorialnumerique():
+	return render_template("memorial-numerique.html")
+
+# @app.route('/your-poetry-reader')
+# def yourpoetryreader():
+# 	return render_template("your-poetry-reader.html")
+
+@app.route('/flesh-of-words')
+def fleshofwords():
+	return render_template("flesh-of-words.html")
+
+@app.route('/berlin-boy')
+def berlinboy():
+	return render_template("berlin-boy.html")
+
+@app.route('/with-the-book-my-body')
+def withthebookmybody():
+	return render_template("with-the-book-my-body.html")
+
+@app.route('/hello-world-dinosaurs-after-apocalypse')
+def helloworlddinosaursafterapocalypse():
+	return render_template("hello-world-dinosaurs-after-apocalypse.html")
+
+@app.route('/mixed-messages')
+def mixedmessages():
+	return render_template("mixed-messages.html")
+
+@app.route('/et-in-arcadia-ego')
+def etinarcadiaego():
+	return render_template("et-in-arcadia-ego.html")
+
+@app.route('/tower-of-babel')
+def towerofbabel():
+	return render_template("tower-of-babel.html")
+
+@app.route('/an-exploration-of-verbivocovisual')
+def verbivocovisual():
+	return render_template("an-exploration-of-verbivocovisual.html")
+
+@app.route('/enchiridions')
+def enchiridions():
+	return render_template("enchiridions.html")
+
+@app.route('/antigone')
+def antigone():
+	return render_template("antigone.html")
 
 # @app.route('/demo')
 # def show_demo():
