@@ -7,6 +7,10 @@ body {
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
   color: white;
+  
+}
+body p {
+  font-size: 12px;
 }
 body a {
   color: white;
@@ -18,10 +22,53 @@ body a:hover {
 
 main p { margin-bottom: 1em; }
 
-.page_wrapper {
-  height: 99%;
-  width: 99%;
+.issue-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.back2index {
+  /*position: relative;*/
+}
+
+.bottom-line {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  border-top-style: solid;
+  border-top-color: #f5f5dc;
+  border-top-width: 1px;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+.top-line {
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 8px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
+.right-line {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 9px;
+  position: fixed;
+  z-index: 999;
+}
+
+.page_wrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
 }
 
 /* nav */
@@ -30,7 +77,7 @@ main p { margin-bottom: 1em; }
   position: fixed;
   right: 10px;
   bottom: 10px;
-  font-size: 10px;
+  font-size: 12px;
   z-index: 1000000;
 }
 .navigation-2 li {
@@ -76,19 +123,19 @@ main p { margin-bottom: 1em; }
   width: 320px;
   left: 420px;
   top: 10px;
-  font-size: 10px;
+  font-size: 12px;
   color: white;
   overflow: auto;
 }
 /* -- */
 .issue-text {
+  position: relative;
   font-size: 10px;
-  position: fixed;
-  width: 600px;
-  left: 420px;
-  top: 20px;
+  /*margin-left: 75%;*/
   color: white;
   overflow: auto;
+  /*width: 600px;*/
+  width: 66%;
 }
 
 .issue-text a{
@@ -98,66 +145,302 @@ main p { margin-bottom: 1em; }
   text-decoration: underline;
 }
 
-.index-text {
+.essay-text {
+  /*width: 580px;*/
+  /*max-width: 477px;*/
+  font-size: 14px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-top: 8px;
+  line-height: 18px;
+  /*line-height: 18px;*/
+}
+.essay-text p {
+  /*line-height: 20px;*/
+  line-height: 18px;
+  width: 477px;
+}
+.essay-text h1 {
+  font-size: 16px;
+}
+.essay-text img {
+  width: 477px;
+}
+.essay-text li {
+  font-size: 12px;
+  /*padding-left: 48px;*/
+  padding-left: 24px;
+}
+.poem-text {
+  width: 580px;
+  font-size: 14px;
+  margin-bottom: 60px;
+  margin-top: 8px;
+}
+.poem-text p {
+  line-height: 14px;
+}
+.subtext {
+  font-size: 12px;
+  line-height: 16px;
+}
+#tracklist {
   font-size: 10px;
-  position: relative;
-  width: 600px;
-  left: 415px;
+}
+.mixtape-content {
+  top: 0;
+  bottom: 0;
+  overflow-y: hidden;
+  margin-bottom: 40px;
+  margin-top: 8px;
+  left: -8%;
+  font-size: 14px;
+}
+.art-content {
+  top: 0;
+  bottom: 0;
+  overflow-y: hidden;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 100%;
+}
+.art-content img {
+  height: 90vh;
+  margin-bottom: 20px;
+
+}
+.art-content p {
+  line-height: 16px;
+  /*width: 380px;*/
+  width: 100%;
+}
+.art-content h1 {
+  font-weight: normal;
+  width: 380px;
+}
+
+.content-wrapper {
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  margin: 0px 0 0 33%;
+  /*padding: 0px 0 0 33%;*/
+  padding-top: 22px;
+  overflow-y: scroll;
   color: white;
   overflow: auto;
   float: left;
+  margin-bottom: 40px;
+  /*width: 66%;*/
+  width: 100%;
+}
+.content-wrapper h1 { font-size: 14px; margin-top: 0px; font-weight: normal; }
+
+.index-number {
+  position: fixed;
+  left: 25%;
+  top: 30px;
+  font-size: 14px;
+}
+
+/*.index-text {
+  font-size: 12px;
+  position: fixed;
+  width: 410px;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  margin-left: 20%;
+  overflow-y: scroll;
+  color: white;
+  overflow: auto;
+  float: left;
+  margin-bottom: 40px;
+}
+.index-text h1{
+  font-size: 14px;
 }
 .index-text a{
   text-decoration: none;
 }
 .index-text a:hover{
   text-decoration: underline;
+}*/
+
+.index-wrapper {
+  width: 40%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+.mixtape-index-wrapper {
+  width: 40%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: auto;
+  overflow: hidden;
+}
+
+.-mixtape-index-text-left {
+  font-size: 12px;
+  /*font-weight: lighter;*/
+  position: relative;
+  margin-top: -2px;
+  left: 2px;
+  right: 0;
+  color: white;
+  overflow: auto;
+  overflow-y: scroll;
+  float: left;
+}
+.index-text-left {
+  font-size: 12px;
+  /*font-weight: lighter;*/
+  position: relative;
+  margin-top: -2px;
+  left: 2px;
+  right: 0;
+  color: white;
+  overflow: auto;
+  overflow-y: scroll;
+  float: left;
+}
+.index-text-left a{
+  text-decoration: none;
+}
+
+.index-text-left a:hover{
+  text-decoration: underline;
+}
+
+.issue-page {
+  /*left: 0px;*/
+  left: 33%;
+  top: 20px;
+  /*width: 600px;*/
+  width: 66%;
+  position: relative;
+}
+.issue-page img {
+  left: 0;
+  top: 0;
+  position: fixed;
 }
 
 /* mixtapes */
-.tracklist {
-  font-size: 10px;
+
+.mixtape-page {
+  left: 33%;
+  top: 10px;
+  width: 800px;
   position: fixed;
-  width: 600px;
-  left: 320px;
-  top: 30px;
+}
+.mixtape-page h1 {
+  font-size: 14px;
+}
+.mixtape-player {
+  position: relative; 
+  height: 50px;
+}
+
+.tracklist {
+  font-size: 12px;
+  /*width: 600px;*/
   color: white;
   overflow: auto;
+  /*position: fixed;*/
+  /*top: 0;*/
+  left: 10px;
+  overflow: scroll;
+  padding-left: 30px;
+  /*margin-top: -53px;*/
+  margin-top: -15px;
+  margin-bottom: 50px;
+  width: 500px;
+
 }
+
+.mixtape-index{
+  position: relative;
+  top: 50px;
+  left: 60px;
+  width: 157px;
+  float: left;
+}
+.mixtape-index img:hover .mixtape-title{
+  opacity: 1;
+}
+.mixtape-thumb {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 10px;
+}
+
 .mixtapes {
   margin-left: 50px;
   margin-top: 80px;
   width: 700px;
 }
 .single-mixtape {
-  width: 97%;
-  left: 15px;
-  bottom:25px;
+  width: 99%;
+  left: 33%;
+  /*left: 25%;*/
+  bottom: 10%;
   position: fixed;
+  /*border-bottom: solid;*/
+  border-width: 1px;
+  border-color: white;
 }
 .single-mixtape-img {
-  left: 15px;
-  top: 30px;
+  right: 0;
+  top: 0;
+  z-index: 999;
   position: fixed;
+  /*height: 75vh;*/
+  /*width: 75vh;*/
   height: 275px;
   width: 275px;
+  opacity: .8;
 }
-.links {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  font-size: 10px;
+.single-mixtape-img:hover {opacity: 1;}
+
+.mixtape-img {
+  /*height: 100%;*/
+  /*width: 100%;*/
+  height: 40%;
+  /*right: 0;*/
+  /*top: 0;*/
+  float: left;
 }
-.issue-links {
+.mixtape-image {
+  top: 10px;
+  left: 10px;
   position: fixed;
-  bottom: 11px;
-  left: 0px;
+  width: 220px;
+  height: 220px;
+}
+
+
+.mixtape-thumb {
+  width: 166px;
+  height: 166px;
 }
 
 .mixtape-title {
-  margin-top: 0px;
+  margin-top: -5px;
   margin-bottom: 15px;
   font-size: 10px;
+  opacity: 0;
 }
 .mixtape-title a {
   text-decoration: none;
@@ -166,19 +449,18 @@ main p { margin-bottom: 1em; }
   text-decoration: underline;
 }
 
-.mixtape-img {
-  /*float: left;*/
-  height: 220px;
-  width: 220px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+
+.mixtape-block {
+  left: 415;
+  display: block;
 }
+
 .issue-thumb {
   width: 275px;
 }
-.mixtape-img:hover{
+/*.mixtape-img:hover{
   opacity: .95;
-}
+}*/
 .single-mixtape-img .mixtape-img:hover{
   opacity: 1;
 }
@@ -204,16 +486,15 @@ main p { margin-bottom: 1em; }
 
 .mixtape-images-left{
   top: 0px;
-  left: 0px;
   width: 250px;
-  /*margin-left: -20px;*/
   float: left;
   margin-bottom: 20px;
+  margin-left: 10%;
+  margin-top: 44px;
 }
 
 .issue-images-right{
   top: 10px;
-  /*bottom: 20px;*/
   right: 5px;
   width: 300px;
   margin-right: -20px;
@@ -225,42 +506,15 @@ main p { margin-bottom: 1em; }
   top: 0px;
   left: 0px;
   width: 400px;
-  /*margin-right: -20px;*/
-  /*float: right;*/
   position: fixed;
   float: left;
 }
 
-.back-to{
-  top: 15px;
-  left: 13px;
-  position: fixed;
-  font-size: 10px;
-}
-.back-to a {
-  text-decoration: none;
-}
-.back-to a:hover {
-  text-decoration: underline;
-}
-
-/* click 'tracklist' to show tracklist */
-.collapse{
-  cursor: pointer;
-  display: block;
-}
-.collapse:hover { text-decoration: underline; }
-.collapse + input{
-  display: none; /* hide the checkboxes */
-}
-.collapse + input + div{
-  display:none;
-}
-.collapse + input:checked + div{
-  display:block;
-}
-
 /* -- */
+
+.art-title {
+  font-weight: bold;
+}
 
 /* demo essay */
 .title {
@@ -278,6 +532,7 @@ main p { margin-bottom: 1em; }
   text-align: justify;
   font-size: 12px;
   line-height: 16px;
+  left: 33%;
 }
 .text-content a {
   text-decoration: none;
@@ -290,6 +545,21 @@ main p { margin-bottom: 1em; }
   text-align: justify;
   font-size: 12px;
   line-height: 12px;
+}
+.essay-quote {
+  padding-left: 48px;
+  /*text-align: justify;*/
+  font-size: 14px;
+  line-height: 14px;
+}
+.footnote {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 33%;
+  position: fixed;
+  font-size: 8px;
+  line-height: 8px;
 }
 .image {
   width: 92px;
@@ -306,10 +576,11 @@ main p { margin-bottom: 1em; }
   width: 100%;
 }
 .image-caption {
-  font-size: 9px;
-  line-height: 0;
-  font-weight: lighter;
-  font-style: italic;
+  font-size: 8px;
+  line-height: 8px;
+  /*line-height: 0;*/
+  /*font-weight: lighter;*/
+  /*font-style: italic;*/
 }
 .essay-wrapper {
   width: 95%;
