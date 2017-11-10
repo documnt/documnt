@@ -25,6 +25,10 @@ def mixtapes():
 def files():
     return render_template("files.html") 
 
+@app.route('/mixtape16')
+def mixtape16():
+	return render_template("mixtape16.html")
+
 @app.route('/mixtape15')
 def mixtape15():
 	return render_template("mixtape15.html")
@@ -133,10 +137,6 @@ def ontransmissions():
 def memorialnumerique():
 	return render_template("memorial-numerique.html")
 
-# @app.route('/your-poetry-reader')
-# def yourpoetryreader():
-# 	return render_template("your-poetry-reader.html")
-
 @app.route('/flesh-of-words')
 def fleshofwords():
 	return render_template("flesh-of-words.html")
@@ -165,9 +165,9 @@ def etinarcadiaego():
 def towerofbabel():
 	return render_template("tower-of-babel.html")
 
-@app.route('/an-exploration-of-verbivocovisual')
+@app.route('/an-exploration-of-verbivocovisual-borders-and-margins')
 def verbivocovisual():
-	return render_template("an-exploration-of-verbivocovisual.html")
+	return render_template("an-exploration-of-verbivocovisual-borders-and-margins.html")
 
 @app.route('/enchiridions')
 def enchiridions():
@@ -176,6 +176,14 @@ def enchiridions():
 @app.route('/antigone')
 def antigone():
 	return render_template("antigone.html")
+
+@app.route('/ana-under-god-2')
+def anaundergod2():
+	return render_template("ana-under-god-2.html")
+
+@app.route('/giant-sad-steps')
+def giantsadsteps():
+	return render_template("giant-sad-steps.html")
 
 # @app.route('/demo')
 # def show_demo():
