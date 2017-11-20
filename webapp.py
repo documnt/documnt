@@ -173,6 +173,10 @@ def verbivocovisual():
 def enchiridions():
 	return render_template("enchiridions.html")
 
+@app.route('/documnt2')
+def documnt2():
+	return render_template("documnt2.html")
+
 @app.route('/antigone')
 def antigone():
 	return render_template("antigone.html")
@@ -185,6 +189,9 @@ def anaundergod2():
 def giantsadsteps():
 	return render_template("giant-sad-steps.html")
 
+@app.route('/food-order')
+def foodorder():
+	return render_template("food-order.html")
 # @app.route('/demo')
 # def show_demo():
 #     return render_template("demo.html")
