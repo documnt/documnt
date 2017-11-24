@@ -1,39 +1,70 @@
 <head>
     <title>DOCUMNT MIXTAPE 10</title>
+    <style>
+        .index-wrapper { 
+            display: none;
+        }
+        .index-text-left {
+            display: none;
+        }
+    </style>
 </head>
 
 {% extends "base.html" %}
 {% block content %}
 
-<div class="single-mixtape-img">
-	<a href="https://soundcloud.com/documnt/mixtape-10-anna-adams" target="_blank"><img class="mixtape-img" src="/static/mixtape10.jpg"></a>
-	<p class="mixtape-title">MIXTAPE 10: ANNA ADAMS<br><br><a href="/mixtapes">< back to mixtapes</a></p>
+<!-- <div class="index-number">10</div> -->
+
+<div class="mixtape-index-wrapper">
+    <div class="mixtape-index-text-left" style="font-size: 12px; padding-top: 10px">
+        <br><br><br>
+        <p>MIXTAPE 16: <a href="/mixtape16">レイン</a></p>
+        <p>MIXTAPE 15: <a href="/mixtape15">KL.NE</a></p>
+        <p>MIXTAPE 14: <a href="/mixtape14">WUNDERWAFFEL</a></p>
+        <p>MIXTAPE 13: <a href="/mixtape13">ZOND</a></p>
+        <p>MIXTAPE 12: <a href="/mixtape12">MXG</a></p>
+        <p>MIXTAPE 11: <a href="/mixtape11">LORD BYRON STYROPOR</a></p>
+        <p>MIXTAPE 10: <a href="/mixtape10">ANNA ADAMS</a></p>
+        <p>MIXTAPE 09: <a href="/mixtape09">ARTETETRA RECORDS</a></p>
+        <p>MIXTAPE 08: <a href="/mixtape08">TRAGEDIJA U STEGLITZU</a></p>
+        <p>MIXTAPE 07: <a href="/mixtape07">PAUL SEIDLER</a></p>
+        <p>MIXTAPE 06: <a href="/mixtape06">BEN K.O.</a></p>
+        <p>MIXTAPE 05: <a href="/mixtape05">KURORT SPANDAU</a></p>
+        <p>MIXTAPE 04: <a href="/mixtape04">SHŌ</a></p>
+        <p>MIXTAPE 03: <a href="/mixtape03">HEALTH</a></p>
+        <p>MIXTAPE 02: <a href="/mixtape02">CLAIRE D.</a></p>
+        <p>MIXTAPE 01: <a href="/mixtape01">SINOSC</a></p>
+    </div>
 </div>
 
+<div class="content-wrapper">
+    <div class="art-content">
+            <a href="https://soundcloud.com/documnt/mixtape-10-anna-adams" target="_blank"><img class="mixtape-img" src="/static/mixtape10.jpg"></a>
+            <div class="tracklist">
+                <p>01. Nthng: In My Dreams (Lobster Theremin, 2016)<br>
+                    02. Günter Karpa: Wunderland bei Nacht (33 rpm) (Amiga, 1952)<br>
+                    03. Füxa: Dream (Don't Give Up) (Emotional Response, 2014)<br>
+                    04. SHDW & Obscure Shape: Die Macht des Schicksals (From Another Mind, 2016)<br>
+                    05. Daze: Leisure Complex (Unknown To The Unknown, 2016)<br>
+                    06. Gianluca Petrella: 103 (electronique.it, 2015)<br>
+                    07. Benedikt Frey: Portal (MRT, 2015)<br>
+                    08. Cornflakes 808: Evil House (Ghost Track) (J.A.M. Traxx, 2013)<br>
+                    09. Gina X Performance: Hypnosis / Hypnose (EMI, 1981)<br>
+                    10. Alchemy Of The 20th Century: 1.-3.-10.1996 (Bawler Productions, 1997)<br>
+                    11. Rattler Proxy: McReady's Blues (Lurid, 2014)<br>
+                    12. Mistress Mix And Psychic TV: Je T'aime (Menstrual Mix) (Temple Records, 1989)<br>
+                    13. Visonia: The Amethyst City (Electronic Emergencies, 2016)<br>
+                    14. Bestial Mouths: Earth (Greenlander Remix) (Clan Destine, 2014)<br>
+                    15. Zwischenfall: Flucht '84 (33 rpm) (1984/ Dark Entries, 2016)<br>
+                    16. Bestial Mouths: Movement (Dalhous Remix) (Clan Destine, 2014)
+                </p>
+            </div>
+    </div>
+</div>
 
 <div class="single-mixtape">
-	<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/308014238&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>
-</div>
-
-<div class="tracklist">
-	<p>Tracklist:</p>
-	<p>01. Nthng: In My Dreams (Lobster Theremin, 2016)<br>
-        02. Günter Karpa: Wunderland bei Nacht (33 rpm) (Amiga, 1952)<br>
-        03. Füxa: Dream (Don't Give Up) (Emotional Response, 2014)<br>
-        04. SHDW & Obscure Shape: Die Macht des Schicksals (From Another Mind, 2016)<br>
-        05. Daze: Leisure Complex (Unknown To The Unknown, 2016)<br>
-        06. Gianluca Petrella: 103 (electronique.it, 2015)<br>
-        07. Benedikt Frey: Portal (MRT, 2015)<br>
-        08. Cornflakes 808: Evil House (Ghost Track) (J.A.M. Traxx, 2013)<br>
-        09. Gina X Performance: Hypnosis / Hypnose (EMI, 1981)<br>
-        10. Alchemy Of The 20th Century: 1.-3.-10.1996 (Bawler Productions, 1997)<br>
-        11. Rattler Proxy: McReady's Blues (Lurid, 2014)<br>
-        12. Mistress Mix And Psychic TV: Je T'aime (Menstrual Mix) (Temple Records, 1989)<br>
-        13. Visonia: The Amethyst City (Electronic Emergencies, 2016)<br>
-        14. Bestial Mouths: Earth (Greenlander Remix) (Clan Destine, 2014)<br>
-        15. Zwischenfall: Flucht '84 (33 rpm) (1984/ Dark Entries, 2016)<br>
-        16. Bestial Mouths: Movement (Dalhous Remix) (Clan Destine, 2014)
-    </p>
+    <iframe width="66%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/308014238&amp;color=%23000000&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+	<!-- <iframe width="66%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/308014238&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe> -->
 </div>
 
 {% endblock %}

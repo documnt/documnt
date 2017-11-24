@@ -1,47 +1,89 @@
 <head>
     <title>DOCUMNT MIXTAPE 15</title>
+    <style>
+        .index-wrapper { 
+            display: none;
+        }
+        .index-text-left {
+            display: none;
+        }
+    </style>
 </head>
 
 {% extends "base.html" %}
 {% block content %}
 
-<div class="single-mixtape-img">
+<!-- <div class="index-number">15</div> -->
+
+<div class="mixtape-index-wrapper">
+    <div class="mixtape-index-text-left" style="font-size: 12px; padding-top: 10px">
+        <br><br><br>
+        <p>MIXTAPE 16: <a href="/mixtape16">レイン</a></p>
+        <p>MIXTAPE 15: <a href="/mixtape15">KL.NE</a></p>
+        <p>MIXTAPE 14: <a href="/mixtape14">WUNDERWAFFEL</a></p>
+        <p>MIXTAPE 13: <a href="/mixtape13">ZOND</a></p>
+        <p>MIXTAPE 12: <a href="/mixtape12">MXG</a></p>
+        <p>MIXTAPE 11: <a href="/mixtape11">LORD BYRON STYROPOR</a></p>
+        <p>MIXTAPE 10: <a href="/mixtape10">ANNA ADAMS</a></p>
+        <p>MIXTAPE 09: <a href="/mixtape09">ARTETETRA RECORDS</a></p>
+        <p>MIXTAPE 08: <a href="/mixtape08">TRAGEDIJA U STEGLITZU</a></p>
+        <p>MIXTAPE 07: <a href="/mixtape07">PAUL SEIDLER</a></p>
+        <p>MIXTAPE 06: <a href="/mixtape06">BEN K.O.</a></p>
+        <p>MIXTAPE 05: <a href="/mixtape05">KURORT SPANDAU</a></p>
+        <p>MIXTAPE 04: <a href="/mixtape04">SHŌ</a></p>
+        <p>MIXTAPE 03: <a href="/mixtape03">HEALTH</a></p>
+        <p>MIXTAPE 02: <a href="/mixtape02">CLAIRE D.</a></p>
+        <p>MIXTAPE 01: <a href="/mixtape01">SINOSC</a></p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="art-content">
+        <!-- <div> -->
+            <a href="https://soundcloud.com/documnt/mixtape-15-klne" target="_blank"><img class="mixtape-img" src="/static/mixtape15.jpg"></a>
+            <div class="tracklist">
+                <!-- <p>MIXTAPE 15: KL.NE</p> -->
+                <!-- <p>Tracklist:</p> -->
+                <p>1. INRA - A Photo Of A Sun Lit Forest (Edit) [Unreleased]<br>
+                    2. INRA – At Least Newton Was Right [Pinkbox Teleport]<br>
+                    3. Sam Kidel - Disruptive Muzak [The Death Of Rave‎]<br>
+                    4. Zuli – Dr. Beckett [UIQ]<br>
+                    5. Kl.ne – The Clouds Are Lying [Unreleased, MSE]<br>
+                    6. Orson – Fabrik [Version]<br>
+                    7. aphtc – Under Glaring Silhouettes [Unreleased, MSE]<br>
+                    8. James Tenney – Saxony [OO Discs]<br>
+                    9. Kuedo - Breaking the Surface [Planet Mu] <br>
+                    10. INRA - A Tired Lover with 760 Facebook Friends [Pinkbox Teleport] <br>
+                    11. Killawatt (Ossia Remix) - Livewire [Inverted Audio‎]<br>
+                    12. Zomby - Daft Punk Rave [Werkdiscs‎]<br>
+                    13. DVA – Dafuq [Hyperdub] <br>
+                    14. Jlin – Nyakinyua_Risa [Planet Mu] <br>
+                    15. Chino Amobi – Kollaps [Non Worldwide]<br>
+                    16. Parris - Your Kiss is Sour [Hemlock] <br>
+                    17. Lurka – Return [Boxclever]<br>
+                    18. Kl.ne – Entropy [Unreleased, MSE]<br>
+                    19. aphtc – Schemes Disappearing Down The Stairwell [Unreleased, MSE]<br>
+                    20. Supermarket - Rock the Boat [Young Echo]<br>
+                    21. Zuli – Robotic Handshakes [UIQ]<br>
+                    22. CRESC – Decay [Unreleased, MSE]<br>
+                    23. Hype Williams - Your Girl Smells Like Chung When She Wears Dior [Hippos in Tanks]<br>
+                    24. Burial – Subtemple [Hyperdub] <br>
+                    25. aphtc – Requiem for Caleb [Nord]<br>
+                </p>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="single-mixtape-img">
 	<a href="https://soundcloud.com/documnt/mixtape-15-klne" target="_blank"><img class="mixtape-img" src="/static/mixtape15.jpg"></a>
 	<p class="mixtape-title">MIXTAPE 15: Kl.ne<br><br><a href="/mixtapes">< back to mixtapes</a></p>
-</div>
+</div> -->
 
 <div class="single-mixtape">
-	<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331320434&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>
+    <iframe width="66%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331320434&amp;color=%23161616&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+	<!-- <iframe width="66%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331320434&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe> -->
 </div>
 
-<div class="tracklist">
-	<p>Tracklist:</p>
-    <p>1. INRA - A Photo Of A Sun Lit Forest (Edit) [Unreleased]<br>
-        2. INRA – At Least Newton Was Right [Pinkbox Teleport]<br>
-        3. Sam Kidel - Disruptive Muzak [The Death Of Rave‎]<br>
-        4. Zuli – Dr. Beckett [UIQ]<br>
-        5. Kl.ne – The Clouds Are Lying [Unreleased, MSE]<br>
-        6. Orson – Fabrik [Version]<br>
-        7. aphtc – Under Glaring Silhouettes [Unreleased, MSE]<br>
-        8. James Tenney – Saxony [OO Discs]<br>
-        9. Kuedo - Breaking the Surface [Planet Mu] <br>
-        10. INRA - A Tired Lover with 760 Facebook Friends [Pinkbox Teleport] <br>
-        11. Killawatt (Ossia Remix) - Livewire [Inverted Audio‎]<br>
-        12. Zomby - Daft Punk Rave [Werkdiscs‎]<br>
-        13. DVA – Dafuq [Hyperdub] <br>
-        14. Jlin – Nyakinyua_Risa [Planet Mu] <br>
-        15. Chino Amobi – Kollaps [Non Worldwide]<br>
-        16. Parris - Your Kiss is Sour [Hemlock] <br>
-        17. Lurka – Return [Boxclever]<br>
-        18. Kl.ne – Entropy [Unreleased, MSE]<br>
-        19. aphtc – Schemes Disappearing Down The Stairwell [Unreleased, MSE]<br>
-        20. Supermarket - Rock the Boat [Young Echo]<br>
-        21. Zuli – Robotic Handshakes [UIQ]<br>
-        22. CRESC – Decay [Unreleased, MSE]<br>
-        23. Hype Williams - Your Girl Smells Like Chung When She Wears Dior [Hippos in Tanks]<br>
-        24. Burial – Subtemple [Hyperdub] <br>
-        25. aphtc – Requiem for Caleb [Nord]<br>
-    </p>
-</div>
+
 
 {% endblock %}

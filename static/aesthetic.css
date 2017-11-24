@@ -3,17 +3,26 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  background-color: rgba(0, 0, 0, 0.9);
+  /*background-color: rgba(0, 0, 0, 0.9);*/
+  /*background-color: brown;*/
+  /*background-color: white;*/
+  /*background-color: #F5F5F5;*/
+  background-color: rgba(245,245,245,0.5);
   font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
+  /*font-family: "Courier New", Courier, monospace;*/
+  font-family: arial;
+  /*font-family: 'Droid Sans', monospace; */
+  /*font-family: monospace;*/
+  /*color: white;*/
+  color: black;
   
 }
 body p {
   font-size: 12px;
+  /*color: black;*/
 }
 body a {
-  color: white;
+  /*color: white;*/
   text-decoration: none;
 }
 body a:hover {
@@ -21,6 +30,20 @@ body a:hover {
 }
 
 main p { margin-bottom: 1em; }
+
+.documnt2 {
+  line-height: 12px;
+}
+
+.about-text-1 {
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  position: fixed;
+  width: 214px;
+  /*font-size: 14px;*/
+}
 
 .issue-image {
   position: fixed;
@@ -86,7 +109,7 @@ main p { margin-bottom: 1em; }
 }
 .navigation-2 a {
   text-decoration: none;
-  color: white;
+  /*color: white;*/
 }
 .navigation-2 a:hover { text-decoration: underline; }
 /* -- */
@@ -100,10 +123,17 @@ main p { margin-bottom: 1em; }
   font-size: 10px;
 }
 .contact_column {
-  position: fixed;
+  position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    /*width: 100px;*/
+    height: 100px;
+  /*position: fixed;
   bottom: 30px;
-  left: 215px;
-  font-size: 10px;
+  left: 215px;*/
+  font-size: 14px;
 }
 .contact_column a {
   text-decoration: none;
@@ -111,6 +141,10 @@ main p { margin-bottom: 1em; }
 .contact_column a:hover {
   text-decoration: underline;
 }
+.contact_column p {
+  font-size: 14px;
+}
+
 .homepage_image {
   position: fixed;
   float: left;
@@ -124,7 +158,7 @@ main p { margin-bottom: 1em; }
   left: 420px;
   top: 10px;
   font-size: 12px;
-  color: white;
+  /*color: white;*/
   overflow: auto;
 }
 /* -- */
@@ -132,7 +166,7 @@ main p { margin-bottom: 1em; }
   position: relative;
   font-size: 10px;
   /*margin-left: 75%;*/
-  color: white;
+  /*color: white;*/
   overflow: auto;
   /*width: 600px;*/
   width: 66%;
@@ -148,17 +182,30 @@ main p { margin-bottom: 1em; }
 .essay-text {
   /*width: 580px;*/
   /*max-width: 477px;*/
+  overflow: none;
   font-size: 14px;
   margin-bottom: 60px;
-  margin-top: 20px;
-  margin-top: 8px;
+  /*margin-top: 20px;*/
+  /*margin-top: 8px;*/
   line-height: 18px;
   /*line-height: 18px;*/
+  width: 477px;
 }
 .essay-text p {
-  /*line-height: 20px;*/
-  line-height: 18px;
-  width: 477px;
+  line-height: 20px;
+  font-size: 14px;
+  /*line-height: 18px;*/
+  /*width: 477px;*/
+}
+.essay-text p.image-caption {
+  line-height: 10px;
+  font-size: 8px;
+  margin-bottom: 20px;
+}
+.essay-text p.essay-quote {
+  /*line-height: 12px;*/
+  line-height: 16px;
+  font-size: 14px;
 }
 .essay-text h1 {
   font-size: 16px;
@@ -171,14 +218,30 @@ main p { margin-bottom: 1em; }
   /*padding-left: 48px;*/
   padding-left: 24px;
 }
+.essay-quote {
+  /*background: pink;*/
+  margin-left: 48px;
+  /*padding-right: -48px;*/
+  /*text-align: justify;*/
+  
+  width: 429px;
+
+}
+
+.citation p {
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .poem-text {
   width: 580px;
   font-size: 14px;
   margin-bottom: 60px;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 .poem-text p {
-  line-height: 14px;
+  line-height: 16px;
+  font-size: 14px;
 }
 .subtext {
   font-size: 12px;
@@ -200,20 +263,28 @@ main p { margin-bottom: 1em; }
   top: 0;
   bottom: 0;
   overflow-y: hidden;
-  margin-bottom: 40px;
-  margin-top: 10px;
+  margin-bottom: 60px;
+  /*margin-top: 10px;*/
   font-size: 14px;
   width: 100%;
 }
 .art-content img {
-  height: 90vh;
+  /*height: 90vh;*/
   margin-bottom: 20px;
+  width: 477px;
 
+}
+.art-content img.mixtape-img {
+  /*width: 298px;*/
+  /*height: 298px;*/
+  width: 200px;
+  height: 200px;
+  /*position: fixed;*/
 }
 .art-content p {
   line-height: 16px;
   /*width: 380px;*/
-  width: 100%;
+  width: 477px;
 }
 .art-content h1 {
   font-weight: normal;
@@ -227,11 +298,11 @@ main p { margin-bottom: 1em; }
   top: 0;
   right: 0;
   height: 100vh;
-  margin: 0px 0 0 33%;
+  margin: 10px 0 0 33%;
   /*padding: 0px 0 0 33%;*/
   padding-top: 22px;
   overflow-y: scroll;
-  color: white;
+  /*color: white;*/
   overflow: auto;
   float: left;
   margin-bottom: 40px;
@@ -243,8 +314,8 @@ main p { margin-bottom: 1em; }
 .index-number {
   position: fixed;
   left: 25%;
-  top: 30px;
-  font-size: 14px;
+  top: 36px;
+  font-size: 8px;
 }
 
 /*.index-text {
@@ -298,19 +369,20 @@ main p { margin-bottom: 1em; }
   margin-top: -2px;
   left: 2px;
   right: 0;
-  color: white;
+  /*color: white;*/
   overflow: auto;
   overflow-y: scroll;
   float: left;
 }
 .index-text-left {
   font-size: 12px;
+  font-weight: 100;
   /*font-weight: lighter;*/
   position: relative;
-  margin-top: -2px;
+  margin-top: -4px;
   left: 2px;
   right: 0;
-  color: white;
+  /*color: white;*/
   overflow: auto;
   overflow-y: scroll;
   float: left;
@@ -322,7 +394,9 @@ main p { margin-bottom: 1em; }
 .index-text-left a:hover{
   text-decoration: underline;
 }
-
+/*.index-text-left p {
+  font-weight: lighter;
+}*/
 .issue-page {
   /*left: 0px;*/
   left: 33%;
@@ -356,7 +430,7 @@ main p { margin-bottom: 1em; }
 .tracklist {
   font-size: 12px;
   /*width: 600px;*/
-  color: white;
+  /*color: white;*/
   overflow: auto;
   /*position: fixed;*/
   /*top: 0;*/
@@ -365,7 +439,7 @@ main p { margin-bottom: 1em; }
   padding-left: 30px;
   /*margin-top: -53px;*/
   margin-top: -15px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   width: 500px;
 
 }
@@ -395,11 +469,14 @@ main p { margin-bottom: 1em; }
   width: 99%;
   left: 33%;
   /*left: 25%;*/
-  bottom: 10%;
+  bottom: 8%;
   position: fixed;
   /*border-bottom: solid;*/
   border-width: 1px;
-  border-color: white;
+  /*border-color: white;*/
+}
+.mixtape-img {
+  float: left;
 }
 .single-mixtape-img {
   right: 0;
@@ -414,14 +491,7 @@ main p { margin-bottom: 1em; }
 }
 .single-mixtape-img:hover {opacity: 1;}
 
-.mixtape-img {
-  /*height: 100%;*/
-  /*width: 100%;*/
-  height: 40%;
-  /*right: 0;*/
-  /*top: 0;*/
-  float: left;
-}
+
 .mixtape-image {
   top: 10px;
   left: 10px;
@@ -546,12 +616,11 @@ main p { margin-bottom: 1em; }
   font-size: 12px;
   line-height: 12px;
 }
-.essay-quote {
-  padding-left: 48px;
-  /*text-align: justify;*/
-  font-size: 14px;
-  line-height: 14px;
+
+.essay-text p.footnote {
+  font-size: 8px;
 }
+
 .footnote {
   bottom: 0;
   left: 0;

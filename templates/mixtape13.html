@@ -1,35 +1,65 @@
 <head>
     <title>DOCUMNT MIXTAPE 13</title>
+    <style>
+        .index-wrapper { 
+            display: none;
+        }
+        .index-text-left {
+            display: none;
+        }
+    </style>
 </head>
 
 {% extends "base.html" %}
 {% block content %}
 
-<div class="single-mixtape-img">
-	<a href="https://soundcloud.com/documnt/mixtape-13-zond" target="_blank"><img class="mixtape-img" src="/static/mixtape13.jpg"></a>
-	<p class="mixtape-title">MIXTAPE 13: ZOND<br><br><a href="/mixtapes">< back to mixtapes</a></p>
+<!-- <div class="index-number">13</div> -->
+
+<div class="mixtape-index-wrapper">
+    <div class="mixtape-index-text-left" style="font-size: 12px; padding-top: 10px">
+        <br><br><br>
+        <p>MIXTAPE 16: <a href="/mixtape16">レイン</a></p>
+        <p>MIXTAPE 15: <a href="/mixtape15">KL.NE</a></p>
+        <p>MIXTAPE 14: <a href="/mixtape14">WUNDERWAFFEL</a></p>
+        <p>MIXTAPE 13: <a href="/mixtape13">ZOND</a></p>
+        <p>MIXTAPE 12: <a href="/mixtape12">MXG</a></p>
+        <p>MIXTAPE 11: <a href="/mixtape11">LORD BYRON STYROPOR</a></p>
+        <p>MIXTAPE 10: <a href="/mixtape10">ANNA ADAMS</a></p>
+        <p>MIXTAPE 09: <a href="/mixtape09">ARTETETRA RECORDS</a></p>
+        <p>MIXTAPE 08: <a href="/mixtape08">TRAGEDIJA U STEGLITZU</a></p>
+        <p>MIXTAPE 07: <a href="/mixtape07">PAUL SEIDLER</a></p>
+        <p>MIXTAPE 06: <a href="/mixtape06">BEN K.O.</a></p>
+        <p>MIXTAPE 05: <a href="/mixtape05">KURORT SPANDAU</a></p>
+        <p>MIXTAPE 04: <a href="/mixtape04">SHŌ</a></p>
+        <p>MIXTAPE 03: <a href="/mixtape03">HEALTH</a></p>
+        <p>MIXTAPE 02: <a href="/mixtape02">CLAIRE D.</a></p>
+        <p>MIXTAPE 01: <a href="/mixtape01">SINOSC</a></p>
+    </div>
 </div>
 
-
+<div class="content-wrapper">
+    <div class="art-content">
+            <a href="https://soundcloud.com/documnt/mixtape-13-zond" target="_blank"><img class="mixtape-img" src="/static/mixtape13.jpg"></a>
+            <div class="tracklist">
+                <p style="width: 500px">1. Thomas Köner: Nunatak<br>
+                    2. Gondwana: A Gospel Of Dirt<br>
+                    3. Valerio Tricoli: In The Eye Of The Cyclone <br>
+                    4. Scheich in China: Untitled<br>
+                    5. Kassel Jaeger & Giuseppe Ielasi: Greyscale<br>
+                    6. Spoils & Relics: Sins of Omission<br>
+                    7. Mika Vainio & Sean Booth: Mika & Kouhei 11th June 2008<br>
+                    8. Thomas Ankersmit: Untitled<br>
+                    9. Mika Vainio: Voisin Olla Vanha Mies Huoltamon Pihassa<br>
+                    10. Scott Gibbons & Lilith: Stone: Reciprocal<br>
+                    11. Ditterich von Euler-Donnersperg: Die Truhe Im Fluss #4<br>
+                    12. Body Sculptures: Feet Into Soil
+                </p>
+            </div>
+    </div>
+</div>
 <div class="single-mixtape">
-	<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323027924&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>
-</div>
-
-<div class="tracklist">
-	<p>Tracklist:</p>
-	<p>1. Thomas Köner: Nunatak<br>
-        2. Gondwana: A Gospel Of Dirt<br>
-        3. Valerio Tricoli: In The Eye Of The Cyclone <br>
-        4. Scheich in China: Untitled<br>
-        5. Kassel Jaeger & Giuseppe Ielasi: Greyscale<br>
-        6. Spoils & Relics: Sins of Omission<br>
-        7. Mika Vainio & Sean Booth: Mika & Kouhei 11th June 2008<br>
-        8. Thomas Ankersmit: Untitled<br>
-        9. Mika Vainio: Voisin Olla Vanha Mies Huoltamon Pihassa<br>
-        10. Scott Gibbons & Lilith: Stone: Reciprocal<br>
-        11. Ditterich von Euler-Donnersperg: Die Truhe Im Fluss #4<br>
-        12. Body Sculptures: Feet Into Soil
-    </p>
+    <iframe width="66%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323027924&amp;color=%233f3f3f&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+    <!-- <iframe width="66%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323027924&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe> -->
 </div>
 
 {% endblock %}

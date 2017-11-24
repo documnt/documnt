@@ -1,22 +1,86 @@
 <head>
     <title>DOCUMNT MIXTAPE 01</title>
+    <style>
+        .index-wrapper { 
+            display: none;
+        }
+        .index-text-left {
+            display: none;
+        }
+    </style>
 </head>
 
 {% extends "base.html" %}
 {% block content %}
 
-<div class="single-mixtape-img">
-	<a href="https://soundcloud.com/documnt/mixtape-01-sinosc" target="_blank"><img class="mixtape-img" src="/static/mixtape01.jpg"></a>
-	<p class="mixtape-title">MIXTAPE 01: SINOSC<br><br><a href="/mixtapes">< back to mixtapes</a></p>
+
+<!-- <div class="index-number">01</div> -->
+
+<div class="mixtape-index-wrapper">
+    <div class="mixtape-index-text-left" style="font-size: 12px; padding-top: 10px">
+        <br><br><br>
+        <p>MIXTAPE 16: <a href="/mixtape16">レイン</a></p>
+        <p>MIXTAPE 15: <a href="/mixtape15">KL.NE</a></p>
+        <p>MIXTAPE 14: <a href="/mixtape14">WUNDERWAFFEL</a></p>
+        <p>MIXTAPE 13: <a href="/mixtape13">ZOND</a></p>
+        <p>MIXTAPE 12: <a href="/mixtape12">MXG</a></p>
+        <p>MIXTAPE 11: <a href="/mixtape11">LORD BYRON STYROPOR</a></p>
+        <p>MIXTAPE 10: <a href="/mixtape10">ANNA ADAMS</a></p>
+        <p>MIXTAPE 09: <a href="/mixtape09">ARTETETRA RECORDS</a></p>
+        <p>MIXTAPE 08: <a href="/mixtape08">TRAGEDIJA U STEGLITZU</a></p>
+        <p>MIXTAPE 07: <a href="/mixtape07">PAUL SEIDLER</a></p>
+        <p>MIXTAPE 06: <a href="/mixtape06">BEN K.O.</a></p>
+        <p>MIXTAPE 05: <a href="/mixtape05">KURORT SPANDAU</a></p>
+        <p>MIXTAPE 04: <a href="/mixtape04">SHŌ</a></p>
+        <p>MIXTAPE 03: <a href="/mixtape03">HEALTH</a></p>
+        <p>MIXTAPE 02: <a href="/mixtape02">CLAIRE D.</a></p>
+        <p>MIXTAPE 01: <a href="/mixtape01">SINOSC</a></p>
+    </div>
 </div>
 
-
+<div class="content-wrapper">
+    <div class="art-content">
+            <a href="https://soundcloud.com/documnt/mixtape-01-sinosc" target="_blank"><img class="mixtape-img" src="/static/mixtape01.jpg"></a>
+            <div class="tracklist">
+                <p>1. Alinoe: II (Outro)<br>
+				    2. Kiyoko: Track 2<br>
+				    3. Ametsub: Repeatedly (Video Edit)<br>
+				    4. We Will Fail: Verstörung v.07<br>
+				    5. Klive: Sweaty Psalms<br>
+				    6. Farben: Loop.Exposure<br>
+				    7. Rechenzentrum: IBM<br>
+				    8. Carter Tutti Void: f = (2.7)<br>
+				    9. Function: Untitled<br>
+				    10. Donnacha Costello: Cocoa A<br>
+				    11. Farben: As Long As There’s Love Around<br>
+				    12. SND: Circa 1509<br>
+				    13. Gramm: Legends / Nugroove™ <br>
+			        14. Ursula Bogner: Begleitung für Tuba
+			    </p>
+            </div>
+    </div>
+</div>
 <div class="single-mixtape">
-	<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>
+	<iframe width="66%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=%23000000&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+	<!-- <iframe width="66%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe> -->
 </div>
+<!-- 
+<div class="index-number">
+    <p><a href="/mixtapes">back <br>to<br> mixtapes</a></p>
+</div> -->
 
-<div class="tracklist">
-	<p>Tracklist:</p>
+<!-- <div class="content-wrapper">
+    <div class="mixtape-content">
+	    <br>
+	    <br>
+	    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+	    
+    </div>
+</div> -->
+
+<!-- <div class="mixtape-page">
+	<br>
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
 	<p>1. Alinoe: II (Outro)<br>
 	    2. Kiyoko: Track 2<br>
 	    3. Ametsub: Repeatedly (Video Edit)<br>
@@ -31,7 +95,152 @@
 	    12. SND: Circa 1509<br>
 	    13. Gramm: Legends / Nugroove™ <br>
         14. Ursula Bogner: Begleitung für Tuba
-    </p>
-</div>
+    </p> -->
+	<!-- <div class="mixtape-page-img">
+		<a href="https://soundcloud.com/documnt/mixtape-01-sinosc" target="_blank"><img class="mixtape-img" src="/static/mixtape01.jpg"></a>
+	</div>
+	<br>
+	<br>
+	<br> -->
+	<!-- <div class="mixtape-player">
+		<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>
+	</div> --> 
+	<!-- <!-- <div class="tracklist">
+		<!-- <p>Tracklist:</p> -->
+		<!-- <br>
+		<p>1. Alinoe: II (Outro)<br>
+		    2. Kiyoko: Track 2<br>
+		    3. Ametsub: Repeatedly (Video Edit)<br>
+		    4. We Will Fail: Verstörung v.07<br>
+		    5. Klive: Sweaty Psalms<br>
+		    6. Farben: Loop.Exposure<br>
+		    7. Rechenzentrum: IBM<br>
+		    8. Carter Tutti Void: f = (2.7)<br>
+		    9. Function: Untitled<br>
+		    10. Donnacha Costello: Cocoa A<br>
+		    11. Farben: As Long As There’s Love Around<br>
+		    12. SND: Circa 1509<br>
+		    13. Gramm: Legends / Nugroove™ <br>
+	        14. Ursula Bogner: Begleitung für Tuba
+	    </p>
+	    <a href="/mixtapes">< back to mixtapes</a>
+	</div> -->
+<!-- </div> -->
+<!-- 
+<div class="back-to" style="top:0px;">
+	<p>mixtapes</p>
+</div> -->
 
+<!-- <div class="mixtape-index">
+
+        <a href="/mixtape15"><img class="mixtape-thumb" src="/static/mixtape15.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape15">MIXTAPE 15: Kl.ne</a></p>
+
+        <a href="/mixtape14"><img class="mixtape-thumb" src="/static/mixtape14.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape14">MIXTAPE 14: WUNDERWAFFEL</a></p>
+
+        <a href="/mixtape13"><img class="mixtape-thumb" src="/static/mixtape13.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape13">MIXTAPE 13: ZOND</a></p>
+
+        <a href="/mixtape12"><img class="mixtape-thumb" src="/static/mixtape12.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape12">MIXTAPE 12: MXG</a></p>
+
+        <a href="/mixtape11"><img class="mixtape-thumb" src="/static/mixtape11.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape11">MIXTAPE 11: LORD BYRON STYROPOR</a></p>
+        
+        <a href="/mixtape10"><img class="mixtape-thumb" src="/static/mixtape10.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape10">MIXTAPE 10: ANNA ADAMS<a href="/mixtape15"></p>
+        
+        <a href="/mixtape09"><img class="mixtape-thumb" src="/static/mixtape09.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape09">MIXTAPE 09: ARTETETRA RECORDS</a></p>
+        
+        <a href="/mixtape08"><img class="mixtape-thumb" src="/static/mixtape08.png"></a>
+        <p class="mixtape-title"><a href="/mixtape08">MIXTAPE 08: TRAGEDIJA U STEGLITZU</a></p>
+        
+        <a href="/mixtape07"><img class="mixtape-thumb" src="/static/mixtape07.png"></a>
+        <p class="mixtape-title"><a href="/mixtape07">MIXTAPE 07: PAUL SEIDLER</a></p>
+        
+        <a href="/mixtape06"><img class="mixtape-thumb" src="/static/mixtape06.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape06">MIXTAPE 06: BEN K.O.</a></p>
+    
+        <a href="/mixtape05"><img class="mixtape-thumb" src="/static/mixtape05.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape05">MIXTAPE 05: KURORT SPANDAU</a></p>
+        
+        <a href="/mixtape04"><img class="mixtape-thumb" src="/static/mixtape04.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape04">MIXTAPE 04: SHŌ</a></p>
+        
+        <a href="/mixtape03"><img class="mixtape-thumb" src="/static/mixtape03.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape03">MIXTAPE 03: HEALTH</a></p>
+        
+        <a href="/mixtape02"><img class="mixtape-thumb" src="/static/mixtape02.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape02">MIXTAPE 02: CLAIRE D.</a></p>
+        
+        <a href="/mixtape01"><img class="mixtape-thumb" src="/static/mixtape01.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape01">MIXTAPE 01: SINOSC</a></p>
+    </div> -->
+
+<!-- 
+
+<div class="single-mixtape-img">
+		<a href="https://soundcloud.com/documnt/mixtape-01-sinosc" target="_blank"><img class="mixtape-img" src="/static/mixtape01.jpg"></a>
+		<p class="mixtape-title">MIXTAPE 01: SINOSC<br><br><a href="/mixtapes">< back to mixtapes</a></p>
+	</div>
+
+
+	<div class="single-mixtape">
+		<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>
+	</div>
+
+	<div class="tracklist">
+		<p>Tracklist:</p>
+		<p>1. Alinoe: II (Outro)<br>
+		    2. Kiyoko: Track 2<br>
+		    3. Ametsub: Repeatedly (Video Edit)<br>
+		    4. We Will Fail: Verstörung v.07<br>
+		    5. Klive: Sweaty Psalms<br>
+		    6. Farben: Loop.Exposure<br>
+		    7. Rechenzentrum: IBM<br>
+		    8. Carter Tutti Void: f = (2.7)<br>
+		    9. Function: Untitled<br>
+		    10. Donnacha Costello: Cocoa A<br>
+		    11. Farben: As Long As There’s Love Around<br>
+		    12. SND: Circa 1509<br>
+		    13. Gramm: Legends / Nugroove™ <br>
+	        14. Ursula Bogner: Begleitung für Tuba
+	    </p>
+	</div>
+ -->
+
+<!-- <div class="mixtape-block"> -->
+
+	<!-- <div class="single-mixtape-img">
+		<a href="https://soundcloud.com/documnt/mixtape-01-sinosc" target="_blank"><img class="mixtape-img" src="/static/mixtape01.jpg"></a>
+		<p class="mixtape-title">MIXTAPE 01: SINOSC<br><br><a href="/mixtapes">< back to mixtapes</a></p>
+	</div>
+
+
+	<div class="single-mixtape">
+		<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236993486&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=true"></iframe>
+	</div>
+
+	<div class="tracklist">
+		<p>Tracklist:</p>
+		<p>1. Alinoe: II (Outro)<br>
+		    2. Kiyoko: Track 2<br>
+		    3. Ametsub: Repeatedly (Video Edit)<br>
+		    4. We Will Fail: Verstörung v.07<br>
+		    5. Klive: Sweaty Psalms<br>
+		    6. Farben: Loop.Exposure<br>
+		    7. Rechenzentrum: IBM<br>
+		    8. Carter Tutti Void: f = (2.7)<br>
+		    9. Function: Untitled<br>
+		    10. Donnacha Costello: Cocoa A<br>
+		    11. Farben: As Long As There’s Love Around<br>
+		    12. SND: Circa 1509<br>
+		    13. Gramm: Legends / Nugroove™ <br>
+	        14. Ursula Bogner: Begleitung für Tuba
+	    </p>
+	</div> -->
+
+<!-- </div> -->
 {% endblock %}

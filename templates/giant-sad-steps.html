@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<!-- TO-DO: Infinite scroll? -->
+
+<!-- Matt Arnold -->
+<!-- 22 Oct 2017 -->
+
+<html>
+<head>
+    <title>"Giant Sad Steps"</title>
+    <style>
+    	body {
+    		font-family: Arial;
+    		font-size: 14px;
+    		line-height: 18px;
+    	}
+    	body h1 {
+    		font-size: 18px;
+    	}
+    	#background {
+    		position: fixed;
+    		left: 0;
+    		top: 0;
+    		right: 0;
+    		bottom: 0;
+    		z-index: -1;
+    	}
+    	#background img {
+    		width: 100%;
+    		opacity: .08;
+    	}
+    	.text {
+    		position: fixed;
+    		overflow: scroll;
+    		left: 0;
+    		margin-left: 25%;
+    		top: 0;
+    		margin-top: 20px;
+    		right: 0;
+    		bottom: 0;
+    	}
+    	.text-2 {
+    		position: fixed;
+    		overflow: scroll;
+    		font-size: 10px;
+    		line-height: 15px;
+    		left: 0;
+    		margin-left: 65%;
+    		top: 0;
+    		margin-top: 25px;
+    		bottom: 0;
+    	}
+    	.text-2 p {
+    		margin-top: 0;
+    		margin-bottom: 1px;
+    	}
+    	.r {
+    		margin-left: 60px;
+    	}
+    	audio {
+    		position: fixed;
+    		width: 100%;
+    		left: 0;
+    		bottom: 0;
+    	}
+    	@keyframes flickerAnimation {
+		  0%   { opacity:1; }
+		  75%  { opacity:0; }
+		  100% { opacity:1; }
+		}
+		@-o-keyframes flickerAnimation{
+		  0%   { opacity:1; }
+		  75%  { opacity:0; }
+		  100% { opacity:1; }
+		}
+		@-moz-keyframes flickerAnimation{
+		  0%   { opacity:1; }
+		  75%  { opacity:0; }
+		  100% { opacity:1; }
+		}
+		@-webkit-keyframes flickerAnimation{
+		  0%   { opacity:1; }
+		  75%  { opacity:0; }
+		  100% { opacity:1; }
+		}
+    	.animate-flicker {
+    		-webkit-animation: flickerAnimation 10s infinite;
+    		-moz-animation: flickerAnimation 10s infinite;
+    		-o-animation: flickerAnimation 10s infinite;
+		    animation: flickerAnimation 10s infinite;
+    	}
+    	@keyframes flickerAnimatio {
+		  0%   { opacity:0; }
+		  75%  { opacity:1; }
+		  100% { opacity:0; }
+		}
+		@-o-keyframes flickerAnimatio {
+		  0%   { opacity:0; }
+		  75%  { opacity:1; }
+		  100% { opacity:0; }
+		}
+		@-moz-keyframes flickerAnimatio {
+		  0%   { opacity:0; }
+		  75%  { opacity:1; }
+		  100% { opacity:0; }
+		}
+		@-webkit-keyframes flickerAnimatio {
+		  0%   { opacity:0; }
+		  75%  { opacity:1; }
+		  100% { opacity:0; }
+		}
+    	.animate-flicker-2 {
+    		-webkit-animation: flickerAnimatio 10s infinite;
+    		-moz-animation: flickerAnimatio 10s infinite;
+    		-o-animation: flickerAnimatio 10s infinite;
+		    animation: flickerAnimatio 10s infinite;
+    	}
+    	.docu {
+    		position: fixed;
+    		left: 0;
+    		margin-left: 20px;
+    		bottom: 0;
+    		margin-bottom: 50px;
+    	}
+    	#documentation {
+    		display: none;
+    		position: fixed;
+    		left: 0;
+    		margin-left: 5%;
+    		top: 0;
+    		margin-top: 5%;
+    		right: 0;
+    		bottom: 0;
+    	}
+    	#documentation p {
+    		width: 200px;
+    	}
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script>
+		$(document).ready(function(){
+			$('html').click(function() {
+					// $('#documentation').slideToggle('slow');
+					$('#documentation').toggle();
+				});
+        		var duration = 94500;
+        		$('html,body').animate('pause');
+        		$('#background').children('img').delay(26000).css("overflow-y", "scroll");
+        		$('#background').delay(2600).css("position","relative")
+				$('html,body').delay(26000).animate({
+   					scrollTop: $('html,body').height()
+				},duration);
+		});
+	</script>
+
+</head>
+<body>
+	<div id="background">
+		<img src="/static/giant-steps.png">
+	</div>
+	<div class="text animate-flicker">
+		<h1>Sad Steps</h1>
+		<p>Groping back to bed after a piss<br>
+		I part thick curtains, and am startled by<br>
+		The rapid clouds, the moon’s cleanliness.<br>
+		<br>
+		Four o’clock: wedge-shadowed gardens lie   <br>
+		Under a cavernous, a wind-picked sky.   <br>
+		There’s something laughable about this,<br>
+		<br>
+		The way the moon dashes through clouds that blow   <br>
+		Loosely as cannon-smoke to stand apart   <br>
+		(Stone-coloured light sharpening the roofs below)<br>
+		<br>
+		High and preposterous and separate—   <br>
+		Lozenge of love! Medallion of art!<br>
+		O wolves of memory! Immensements! No,<br>
+		<br>
+		One shivers slightly, looking up there.<br>
+		The hardness and the brightness and the plain   <br>
+		Far-reaching singleness of that wide stare<br>
+		<br>
+		Is a reminder of the strength and pain   <br>
+		Of being young; that it can’t come again,   <br>
+		But is for others undiminished somewhere.<br>
+		</p>
+		<p>By Philip Larkin</p>
+	</div>
+	<div class="text-2 animate-flicker-2">
+		<h1>Sad Steps</h1>
+		<br>
+		<p>Piss</p>
+		<p class="r">Off. The stars and the keen wind</p>
+		<p>By</p>
+		<p class="r">Every measure should suffice,</p>
+		<p>Cleanse</p>
+		<p class="r">A fisted night be rights. I</p>
+		<p>Lied</p>
+		<p class="r">Here, and here again. This</p>
+		<p>Sky</p>
+		<p class="r">Downwind of circumstance,</p>
+		<p>These</p>
+		<p class="r">Palsied clouds, still on the go</p>
+		<p>Blown</p>
+		<p class="r">As though a sink would swirl and</p>
+		<p>Part</p>
+		<p class="r">Them, clogged and dull, down drains</p>
+		<p>Below,</p>
+		<p class="r">Dog on.</p>
+		<p>Separate</p>
+		<p class="r">Stars seem, but so does the ringing</p>
+		<p>Start</p>
+		<p class="r">Of every chain I've clinked my skin &mdash</p>
+		<p>No,</p>
+		<p class="r">Clamped myself &mdash into. Swinging</p>
+		<p>There,</p>
+		<p class="r">The meathead moon and its</p>
+		<p>Plain</p>
+		<p class="r">Dank cold ring</p>
+		<p>Steer</p>
+		<p class="r">Me nowhere. This thought the</p>
+		<p>Pain</p>
+		<p class="r">Spurs on. And then, in this late night,</p>
+		<p>Again,</p>
+		<p class="r">The pissing comes so clear and clean</p>
+		<p>There</p>
+		<p class="r">Follows the smallest softening.</p>
+		<br>
+		<p> By Sharon Olds</p>
+	</div>
+	<audio controls autoplay>
+		<source src="/static/giant-steps.mp3" type="audio/mpeg">
+	Your browser does not suppor tthe audio element.
+	</audio>
+	<div class="docu">Click Anywhere for Documentation</div>
+	<div id="documentation">
+		<p>Documentation:<br>
+		<br>
+		This page attempts to put in conversation three "Steps": Philip Larkin's "Sad Steps" with Sharon Olds' version, plus John Coltrane's infamously modular/difficult jazz tune, "Giant Steps".<br>
+		<br>
+		The audio is from a YouTube video found by searching "Coltrane Giant Steps", ripped using the website www.onlinevideoconverter.com.<br>
+		<br>
+		The sheet music in the background is a transcription of Coltrane's saxophone solo in "Giant Steps", made by someone called Mark McNight. Find it here: mmckmusic.com/lessons/john-coltrane-giant-steps-transcription. The pdf is free to download!
+		</p>
+	</div>
+</body>
+</html>

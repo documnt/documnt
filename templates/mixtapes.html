@@ -1,56 +1,145 @@
+<!-- TO-DO: slide up menu from nav bar hover over mixtapes -->
+<!-- TO-DO: display artist name on thumbnail hover -->
+
 <head>
     <title>DOCUMNT MIXTAPES</title>
+    <style>
+        .index-wrapper { 
+            display: none;
+        }
+        .index-text-left {
+            display: none;
+        }
+    </style>
 </head>
 
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="mixtape-images-left">
-
-        <a href="/mixtape15"><img class="mixtape-img" src="/static/mixtape15.jpg"></a>
+<!-- <div class="content-wrapper">
+    <div class="mixtape-content">
+        <a href="/mixtape15"><img class="mixtape-thumb" src="/static/mixtape15.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape15">MIXTAPE 15: Kl.ne</a></p>
 
-        <a href="/mixtape14"><img class="mixtape-img" src="/static/mixtape14.jpg"></a>
+        <a href="/mixtape14"><img class="mixtape-thumb" src="/static/mixtape14.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape14">MIXTAPE 14: WUNDERWAFFEL</a></p>
 
-        <a href="/mixtape13"><img class="mixtape-img" src="/static/mixtape13.jpg"></a>
+        <a href="/mixtape13"><img class="mixtape-thumb" src="/static/mixtape13.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape13">MIXTAPE 13: ZOND</a></p>
 
-        <a href="/mixtape12"><img class="mixtape-img" src="/static/mixtape12.jpg"></a>
+        <a href="/mixtape12"><img class="mixtape-thumb" src="/static/mixtape12.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape12">MIXTAPE 12: MXG</a></p>
 
-        <a href="/mixtape11"><img class="mixtape-img" src="/static/mixtape11.jpg"></a>
+        <a href="/mixtape11"><img class="mixtape-thumb" src="/static/mixtape11.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape11">MIXTAPE 11: LORD BYRON STYROPOR</a></p>
         
-        <a href="/mixtape10"><img class="mixtape-img" src="/static/mixtape10.jpg"></a>
-        <p class="mixtape-title"><a href="/mixtape10">MIXTAPE 10: ANNA ADAMS<a href="/mixtape15"></p>
+        <a href="/mixtape10"><img class="mixtape-thumb" src="/static/mixtape10.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape10">MIXTAPE 10: ANNA ADAMS</p>
         
-        <a href="/mixtape09"><img class="mixtape-img" src="/static/mixtape09.jpg"></a>
+        <a href="/mixtape09"><img class="mixtape-thumb" src="/static/mixtape09.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape09">MIXTAPE 09: ARTETETRA RECORDS</a></p>
         
-        <a href="/mixtape08"><img class="mixtape-img" src="/static/mixtape08.png"></a>
+        <a href="/mixtape08"><img class="mixtape-thumb" src="/static/mixtape08.png"></a>
         <p class="mixtape-title"><a href="/mixtape08">MIXTAPE 08: TRAGEDIJA U STEGLITZU</a></p>
         
-        <a href="/mixtape07"><img class="mixtape-img" src="/static/mixtape07.png"></a>
+        <a href="/mixtape07"><img class="mixtape-thumb" src="/static/mixtape07.png"></a>
         <p class="mixtape-title"><a href="/mixtape07">MIXTAPE 07: PAUL SEIDLER</a></p>
         
-        <a href="/mixtape06"><img class="mixtape-img" src="/static/mixtape06.jpg"></a>
+        <a href="/mixtape06"><img class="mixtape-thumb" src="/static/mixtape06.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape06">MIXTAPE 06: BEN K.O.</a></p>
     
-        <a href="/mixtape05"><img class="mixtape-img" src="/static/mixtape05.jpg"></a>
+        <a href="/mixtape05"><img class="mixtape-thumb" src="/static/mixtape05.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape05">MIXTAPE 05: KURORT SPANDAU</a></p>
         
-        <a href="/mixtape04"><img class="mixtape-img" src="/static/mixtape04.jpg"></a>
+        <a href="/mixtape04"><img class="mixtape-thumb" src="/static/mixtape04.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape04">MIXTAPE 04: SHŌ</a></p>
         
-        <a href="/mixtape03"><img class="mixtape-img" src="/static/mixtape03.jpg"></a>
+        <a href="/mixtape03"><img class="mixtape-thumb" src="/static/mixtape03.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape03">MIXTAPE 03: HEALTH</a></p>
         
-        <a href="/mixtape02"><img class="mixtape-img" src="/static/mixtape02.jpg"></a>
+        <a href="/mixtape02"><img class="mixtape-thumb" src="/static/mixtape02.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape02">MIXTAPE 02: CLAIRE D.</a></p>
         
-        <a href="/mixtape01"><img class="mixtape-img" src="/static/mixtape01.jpg"></a>
+        <a href="/mixtape01"><img class="mixtape-thumb" src="/static/mixtape01.jpg"></a>
         <p class="mixtape-title"><a href="/mixtape01">MIXTAPE 01: SINOSC</a></p>
+        <br>
+        <br>
+        <br>
+        <!-- <br> -->
+    <!-- </div> -->
+<!-- </div>  -->
+
+
+
+<div class="mixtape-index-wrapper">
+    <div class="mixtape-index-text-left" style="font-size: 12px; padding-top: 10px">
+        <br><br><br>
+        <p>MIXTAPE 16: <a href="/mixtape16">レイン</a></p>
+        <p>MIXTAPE 15: <a href="/mixtape15">KL.NE</a></p>
+        <p>MIXTAPE 14: <a href="/mixtape14">WUNDERWAFFEL</a></p>
+        <p>MIXTAPE 13: <a href="/mixtape13">ZOND</a></p>
+        <p>MIXTAPE 12: <a href="/mixtape12">MXG</a></p>
+        <p>MIXTAPE 11: <a href="/mixtape11">LORD BYRON STYROPOR</a></p>
+        <p>MIXTAPE 10: <a href="/mixtape10">ANNA ADAMS</a></p>
+        <p>MIXTAPE 09: <a href="/mixtape09">ARTETETRA RECORDS</a></p>
+        <p>MIXTAPE 08: <a href="/mixtape08">TRAGEDIJA U STEGLITZU</a></p>
+        <p>MIXTAPE 07: <a href="/mixtape07">PAUL SEIDLER</a></p>
+        <p>MIXTAPE 06: <a href="/mixtape06">BEN K.O.</a></p>
+        <p>MIXTAPE 05: <a href="/mixtape05">KURORT SPANDAU</a></p>
+        <p>MIXTAPE 04: <a href="/mixtape04">SHŌ</a></p>
+        <p>MIXTAPE 03: <a href="/mixtape03">HEALTH</a></p>
+        <p>MIXTAPE 02: <a href="/mixtape02">CLAIRE D.</a></p>
+        <p>MIXTAPE 01: <a href="/mixtape01">SINOSC</a></p>
     </div>
+</div>
+<!-- 
+
+    <div class="mixtape-images-left">
+
+        <a href="/mixtape15"><img class="mixtape-thumb" src="/static/mixtape15.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape15">MIXTAPE 15: Kl.ne</a></p>
+
+        <a href="/mixtape14"><img class="mixtape-thumb" src="/static/mixtape14.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape14">MIXTAPE 14: WUNDERWAFFEL</a></p>
+
+        <a href="/mixtape13"><img class="mixtape-thumb" src="/static/mixtape13.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape13">MIXTAPE 13: ZOND</a></p>
+
+        <a href="/mixtape12"><img class="mixtape-thumb" src="/static/mixtape12.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape12">MIXTAPE 12: MXG</a></p>
+
+        <a href="/mixtape11"><img class="mixtape-thumb" src="/static/mixtape11.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape11">MIXTAPE 11: LORD BYRON STYROPOR</a></p>
+        
+        <a href="/mixtape10"><img class="mixtape-thumb" src="/static/mixtape10.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape10">MIXTAPE 10: ANNA ADAMS<a href="/mixtape15"></p>
+        
+        <a href="/mixtape09"><img class="mixtape-thumb" src="/static/mixtape09.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape09">MIXTAPE 09: ARTETETRA RECORDS</a></p>
+        
+        <a href="/mixtape08"><img class="mixtape-thumb" src="/static/mixtape08.png"></a>
+        <p class="mixtape-title"><a href="/mixtape08">MIXTAPE 08: TRAGEDIJA U STEGLITZU</a></p>
+        
+        <a href="/mixtape07"><img class="mixtape-thumb" src="/static/mixtape07.png"></a>
+        <p class="mixtape-title"><a href="/mixtape07">MIXTAPE 07: PAUL SEIDLER</a></p>
+        
+        <a href="/mixtape06"><img class="mixtape-thumb" src="/static/mixtape06.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape06">MIXTAPE 06: BEN K.O.</a></p>
+    
+        <a href="/mixtape05"><img class="mixtape-thumb" src="/static/mixtape05.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape05">MIXTAPE 05: KURORT SPANDAU</a></p>
+        
+        <a href="/mixtape04"><img class="mixtape-thumb" src="/static/mixtape04.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape04">MIXTAPE 04: SHŌ</a></p>
+        
+        <a href="/mixtape03"><img class="mixtape-thumb" src="/static/mixtape03.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape03">MIXTAPE 03: HEALTH</a></p>
+        
+        <a href="/mixtape02"><img class="mixtape-thumb" src="/static/mixtape02.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape02">MIXTAPE 02: CLAIRE D.</a></p>
+        
+        <a href="/mixtape01"><img class="mixtape-thumb" src="/static/mixtape01.jpg"></a>
+        <p class="mixtape-title"><a href="/mixtape01">MIXTAPE 01: SINOSC</a></p>
+    </div> -->
 
 {% endblock %}
