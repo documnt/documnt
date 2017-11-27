@@ -42,7 +42,7 @@ main p { margin-bottom: 1em; }
   padding-top: 10px;
   position: fixed;
   width: 214px;
-  /*font-size: 14px;*/
+  font-size: 14px;
 }
 
 .issue-image {
