@@ -31,6 +31,17 @@ body a:hover {
 
 main p { margin-bottom: 1em; }
 
+
+.accounting {
+  width: 100vw;
+  height: 100vh;
+}
+
+.accounting iframe {
+  width: 600px;
+  height: 600px;
+}
+
 .documnt2 {
   line-height: 12px;
 }
@@ -42,7 +53,7 @@ main p { margin-bottom: 1em; }
   padding-top: 10px;
   position: fixed;
   width: 214px;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 
 .issue-image {
@@ -187,12 +198,12 @@ main p { margin-bottom: 1em; }
   margin-bottom: 60px;
   /*margin-top: 20px;*/
   /*margin-top: 8px;*/
-  line-height: 18px;
   /*line-height: 18px;*/
+  line-height: 24px;
   width: 477px;
 }
 .essay-text p {
-  line-height: 20px;
+  /*line-height: 20px;*/
   font-size: 14px;
   /*line-height: 18px;*/
   /*width: 477px;*/

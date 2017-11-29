@@ -192,6 +192,13 @@ def giantsadsteps():
 @app.route('/food-order')
 def foodorder():
 	return render_template("food-order.html")
+
+
+@app.route('/accounting')
+def accouting():
+	return render_template("accounting.html")
+
+
 # @app.route('/demo')
 # def show_demo():
 #     return render_template("demo.html")
