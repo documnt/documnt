@@ -220,6 +220,7 @@ main p { margin-bottom: 1em; }
 }
 .essay-text h1 {
   font-size: 16px;
+  line-height: 20px;
 }
 .essay-text img {
   width: 477px;
