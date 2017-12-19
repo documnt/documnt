@@ -1,28 +1,15 @@
 /* aesthetic.css: styles which don't dramatically change the site's layout */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 body {
-  /*background-color: rgba(0, 0, 0, 0.9);*/
-  /*background-color: brown;*/
-  /*background-color: white;*/
-  /*background-color: #F5F5F5;*/
   background-color: rgba(245,245,245,0.5);
   font-size: 16px;
-  /*font-family: "Courier New", Courier, monospace;*/
   font-family: arial;
-  /*font-family: 'Droid Sans', monospace; */
-  /*font-family: monospace;*/
-  /*color: white;*/
   color: black;
-  
 }
 body p {
   font-size: 12px;
-  /*color: black;*/
 }
 body a {
-  /*color: white;*/
   text-decoration: none;
 }
 body a:hover {
@@ -53,46 +40,12 @@ main p { margin-bottom: 1em; }
   padding-top: 10px;
   position: fixed;
   width: 214px;
-  /*font-size: 14px;*/
 }
 
 .issue-image {
   position: fixed;
   left: 0;
   top: 0;
-}
-.back2index {
-  /*position: relative;*/
-}
-
-.bottom-line {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 10px;
-  border-top-style: solid;
-  border-top-color: #f5f5dc;
-  border-top-width: 1px;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 999;
-}
-.top-line {
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 8px;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 999;
-}
-.right-line {
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 9px;
-  position: fixed;
-  z-index: 999;
 }
 
 .page_wrapper {
@@ -105,7 +58,6 @@ main p { margin-bottom: 1em; }
   overflow: hidden;
 }
 
-/* nav */
 .navigation-2 {
   list-style-type: none;
   position: fixed;
@@ -120,12 +72,10 @@ main p { margin-bottom: 1em; }
 }
 .navigation-2 a {
   text-decoration: none;
-  /*color: white;*/
 }
 .navigation-2 a:hover { text-decoration: underline; }
-/* -- */
 
-/* text */
+
 .text_content {
   position: fixed;
   width: 614px;
@@ -135,15 +85,11 @@ main p { margin-bottom: 1em; }
 }
 .contact_column {
   position: absolute;
-    top: 25%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    /*width: 100px;*/
-    height: 100px;
-  /*position: fixed;
-  bottom: 30px;
-  left: 215px;*/
+  top: 25%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  height: 100px;
   font-size: 14px;
 }
 .contact_column a {
@@ -169,17 +115,13 @@ main p { margin-bottom: 1em; }
   left: 420px;
   top: 10px;
   font-size: 12px;
-  /*color: white;*/
   overflow: auto;
 }
 /* -- */
 .issue-text {
   position: relative;
   font-size: 10px;
-  /*margin-left: 75%;*/
-  /*color: white;*/
   overflow: auto;
-  /*width: 600px;*/
   width: 66%;
 }
 
@@ -191,22 +133,14 @@ main p { margin-bottom: 1em; }
 }
 
 .essay-text {
-  /*width: 580px;*/
-  /*max-width: 477px;*/
   overflow: none;
   font-size: 14px;
   margin-bottom: 60px;
-  /*margin-top: 20px;*/
-  /*margin-top: 8px;*/
-  /*line-height: 18px;*/
-  line-height: 24px;
+  line-height: 26px;
   width: 477px;
 }
 .essay-text p {
-  /*line-height: 20px;*/
-  font-size: 14px;
-  /*line-height: 18px;*/
-  /*width: 477px;*/
+  font-size: 12px;
 }
 .essay-text p.image-caption {
   line-height: 10px;
@@ -214,9 +148,8 @@ main p { margin-bottom: 1em; }
   margin-bottom: 20px;
 }
 .essay-text p.essay-quote {
-  /*line-height: 12px;*/
-  line-height: 16px;
-  font-size: 14px;
+  line-height: 14px;
+  font-size: 12px;
 }
 .essay-text h1 {
   font-size: 16px;
@@ -227,17 +160,16 @@ main p { margin-bottom: 1em; }
 }
 .essay-text li {
   font-size: 12px;
-  /*padding-left: 48px;*/
   padding-left: 24px;
 }
-.essay-quote {
-  /*background: pink;*/
-  margin-left: 48px;
-  /*padding-right: -48px;*/
-  /*text-align: justify;*/
-  
-  width: 429px;
 
+.essay-text p.endnote {
+  width: 477px;
+  line-height: 14px;
+}
+.essay-quote {
+  margin-left: 48px;
+  width: 429px;
 }
 
 .citation p {
@@ -247,13 +179,12 @@ main p { margin-bottom: 1em; }
 
 .poem-text {
   width: 580px;
-  font-size: 14px;
   margin-bottom: 60px;
-  margin-top: 0px;
+  margin-top: 4px;
 }
 .poem-text p {
-  line-height: 16px;
-  font-size: 14px;
+  line-height: 14px;
+  font-size: 12px;
 }
 .subtext {
   font-size: 12px;
@@ -267,7 +198,7 @@ main p { margin-bottom: 1em; }
   bottom: 0;
   overflow-y: hidden;
   margin-bottom: 40px;
-  margin-top: 8px;
+  padding-top: 8px;
   left: -8%;
   font-size: 14px;
 }
@@ -276,26 +207,21 @@ main p { margin-bottom: 1em; }
   bottom: 0;
   overflow-y: hidden;
   margin-bottom: 60px;
-  /*margin-top: 10px;*/
-  font-size: 14px;
+  padding-top: 5px;
+  font-size: 12px;
   width: 100%;
 }
 .art-content img {
-  /*height: 90vh;*/
   margin-bottom: 20px;
   width: 477px;
 
 }
 .art-content img.mixtape-img {
-  /*width: 298px;*/
-  /*height: 298px;*/
   width: 200px;
   height: 200px;
-  /*position: fixed;*/
 }
 .art-content p {
-  line-height: 16px;
-  /*width: 380px;*/
+  line-height: 14px;
   width: 477px;
 }
 .art-content h1 {
@@ -304,21 +230,19 @@ main p { margin-bottom: 1em; }
 }
 
 .content-wrapper {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 14px;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   height: 100vh;
   margin: 10px 0 0 33%;
-  /*padding: 0px 0 0 33%;*/
   padding-top: 22px;
   overflow-y: scroll;
-  /*color: white;*/
   overflow: auto;
   float: left;
   margin-bottom: 40px;
-  /*width: 66%;*/
   width: 100%;
 }
 .content-wrapper h1 { font-size: 14px; margin-top: 0px; font-weight: normal; }
@@ -327,32 +251,9 @@ main p { margin-bottom: 1em; }
   position: fixed;
   left: 25%;
   top: 36px;
-  font-size: 8px;
-}
-
-/*.index-text {
+  /*font-size: 8px;*/
   font-size: 12px;
-  position: fixed;
-  width: 410px;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  margin-left: 20%;
-  overflow-y: scroll;
-  color: white;
-  overflow: auto;
-  float: left;
-  margin-bottom: 40px;
 }
-.index-text h1{
-  font-size: 14px;
-}
-.index-text a{
-  text-decoration: none;
-}
-.index-text a:hover{
-  text-decoration: underline;
-}*/
 
 .index-wrapper {
   width: 40%;
@@ -376,12 +277,10 @@ main p { margin-bottom: 1em; }
 
 .-mixtape-index-text-left {
   font-size: 12px;
-  /*font-weight: lighter;*/
   position: relative;
   margin-top: -2px;
   left: 2px;
   right: 0;
-  /*color: white;*/
   overflow: auto;
   overflow-y: scroll;
   float: left;
@@ -389,12 +288,11 @@ main p { margin-bottom: 1em; }
 .index-text-left {
   font-size: 12px;
   font-weight: 100;
-  /*font-weight: lighter;*/
   position: relative;
-  margin-top: -4px;
+  /*margin-top: -4px;*/
+  margin-top: 0px;
   left: 2px;
   right: 0;
-  /*color: white;*/
   overflow: auto;
   overflow-y: scroll;
   float: left;
@@ -406,14 +304,10 @@ main p { margin-bottom: 1em; }
 .index-text-left a:hover{
   text-decoration: underline;
 }
-/*.index-text-left p {
-  font-weight: lighter;
-}*/
+
 .issue-page {
-  /*left: 0px;*/
   left: 33%;
   top: 20px;
-  /*width: 600px;*/
   width: 66%;
   position: relative;
 }
@@ -422,8 +316,6 @@ main p { margin-bottom: 1em; }
   top: 0;
   position: fixed;
 }
-
-/* mixtapes */
 
 .mixtape-page {
   left: 33%;
@@ -441,15 +333,10 @@ main p { margin-bottom: 1em; }
 
 .tracklist {
   font-size: 12px;
-  /*width: 600px;*/
-  /*color: white;*/
   overflow: auto;
-  /*position: fixed;*/
-  /*top: 0;*/
   left: 10px;
   overflow: scroll;
   padding-left: 30px;
-  /*margin-top: -53px;*/
   margin-top: -15px;
   margin-bottom: 70px;
   width: 500px;
@@ -480,12 +367,9 @@ main p { margin-bottom: 1em; }
 .single-mixtape {
   width: 99%;
   left: 33%;
-  /*left: 25%;*/
   bottom: 8%;
   position: fixed;
-  /*border-bottom: solid;*/
   border-width: 1px;
-  /*border-color: white;*/
 }
 .mixtape-img {
   float: left;
@@ -495,8 +379,6 @@ main p { margin-bottom: 1em; }
   top: 0;
   z-index: 999;
   position: fixed;
-  /*height: 75vh;*/
-  /*width: 75vh;*/
   height: 275px;
   width: 275px;
   opacity: .8;
@@ -540,9 +422,7 @@ main p { margin-bottom: 1em; }
 .issue-thumb {
   width: 275px;
 }
-/*.mixtape-img:hover{
-  opacity: .95;
-}*/
+
 .single-mixtape-img .mixtape-img:hover{
   opacity: 1;
 }
@@ -592,14 +472,12 @@ main p { margin-bottom: 1em; }
   float: left;
 }
 
-/* -- */
-
 .art-title {
   font-weight: bold;
 }
 
 /* demo essay */
-.title {
+/*.title {
   position: fixed;
   right: 4%;
   top: 2%;
@@ -659,14 +537,11 @@ main p { margin-bottom: 1em; }
 .image-caption {
   font-size: 8px;
   line-height: 8px;
-  /*line-height: 0;*/
-  /*font-weight: lighter;*/
-  /*font-style: italic;*/
 }
 .essay-wrapper {
   width: 95%;
   margin-left: 2%;
   margin-top: 35%;
   z-index: 99999;
-}
+}*/
 /* -- */
