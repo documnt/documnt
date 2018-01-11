@@ -137,7 +137,8 @@ main p { margin-bottom: 1em; }
   font-size: 14px;
   margin-bottom: 60px;
   line-height: 26px;
-  width: 477px;
+  width: 430px;
+  /*width: 477px;*/
 }
 .essay-text p {
   font-size: 12px;
@@ -156,20 +157,28 @@ main p { margin-bottom: 1em; }
   line-height: 20px;
 }
 .essay-text img {
-  width: 477px;
+  /*width: 477px;*/
+  width: 430px;
 }
 .essay-text li {
   font-size: 12px;
   padding-left: 24px;
 }
 
+.essay-text .bibliography {
+  width: 430px;
+  line-height: 14px;
+}
+
 .essay-text p.endnote {
-  width: 477px;
+  /*width: 477px;*/
+  width: 430px;
   line-height: 14px;
 }
 .essay-quote {
   margin-left: 48px;
-  width: 429px;
+  /*width: 429px;*/
+  width: 382px;
 }
 
 .citation p {
