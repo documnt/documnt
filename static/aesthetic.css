@@ -18,6 +18,10 @@ body a:hover {
 
 main p { margin-bottom: 1em; }
 
+sup {
+  line-height: 12px;
+  font-size: 8px
+}
 
 .accounting {
   width: 100vw;
@@ -235,7 +239,8 @@ main p { margin-bottom: 1em; }
 }
 .art-content h1 {
   font-weight: normal;
-  width: 380px;
+  /*width: 380px;*/
+  width: 477px;
 }
 
 .content-wrapper {
