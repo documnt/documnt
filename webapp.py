@@ -198,6 +198,25 @@ def foodorder():
 def accouting():
 	return render_template("accounting.html")
 
+@app.route('/sexed-realities')
+def sexedrealities():
+	return render_template("sexed-realities.html")
+
+@app.route('/in-other-worlds')
+def inotherworlds():
+	return render_template("in-other-worlds.html")
+
+@app.route('/hanne-lippard')
+def hannelippard():
+	return render_template("hanne-lippard.html")
+
+@app.route('/dark-room')
+def darkroom():
+	return render_template("dark-room.html")
+
+@app.route('/foucaults-fossils')
+def foucaultsfossils():
+	return render_template("foucaults-fossils.html")
 
 # @app.route('/demo')
 # def show_demo():
