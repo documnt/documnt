@@ -25,6 +25,10 @@ def mixtapes():
 def files():
     return render_template("files.html") 
 
+@app.route('/mixtape17')
+def mixtape17():
+	return render_template("mixtape17.html")
+
 @app.route('/mixtape16')
 def mixtape16():
 	return render_template("mixtape16.html")
