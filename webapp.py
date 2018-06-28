@@ -177,6 +177,10 @@ def verbivocovisual():
 def enchiridions():
 	return render_template("enchiridions.html")
 
+@app.route('/documnt2-contents')
+def documnt2contents():
+	return render_template("documnt2-contents.html")
+
 @app.route('/documnt2')
 def documnt2():
 	return render_template("documnt2.html")
