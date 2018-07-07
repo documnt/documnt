@@ -94,12 +94,15 @@ img.d2_poster{
   list-style-type: none;
   position: fixed;
   right: 10px;
+  /*right: 30px;*/
+  /*bottom: 20px;*/
   bottom: 10px;
   font-size: 12px;
   z-index: 1000000;
 }
 .navigation-2 li {
   display: inline;
+  /*list-style-type: none;*/
   padding: 10px;
 }
 .navigation-2 a {
@@ -270,6 +273,7 @@ img.d2_poster{
   font-weight: normal;
   /*width: 380px;*/
   width: 477px;
+  font-size: 12px;
 }
 
 .content-wrapper {
