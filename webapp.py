@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template("events.html")
+    return render_template("issues.html")
 
 @app.route('/issues')
 def issues():
@@ -189,6 +189,10 @@ def documnt2contents():
 def documnt2():
 	return render_template("documnt2.html")
 
+@app.route('/documnt2-info')
+def documnt2info():
+	return render_template("documnt2-info.html")
+
 @app.route('/antigone')
 def antigone():
 	return render_template("antigone.html")
@@ -218,13 +222,21 @@ def sexedrealities():
 def inotherworlds():
 	return render_template("in-other-worlds.html")
 
-@app.route('/hanne-lippard')
-def hannelippard():
-	return render_template("hanne-lippard.html")
+@app.route('/keywords-scans')
+def keywordsscans():
+	return render_template("keywords-scans.html")
 
-@app.route('/dark-room')
+@app.route('/digitized-archives-digital-archives')
+def digitizedarchivesdigitalarchives():
+	return render_template("digitized-archives-digital-archives.html")
+
+@app.route('/two-or-three-things-i-know-about-provo')
+def twoorthreethingsiknowaboutprovo():
+	return render_template("two-or-three-things-i-know-about-provo.html")
+
+@app.route('/the-dark-room-as-a-spiritual-path')
 def darkroom():
-	return render_template("dark-room.html")
+	return render_template("the-dark-room-as-a-spiritual-path.html")
 
 @app.route('/foucaults-fossils')
 def foucaultsfossils():

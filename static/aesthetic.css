@@ -179,6 +179,10 @@ img.d2_poster{
 .essay-text p {
   font-size: 12px;
 }
+.art-content .image-caption {
+  margin-top: -20px;
+  font-size: 8px;
+}
 .essay-text p.image-caption {
   line-height: 10px;
   font-size: 8px;
