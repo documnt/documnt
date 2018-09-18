@@ -238,9 +238,9 @@ def twoorthreethingsiknowaboutprovo():
 def darkroom():
 	return render_template("the-dark-room-as-a-spiritual-path.html")
 
-@app.route('/foucaults-fossils')
+@app.route('/lynne-huffer-foucaults-fossils')
 def foucaultsfossils():
-	return render_template("foucaults-fossils.html")
+	return render_template("lynne-huffer-foucaults-fossils.html")
 
 # @app.route('/demo')
 # def show_demo():
