@@ -242,6 +242,10 @@ def darkroom():
 def foucaultsfossils():
 	return render_template("lynne-huffer-foucaults-fossils.html")
 
+@app.route('/hito-steyerl-politics-of-the-archive')
+def politicsofthearchive():
+	return render_template("hito-steyerl-politics-of-the-archive.html")
+
 # @app.route('/demo')
 # def show_demo():
 #     return render_template("demo.html")
