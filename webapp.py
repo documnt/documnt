@@ -97,101 +97,101 @@ def mixtape02():
 def mixtape01():
 	return render_template("mixtape01.html")
 
-@app.route('/documnt1-index')
-def documnt1index():
-	return render_template("documnt1-index.html")
+# @app.route('/documnt1-index')
+# def documnt1index():
+# 	return render_template("documnt1-index.html")
 
 @app.route('/documnt-wants-to-be-free')
 def documntwantstobefree():
 	return render_template("documnt-wants-to-be-free.html")
 
-@app.route('/concept-nr-05-music-as-organisatorial-principle')
+@app.route('/mirjam-kroker-concept-nr-05-music-as-organisatorial-principle')
 def conceptnr05():
-	return render_template("concept-nr-05-music-as-organisatorial-principle.html")
+	return render_template("mirjam-kroker-concept-nr-05-music-as-organisatorial-principle.html")
 
-@app.route('/how-to-do-things-with-docs')
+@app.route('/simon-roloff-how-to-do-things-with-docs')
 def howtodothingswithdocs():
-	return render_template("how-to-do-things-with-docs.html")
+	return render_template("simon-roloff-how-to-do-things-with-docs.html")
 
-@app.route('/gefühlt-aphrodite-mit-soße')
+@app.route('/diana-ludzay-gefühlt-aphrodite-mit-soße')
 def gefuehltaphroditemitsosse():
-	return render_template("gefühlt-aphrodite-mit-soße.html")
+	return render_template("diana-ludzay-gefühlt-aphrodite-mit-soße.html")
 
-@app.route('/your-poetry-reader')
+@app.route('/joeun-aatchim-your-poetry-reader')
 def yourpoetryreader():
-	return render_template("your-poetry-reader.html")
+	return render_template("joeun-aatchim-your-poetry-reader.html")
 
-@app.route('/untitled-half-man-half-beast')
+@app.route('/karl-holmqvist-untitled-half-man-half-beast')
 def halfmanhalfbeast():
-	return render_template("untitled-half-man-half-beast.html")
+	return render_template("karl-holmqvist-untitled-half-man-half-beast.html")
 
-@app.route('/ill-make-the-world-explode')
+@app.route('/karl-holmqvist-ill-make-the-world-explode')
 def illmaketheworldexplode():
-	return render_template("ill-make-the-world-explode.html")
+	return render_template("karl-holmqvist-ill-make-the-world-explode.html")
 
-@app.route('/3C-93-53-27-E4-E1-13-63-92-08-49-40-A4-E2-E4-35-E2-49-EF-2D-3D-E9-54-37-D3-C9-04-64-BF-3E-34')
+@app.route('/tcf-3C-93-53-27-E4-E1-13-63-92-08-49-40-A4-E2-E4-35-E2-49-EF-2D-3D-E9-54-37-D3-C9-04-64-BF-3E-34')
 def holdhusuntitled():
-	return render_template("3C-93-53-27-E4-E1-13-63-92-08-49-40-A4-E2-E4-35-E2-49-EF-2D-3D-E9-54-37-D3-C9-04-64-BF-3E-34.html")
+	return render_template("tcf-3C-93-53-27-E4-E1-13-63-92-08-49-40-A4-E2-E4-35-E2-49-EF-2D-3D-E9-54-37-D3-C9-04-64-BF-3E-34.html")
 
-@app.route('/how-we-became-posthuman')
+@app.route('/n-katherine-hayles-how-we-became-posthuman')
 def howwebecameposthuman():
-	return render_template("how-we-became-posthuman.html")
+	return render_template("n-katherine-hayles-how-we-became-posthuman.html")
 
-@app.route('/on-transmissions')
+@app.route('/bisera-krckovska-on-transmissions')
 def ontransmissions():
-	return render_template("on-transmissions.html")
+	return render_template("bisera-krckovska-on-transmissions.html")
 
-@app.route('/memorial-numerique')
+@app.route('/herve-all-memorial-numerique')
 def memorialnumerique():
-	return render_template("memorial-numerique.html")
+	return render_template("herve-all-memorial-numerique.html")
 
-@app.route('/flesh-of-words')
+@app.route('/jacques-ranciere-flesh-of-words')
 def fleshofwords():
-	return render_template("flesh-of-words.html")
+	return render_template("jacques-ranciere-flesh-of-words.html")
 
-@app.route('/berlin-boy')
+@app.route('/steve-rosenthal-berlin-boy')
 def berlinboy():
-	return render_template("berlin-boy.html")
+	return render_template("steve-rosenthal-berlin-boy.html")
 
-@app.route('/with-the-book-my-body')
+@app.route('/adrien-da-silva-with-the-book-my-body')
 def withthebookmybody():
-	return render_template("with-the-book-my-body.html")
+	return render_template("adrien-da-silva-with-the-book-my-body.html")
 
-@app.route('/hello-world-dinosaurs-after-apocalypse')
+@app.route('/tinna-siradze-hello-world-dinosaurs-after-apocalypse')
 def helloworlddinosaursafterapocalypse():
-	return render_template("hello-world-dinosaurs-after-apocalypse.html")
+	return render_template("tinna-siradze-hello-world-dinosaurs-after-apocalypse.html")
 
-@app.route('/mixed-messages')
+@app.route('/kurt-eidsvig-mixed-messages')
 def mixedmessages():
-	return render_template("mixed-messages.html")
+	return render_template("kurt-eidsvig-mixed-messages.html")
 
-@app.route('/et-in-arcadia-ego')
+@app.route('/katarina-henriksson-et-in-arcadia-ego')
 def etinarcadiaego():
-	return render_template("et-in-arcadia-ego.html")
+	return render_template("katarina-henriksson-et-in-arcadia-ego.html")
 
-@app.route('/tower-of-babel')
+@app.route('/wislawa-szymborska-tower-of-babel')
 def towerofbabel():
-	return render_template("tower-of-babel.html")
+	return render_template("wislawa-szymborska-tower-of-babel.html")
 
-@app.route('/an-exploration-of-verbivocovisual-borders-and-margins')
+@app.route('/bryony-gillard-an-exploration-of-verbivocovisual-borders-and-margins')
 def verbivocovisual():
-	return render_template("an-exploration-of-verbivocovisual-borders-and-margins.html")
+	return render_template("bryony-gillard-an-exploration-of-verbivocovisual-borders-and-margins.html")
 
-@app.route('/enchiridions')
+@app.route('/r-prost-enchiridions')
 def enchiridions():
-	return render_template("enchiridions.html")
+	return render_template("r-prost-enchiridions.html")
 
-@app.route('/documnt2-contents')
-def documnt2contents():
-	return render_template("documnt2-contents.html")
+# @app.route('/documnt2-contents')
+# def documnt2contents():
+# 	return render_template("documnt2-contents.html")
 
 @app.route('/documnt2')
 def documnt2():
 	return render_template("documnt2.html")
 
-@app.route('/documnt2-info')
-def documnt2info():
-	return render_template("documnt2-info.html")
+# @app.route('/documnt2-info')
+# def documnt2info():
+# 	return render_template("documnt2-info.html")
 
 @app.route('/antigone')
 def antigone():
@@ -201,42 +201,42 @@ def antigone():
 def anaundergod2():
 	return render_template("ana-under-god-2.html")
 
-@app.route('/giant-sad-steps')
-def giantsadsteps():
-	return render_template("giant-sad-steps.html")
+# @app.route('/giant-sad-steps')
+# def giantsadsteps():
+# 	return render_template("giant-sad-steps.html")
 
-@app.route('/food-order')
-def foodorder():
-	return render_template("food-order.html")
+# @app.route('/food-order')
+# def foodorder():
+# 	return render_template("food-order.html")
 
 
-@app.route('/accounting')
-def accouting():
-	return render_template("accounting.html")
+# @app.route('/accounting')
+# def accouting():
+# 	return render_template("accounting.html")
 
-@app.route('/sexed-realities')
-def sexedrealities():
-	return render_template("sexed-realities.html")
+# @app.route('/anja-kaiser-sexed-realities')
+# def sexedrealities():
+# 	return render_template("anja-kaiser-sexed-realities.html")
 
-@app.route('/in-other-worlds')
-def inotherworlds():
-	return render_template("in-other-worlds.html")
+# @app.route('/in-other-worlds')
+# def inotherworlds():
+# 	return render_template("in-other-worlds.html")
 
-@app.route('/keywords-scans')
+@app.route('/hanne-lippard-keywords-scans')
 def keywordsscans():
-	return render_template("keywords-scans.html")
+	return render_template("hanne-lippard-keywords-scans.html")
 
-@app.route('/digitized-archives-digital-archives')
+@app.route('/ella-coon-digitized-archives-digital-archives')
 def digitizedarchivesdigitalarchives():
-	return render_template("digitized-archives-digital-archives.html")
+	return render_template("ella-coon-digitized-archives-digital-archives.html")
 
-@app.route('/two-or-three-things-i-know-about-provo')
+@app.route('/experimental-jetset-two-or-three-things-i-know-about-provo')
 def twoorthreethingsiknowaboutprovo():
-	return render_template("two-or-three-things-i-know-about-provo.html")
+	return render_template("experimental-jetset-two-or-three-things-i-know-about-provo.html")
 
-@app.route('/the-dark-room-as-a-spiritual-path')
+@app.route('/anna-erdmann-the-dark-room-as-a-spiritual-path')
 def darkroom():
-	return render_template("the-dark-room-as-a-spiritual-path.html")
+	return render_template("anna-erdmann-the-dark-room-as-a-spiritual-path.html")
 
 @app.route('/lynne-huffer-foucaults-fossils')
 def foucaultsfossils():
