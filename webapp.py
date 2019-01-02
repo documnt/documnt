@@ -165,9 +165,9 @@ def helloworlddinosaursafterapocalypse():
 def mixedmessages():
 	return render_template("kurt-eidsvig-mixed-messages.html")
 
-@app.route('/katarina-henriksson-et-in-arcadia-ego')
+@app.route('/katarina-sylvan-et-in-arcadia-ego')
 def etinarcadiaego():
-	return render_template("katarina-henriksson-et-in-arcadia-ego.html")
+	return render_template("katarina-sylvan-et-in-arcadia-ego.html")
 
 @app.route('/wislawa-szymborska-tower-of-babel')
 def towerofbabel():
