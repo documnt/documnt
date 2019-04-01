@@ -253,11 +253,11 @@ img.d2_poster{
   font-size: 14px;
 }
 .art-content {
-  top: 0;
+  top: 25px;
   bottom: 0;
   overflow-y: hidden;
   margin-bottom: 60px;
-  padding-top: 5px;
+  padding-top: 25px;
   font-size: 12px;
   width: 100%;
 }
@@ -295,7 +295,7 @@ img.d2_poster{
   top: 0;
   right: 0;
   height: 100vh;
-  margin: 10px 0 0 33%;
+  margin: 10px 0 0 25%;
   padding-top: 22px;
   overflow-y: scroll;
   overflow: auto;
@@ -311,6 +311,7 @@ img.d2_poster{
   top: 36px;
   /*font-size: 8px;*/
   font-size: 12px;
+  display: none;
 }
 
 .index-wrapper {
